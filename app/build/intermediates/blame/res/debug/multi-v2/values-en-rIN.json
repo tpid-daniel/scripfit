@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Asset Ricky\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\de5593795f00ea8a8983d77d8fc2929b\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/macbook2015/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c0552c0f3fa151e40fca63a257bf7321/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\5f8419cb680a90bd5e1e17fbd6256f05\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/macbook2015/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/da9441a4f6b03d4f181a031a1b276270/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

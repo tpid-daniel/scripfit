@@ -18,12 +18,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHolder> implements Filterable {
-    List<String> mData;
-    List<String> mDataFull;
+    List<LatihanModel> mData;
+    List<LatihanModel> mDataFull;
     private LayoutInflater mInflater;
     Context context;
 
-    public LatihanAdapter(Context context, List<String> data) {
+    public LatihanAdapter(Context context, List<LatihanModel> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
         this.context = context;
@@ -41,8 +41,8 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        final String data = mData.get(i);
-        viewHolder.txtMessage.setText(mData.get(i));
+        final String data = mData.get(i).getKeterangan();
+        viewHolder.txtMessage.setText(mData.get(i).getKeterangan());
         viewHolder.latihanItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,7 +87,7 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
     private Filter filterList = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence charSequence) {
-            List<String> filterListData = new ArrayList<>();
+            List<LatihanModel> filterListData = new ArrayList<>();
 
             if(charSequence == null || charSequence.length() == 0){
                 filterListData.addAll(mDataFull);
@@ -95,8 +95,8 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
             else{
                 String filterPattern = charSequence.toString().toLowerCase().trim();
 
-                for (String item : mDataFull){
-                    if(item.toLowerCase().contains(filterPattern)){
+                for (LatihanModel item : mDataFull){
+                    if(item.getKeterangan().toLowerCase().contains(filterPattern)){
                         filterListData.add(item);
                     }
                 }

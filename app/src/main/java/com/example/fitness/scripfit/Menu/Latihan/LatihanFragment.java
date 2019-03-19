@@ -45,15 +45,9 @@ public class LatihanFragment extends Fragment {
 
         Toolbar actionBarToolBar = (Toolbar) rootView.findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(actionBarToolBar);
-//        actionBarToolBar.inflateMenu(R.menu.search_latihan);
 
         return rootView;
     }
-
-//    public void onCreate(@Nullable Bundle savedInstanceState){
-//        super.onCreate(savedInstanceState);
-//        data();
-//    }
 
     public void onResume() {
         super.onResume();
@@ -61,16 +55,16 @@ public class LatihanFragment extends Fragment {
     }
 
     public void data(){
-        List<String> menu;
+        List<LatihanModel> menu;
         menu = new ArrayList<>();
-        menu.add("CARDIO");
-        menu.add("PUNGGUNG");
-        menu.add("BISEP");
-        menu.add("BETIS");
-        menu.add("DADA");
-        menu.add("LENGAN BAWAH");
-        menu.add("KAKI");
-        menu.add("BAHU");
+        menu.add(new LatihanModel("CARDIO"));
+        menu.add(new LatihanModel("PUNGGUNG"));
+        menu.add(new LatihanModel("BISEP"));
+        menu.add(new LatihanModel("BETIS"));
+        menu.add(new LatihanModel("DADA"));
+        menu.add(new LatihanModel("LENGAN BAWAH"));
+        menu.add(new LatihanModel("KAKI"));
+        menu.add(new LatihanModel("BAHU"));
 
         adapter = new LatihanAdapter(getContext(), menu);
 
