@@ -1,0 +1,130 @@
+package com.example.fitness.scripfit.Menu.Latihan;
+
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.fitness.scripfit.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHolder> implements Filterable {
+    List<String> mData;
+    List<String> mDataFull;
+    private LayoutInflater mInflater;
+    Context context;
+
+    public LatihanAdapter(Context context, List<String> data) {
+        this.mInflater = LayoutInflater.from(context);
+        this.mData = data;
+        this.context = context;
+        mDataFull = new ArrayList<>(data);
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+        View v;
+        v= mInflater.inflate(R.layout.latihan_item, parent, false);
+        final ViewHolder vHolder = new ViewHolder(v);
+        return vHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+        final String data = mData.get(i);
+        viewHolder.txtMessage.setText(mData.get(i));
+        viewHolder.latihanItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(data == "CARDIO"){
+                    Toast.makeText(context, "CARDIO", Toast.LENGTH_SHORT).show();
+                }
+                else if(data == "PUNGGUNG"){
+                    Toast.makeText(context, "PUNGGUNG", Toast.LENGTH_SHORT).show();
+                }
+                else if(data == "BISEP"){
+                    Toast.makeText(context, "BISEP", Toast.LENGTH_SHORT).show();
+                }
+                else if(data == "BETIS"){
+                    Toast.makeText(context, "BETIS", Toast.LENGTH_SHORT).show();
+                }
+                else if(data == "DADA"){
+                    Toast.makeText(context, "DADA", Toast.LENGTH_SHORT).show();
+                }
+                else if(data == "LENGAN BAWAH"){
+                    Toast.makeText(context, "LENGAN BAWAH", Toast.LENGTH_SHORT).show();
+                }
+                else if(data == "KAKI"){
+                    Toast.makeText(context, "KAKI", Toast.LENGTH_SHORT).show();
+                }
+                else if(data == "BAHU"){
+                    Toast.makeText(context, "BAHU", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
+        return mData.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+        return filterList;
+    }
+
+    private Filter filterList = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence charSequence) {
+            List<String> filterListData = new ArrayList<>();
+
+            if(charSequence == null || charSequence.length() == 0){
+                filterListData.addAll(mDataFull);
+            }
+            else{
+                String filterPattern = charSequence.toString().toLowerCase().trim();
+
+                for (String item : mDataFull){
+                    if(item.toLowerCase().contains(filterPattern)){
+                        filterListData.add(item);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filterListData;
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+            mData.clear();
+            mData.addAll((List) filterResults.values);
+            notifyDataSetChanged();
+        }
+    };
+
+    //ViewHolder class
+    //TextView and ImageView holders are binded with relevant views in item of recyclerview.
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        public TextView txtMessage;
+        public LinearLayout latihanItem;
+
+        public ViewHolder(View v) {
+            super(v);
+
+            txtMessage = (TextView) v.findViewById(R.id.tv_latihanItem);
+            latihanItem = (LinearLayout) v.findViewById(R.id.latihanItem);
+        }
+    }
+}

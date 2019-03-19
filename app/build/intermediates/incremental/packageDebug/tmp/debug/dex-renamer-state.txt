@@ -1,0 +1,7 @@
+#Mon Mar 18 23:09:40 ICT 2019
+base.0=D\:\\Asset Ricky\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\Asset Ricky\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
