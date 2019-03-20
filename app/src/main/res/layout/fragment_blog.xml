@@ -15,12 +15,14 @@
         app:layout_scrollFlags="scroll|enterAlways|snap"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="Blog"
-        app:titleMarginStart="185dp" />
+        app:titleMarginStart="165dp" />
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_blog"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="65dp" />
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="55dp" />
 
 </FrameLayout>

@@ -40,7 +40,7 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogAdapter.ViewHolder>{
         viewHolder.txtJudul.setText(mData.get(i).getJudul());
         viewHolder.txtKeterangan.setText(mData.get(i).getKeterangan());
         Glide.with(context)
-                .load("http://via.placeholder.com/300.png")
+                .load(mData.get(i).getLinkImage())
                 .into(viewHolder.iv_blogItem);
     }
 

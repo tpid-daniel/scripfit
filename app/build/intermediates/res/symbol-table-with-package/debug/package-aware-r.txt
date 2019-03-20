@@ -1017,6 +1017,7 @@ drawable ic_bell_fill
 drawable ic_blog
 drawable ic_clock
 drawable ic_close
+drawable ic_history
 drawable ic_latihan
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1130,6 +1131,7 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id history_blog
 id home
 id homeAsUp
 id icon
@@ -1145,6 +1147,7 @@ id italic
 id item_touch_helper_previous_elevation
 id iv_blogItem
 id iv_close
+id iv_gambarRencana
 id iv_jumat
 id iv_kamis
 id iv_minggu
@@ -1196,6 +1199,8 @@ id right_icon
 id right_side
 id rv_blog
 id rv_latihan
+id rv_listRencana
+id rv_recentOpen
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1274,8 +1279,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv_clock
 id tv_judul
+id tv_judulKeterangan
 id tv_keterangan
 id tv_latihanItem
+id tv_selengkapnya
 id uniform
 id unlabeled
 id up
@@ -1371,12 +1378,14 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout reminder_item
+layout rencana_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout toolbar_activity
 menu bottom_navigation
+menu history_blog
 menu search_latihan
 mipmap ic_launcher
 mipmap ic_launcher_round

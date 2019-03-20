@@ -19,7 +19,7 @@
         <ImageView
             android:id="@+id/iv_blogItem"
             android:layout_width="match_parent"
-            android:layout_height="125dp"
+            android:layout_height="206dp"
             android:contentDescription="TODO"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp"
