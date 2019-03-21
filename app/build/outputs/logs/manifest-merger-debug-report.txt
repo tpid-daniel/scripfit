@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
 MERGED from [com.android.support:design:28.0.0] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/25d4f1e1ce3691e7eb258821904c86d0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c0552c0f3fa151e40fca63a257bf7321/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9b8e6abce36c544a92dd50d11e8ed7a4/AndroidManifest.xml:2:1-11:12
@@ -39,20 +39,20 @@ MERGED from [com.android.support:interpolator:28.0.0] /Users/macbook2015/.gradle
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2482bcabb522c0c01829042300935e35/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/2b11dab5673dc9f7cb2c0b87755a8518/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fe15bf3623d5f09fad98ad6c27967e2d/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:3:5-43
 		INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml
-		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
+		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml
-		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-26:12
+		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:2:11-69
@@ -61,7 +61,7 @@ ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidMa
 	android:name
 		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:7:5-24:19
+ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:7:5-26:19
 MERGED from [com.android.support:design:28.0.0] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/25d4f1e1ce3691e7eb258821904c86d0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/25d4f1e1ce3691e7eb258821904c86d0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/macbook2015/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9b8e6abce36c544a92dd50d11e8ed7a4/AndroidManifest.xml:9:5-20
@@ -89,25 +89,27 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/macbook2015/.gra
 	android:theme
 		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:13:9-40
 activity#com.example.fitness.scripfit.MainActivity
-ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:14:9-22:20
+	android:screenOrientation
+		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:15:19-55
 	android:name
 		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:20:27-74
 meta-data#preloaded_fonts
-ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:21:9-23:57
+ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:23:9-25:57
 	android:resource
-		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:23:13-54
+		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:25:13-54
 	android:name
-		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:22:13-43
+		ADDED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml:24:13-43
 uses-sdk
 INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/macbook2015/Documents/scripfit/scripfit/app/src/main/AndroidManifest.xml

@@ -1204,6 +1204,7 @@ id rv_list2
 id rv_list3
 id rv_list4
 id rv_list5
+id rv_recentOpen
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1291,6 +1292,8 @@ id tv_judul5
 id tv_judulKeterangan
 id tv_keterangan
 id tv_latihanItem
+id tv_noRecent
+id tv_recentOpen
 id tv_selengkapnya1
 id tv_selengkapnya2
 id tv_selengkapnya3

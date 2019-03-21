@@ -23,7 +23,12 @@ public class RencanaPresenter {
     }
 
     public void getListRencana(){
-        final List<RencanaModel> menu = new ArrayList<>();
+        final List<RencanaModel> dataRecentOpen = new ArrayList<>();
+        final List<RencanaModel> dataList1 = new ArrayList<>();
+        final List<RencanaModel> dataList2 = new ArrayList<>();
+        final List<RencanaModel> dataList3 = new ArrayList<>();
+        final List<RencanaModel> dataList4 = new ArrayList<>();
+        final List<RencanaModel> dataList5 = new ArrayList<>();
         mService = Common.getAPIService();
 
         Call<RencanaMainModel> call = mService.getRencana();
@@ -33,10 +38,35 @@ public class RencanaPresenter {
             public void onResponse(Call<RencanaMainModel> call, Response<RencanaMainModel> response) {
                 List<RencanaModel> lists = response.body().getRencana();
                 for(RencanaModel listModel : lists){
-                    Log.i("judul", listModel.getJudul());
-                    menu.add(listModel);
+                    Log.i("status", listModel.getOpen().toString());
+
+
+                    if(listModel.getJudul().contains("list1")){
+                        dataList1.add(listModel);
+                    }
+                    else if(listModel.getJudul().contains("list2")){
+                        dataList2.add(listModel);
+                    }
+                    else if(listModel.getJudul().contains("list3")){
+                        dataList3.add(listModel);
+                    }
+                    else if(listModel.getJudul().contains("list4")){
+                        dataList4.add(listModel);
+                    }
+                    else if(listModel.getJudul().contains("list5")){
+                        dataList5.add(listModel);
+                    }
+
+                    if(listModel.getOpen() == 1){
+                        dataRecentOpen.add(listModel);
+                    }
                 }
-                view.resultListRencana(menu);
+                view.resultRecentOpen(dataRecentOpen);
+                view.resultList1(dataList1);
+                view.resultList2(dataList2);
+                view.resultList3(dataList3);
+                view.resultList4(dataList4);
+                view.resultList5(dataList5);
             }
 
             @Override
@@ -48,7 +78,18 @@ public class RencanaPresenter {
 
 
     public interface View {
-        void resultListRencana(List<RencanaModel> data);
+
+        void resultRecentOpen(List<RencanaModel> data);
+
+        void resultList1(List<RencanaModel> data);
+
+        void resultList2(List<RencanaModel> data);
+
+        void resultList3(List<RencanaModel> data);
+
+        void resultList4(List<RencanaModel> data);
+
+        void resultList5(List<RencanaModel> data);
 
         void showErrorMessage(String errorMessage);
     }

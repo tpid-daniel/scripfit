@@ -23,6 +23,7 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class RencanaLatihanFragment extends Fragment implements RencanaPresenter.View {
+    RecyclerView rv_recentOpen;
     RecyclerView rv_list1;
     RecyclerView rv_list2;
     RecyclerView rv_list3;
@@ -30,7 +31,12 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     RecyclerView rv_list5;
     ListRencanaAdapter adapter;
     RencanaPresenter rencanaPresenter;
-    List<RencanaModel> menu = new ArrayList<>();
+    List<RencanaModel> menuRecentOpen = new ArrayList<>();
+    List<RencanaModel> menuList1 = new ArrayList<>();
+    List<RencanaModel> menuList2 = new ArrayList<>();
+    List<RencanaModel> menuList3 = new ArrayList<>();
+    List<RencanaModel> menuList4 = new ArrayList<>();
+    List<RencanaModel> menuList5 = new ArrayList<>();
     public RencanaLatihanFragment() {
         // Required empty public constructor
     }
@@ -41,6 +47,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_rencana_latihan, container, false);
+        rv_recentOpen = (RecyclerView) rootView.findViewById(R.id.rv_recentOpen);
         rv_list1 = (RecyclerView) rootView.findViewById(R.id.rv_list1);
         rv_list2 = (RecyclerView) rootView.findViewById(R.id.rv_list2);
         rv_list3 = (RecyclerView) rootView.findViewById(R.id.rv_list3);
@@ -53,6 +60,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
 
     public void onResume() {
         super.onResume();
+        listRecentOpen();
         list1();
         list2();
         list3();
@@ -60,8 +68,16 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         list5();
     }
 
+    public void listRecentOpen(){
+        adapter = new ListRencanaAdapter(getContext(), menuRecentOpen);
+
+        rv_recentOpen.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+
+        rv_recentOpen.setAdapter(adapter);
+    }
+
     public void list1(){
-        adapter = new ListRencanaAdapter(getContext(), menu);
+        adapter = new ListRencanaAdapter(getContext(), menuList1);
 
         rv_list1.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -69,7 +85,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list2(){
-        adapter = new ListRencanaAdapter(getContext(), menu);
+        adapter = new ListRencanaAdapter(getContext(), menuList2);
 
         rv_list2.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -77,7 +93,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list3(){
-        adapter = new ListRencanaAdapter(getContext(), menu);
+        adapter = new ListRencanaAdapter(getContext(), menuList3);
 
         rv_list3.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -85,7 +101,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list4(){
-        adapter = new ListRencanaAdapter(getContext(), menu);
+        adapter = new ListRencanaAdapter(getContext(), menuList4);
 
         rv_list4.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -93,7 +109,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list5(){
-        adapter = new ListRencanaAdapter(getContext(), menu);
+        adapter = new ListRencanaAdapter(getContext(), menuList5);
 
         rv_list5.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -101,12 +117,38 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     @Override
-    public void resultListRencana(List<RencanaModel> data) {
-        menu = data;
+    public void resultRecentOpen(List<RencanaModel> data) {
+        menuRecentOpen = data;
+        listRecentOpen();
+    }
+
+    @Override
+    public void resultList1(List<RencanaModel> data) {
+        menuList1 = data;
         list1();
+    }
+
+    @Override
+    public void resultList2(List<RencanaModel> data) {
+        menuList2 = data;
         list2();
+    }
+
+    @Override
+    public void resultList3(List<RencanaModel> data) {
+        menuList3 = data;
         list3();
+    }
+
+    @Override
+    public void resultList4(List<RencanaModel> data) {
+        menuList4 = data;
         list4();
+    }
+
+    @Override
+    public void resultList5(List<RencanaModel> data) {
+        menuList5 = data;
         list5();
     }
 
