@@ -19,24 +19,7 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tv_judul"
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/tv_selengkapnya"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Selengkapnya >" />
-        </LinearLayout>
 
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
