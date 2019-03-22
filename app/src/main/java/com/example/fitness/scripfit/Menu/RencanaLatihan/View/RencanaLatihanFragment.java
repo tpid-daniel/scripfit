@@ -1,6 +1,7 @@
-package com.example.fitness.scripfit.Menu.RencanaLatihan;
+package com.example.fitness.scripfit.Menu.RencanaLatihan.View;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
@@ -32,7 +34,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     ListRencanaAdapter adapter;
     RencanaPresenter rencanaPresenter;
     List<RencanaModel> menuRecentOpen = new ArrayList<>();
-    List<RencanaModel> menuList1 = new ArrayList<>();
+        List<RencanaModel> menuList1 = new ArrayList<>();
     List<RencanaModel> menuList2 = new ArrayList<>();
     List<RencanaModel> menuList3 = new ArrayList<>();
     List<RencanaModel> menuList4 = new ArrayList<>();
@@ -53,8 +55,58 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         rv_list3 = (RecyclerView) rootView.findViewById(R.id.rv_list3);
         rv_list4 = (RecyclerView) rootView.findViewById(R.id.rv_list4);
         rv_list5 = (RecyclerView) rootView.findViewById(R.id.rv_list5);
+        TextView tv_selengkapnya1 = (TextView) rootView.findViewById(R.id.tv_selengkapnya1);
+        TextView tv_selengkapnya2 = (TextView) rootView.findViewById(R.id.tv_selengkapnya2);
+        TextView tv_selengkapnya3 = (TextView) rootView.findViewById(R.id.tv_selengkapnya3);
+        TextView tv_selengkapnya4 = (TextView) rootView.findViewById(R.id.tv_selengkapnya4);
+        TextView tv_selengkapnya5 = (TextView) rootView.findViewById(R.id.tv_selengkapnya5);
         rencanaPresenter = new RencanaPresenter(this);
         rencanaPresenter.getListRencana();
+
+        tv_selengkapnya1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
+                data.putExtra("judul", "list1");
+                getActivity().startActivity(data);
+            }
+        });
+
+        tv_selengkapnya2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
+                data.putExtra("judul", "list2");
+                getActivity().startActivity(data);
+            }
+        });
+
+        tv_selengkapnya3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
+                data.putExtra("judul", "list3");
+                getActivity().startActivity(data);
+            }
+        });
+
+        tv_selengkapnya4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
+                data.putExtra("judul", "list4");
+                getActivity().startActivity(data);
+            }
+        });
+
+        tv_selengkapnya5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
+                data.putExtra("judul", "list5");
+                getActivity().startActivity(data);
+            }
+        });
         return rootView;
     }
 
@@ -156,5 +208,10 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     public void showErrorMessage(String errorMessage) {
         Toast.makeText(getActivity(), errorMessage, Toast.LENGTH_SHORT).show();
         Log.i("errorRencana", errorMessage);
+    }
+
+    @Override
+    public void resultDataDetail(List<RencanaModel> data) {
+
     }
 }

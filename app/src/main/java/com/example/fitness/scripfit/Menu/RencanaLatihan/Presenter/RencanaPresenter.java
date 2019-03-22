@@ -36,37 +36,74 @@ public class RencanaPresenter {
         call.enqueue(new Callback<RencanaMainModel>() {
             @Override
             public void onResponse(Call<RencanaMainModel> call, Response<RencanaMainModel> response) {
-                List<RencanaModel> lists = response.body().getRencana();
-                for(RencanaModel listModel : lists){
-                    Log.i("status", listModel.getOpen().toString());
+                try {
+                    List<RencanaModel> lists = response.body().getRencana();
+                    for(RencanaModel listModel : lists){
+                        Log.i("status", listModel.getOpen().toString());
 
 
-                    if(listModel.getJudul().contains("list1")){
-                        dataList1.add(listModel);
-                    }
-                    else if(listModel.getJudul().contains("list2")){
-                        dataList2.add(listModel);
-                    }
-                    else if(listModel.getJudul().contains("list3")){
-                        dataList3.add(listModel);
-                    }
-                    else if(listModel.getJudul().contains("list4")){
-                        dataList4.add(listModel);
-                    }
-                    else if(listModel.getJudul().contains("list5")){
-                        dataList5.add(listModel);
-                    }
+                        if(listModel.getJudul().contains("list1")){
+                            dataList1.add(listModel);
+                        }
+                        else if(listModel.getJudul().contains("list2")){
+                            dataList2.add(listModel);
+                        }
+                        else if(listModel.getJudul().contains("list3")){
+                            dataList3.add(listModel);
+                        }
+                        else if(listModel.getJudul().contains("list4")){
+                            dataList4.add(listModel);
+                        }
+                        else if(listModel.getJudul().contains("list5")){
+                            dataList5.add(listModel);
+                        }
 
-                    if(listModel.getOpen() == 1){
-                        dataRecentOpen.add(listModel);
+                        if(listModel.getOpen() == 1){
+                            dataRecentOpen.add(listModel);
+                        }
                     }
+                    view.resultRecentOpen(dataRecentOpen);
+                    view.resultList1(dataList1);
+                    view.resultList2(dataList2);
+                    view.resultList3(dataList3);
+                    view.resultList4(dataList4);
+                    view.resultList5(dataList5);
                 }
-                view.resultRecentOpen(dataRecentOpen);
-                view.resultList1(dataList1);
-                view.resultList2(dataList2);
-                view.resultList3(dataList3);
-                view.resultList4(dataList4);
-                view.resultList5(dataList5);
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<RencanaMainModel> call, Throwable t) {
+                view.showErrorMessage(t.toString());
+            }
+        });
+    }
+
+    public void getDataDetail(final String judul){
+        final List<RencanaModel> dataDetail = new ArrayList<>();
+        mService = Common.getAPIService();
+
+        Call<RencanaMainModel> call = mService.getRencana();
+
+        call.enqueue(new Callback<RencanaMainModel>() {
+            @Override
+            public void onResponse(Call<RencanaMainModel> call, Response<RencanaMainModel> response) {
+                try {
+                    List<RencanaModel> lists = response.body().getRencana();
+                    for(RencanaModel listModel : lists){
+                        if(listModel.getJudul().contains(judul)){
+                            dataDetail.add(listModel);
+                        }
+
+                    }
+                    view.resultDataDetail(dataDetail);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
 
             @Override
@@ -92,5 +129,7 @@ public class RencanaPresenter {
         void resultList5(List<RencanaModel> data);
 
         void showErrorMessage(String errorMessage);
+
+        void resultDataDetail(List<RencanaModel> data);
     }
 }

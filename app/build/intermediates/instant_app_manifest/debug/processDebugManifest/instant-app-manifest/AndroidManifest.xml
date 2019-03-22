@@ -22,6 +22,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanDetail"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.example.fitness.scripfit.MainActivity"
             android:screenOrientation="portrait" >
             <intent-filter>

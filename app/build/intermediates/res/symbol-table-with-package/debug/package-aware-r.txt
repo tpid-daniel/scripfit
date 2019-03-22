@@ -1011,6 +1011,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_action_back
 drawable ic_arrow_right
 drawable ic_bell
 drawable ic_bell_fill
@@ -1205,6 +1206,7 @@ id rv_list3
 id rv_list4
 id rv_list5
 id rv_recentOpen
+id rv_rencanaDetail
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1356,6 +1358,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_rencana_latihan_detail
 layout blog_item
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

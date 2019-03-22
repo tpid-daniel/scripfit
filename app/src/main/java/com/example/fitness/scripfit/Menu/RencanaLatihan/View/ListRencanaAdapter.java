@@ -1,4 +1,4 @@
-package com.example.fitness.scripfit.Menu.RencanaLatihan;
+package com.example.fitness.scripfit.Menu.RencanaLatihan.View;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import com.example.fitness.scripfit.Menu.Blog.BlogFragment;
 import com.example.fitness.scripfit.Menu.Latihan.LatihanFragment;
 import com.example.fitness.scripfit.Menu.Reminder.ReminderFragment;
-import com.example.fitness.scripfit.Menu.RencanaLatihan.RencanaLatihanFragment;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanFragment;
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
