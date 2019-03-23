@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanDetail"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Menu.RencanaLatihan.View.RencanaLatihanDetail"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -26,6 +27,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanSub"></activity>
     </application>
 
 </manifest>

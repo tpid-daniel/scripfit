@@ -22,6 +22,6 @@
         android:id="@+id/nav_reminder"
         android:enabled="true"
         android:icon="@drawable/ic_reminder"
-        android:title="Reminder"
-        app:showAsAction="ifRoom"/>
+        android:title="Pengingat"
+        app:showAsAction="ifRoom" />
 </menu>
