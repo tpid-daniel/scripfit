@@ -1016,6 +1016,7 @@ drawable ic_arrow_right
 drawable ic_bell
 drawable ic_bell_fill
 drawable ic_blog
+drawable ic_calendar
 drawable ic_clock
 drawable ic_close
 drawable ic_history
@@ -1359,6 +1360,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_rencana_latihan_detail
+layout activity_rencana_latihan_sub
 layout blog_item
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
