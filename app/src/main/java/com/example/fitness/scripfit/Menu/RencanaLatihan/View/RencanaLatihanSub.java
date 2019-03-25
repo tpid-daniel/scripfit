@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
@@ -27,6 +28,7 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
     TextView tv_jumat;
     TextView tv_sabtu;
     TextView tv_minggu;
+    LinearLayout linear_penjelasan;
     RencanaPresenter rencanaPresenter;
     List<RencanaModel> dataDetail = new ArrayList<>();
 
@@ -45,7 +47,7 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
         tv_jumat = (TextView)findViewById(R.id.tv_jumat);
         tv_sabtu = (TextView)findViewById(R.id.tv_sabtu);
         tv_minggu = (TextView)findViewById(R.id.tv_minggu);
-
+        linear_penjelasan = (LinearLayout)findViewById(R.id.linear_penjelasan);
         rencanaPresenter = new RencanaPresenter(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        getSupportActionBar().setTitle("NEWS");

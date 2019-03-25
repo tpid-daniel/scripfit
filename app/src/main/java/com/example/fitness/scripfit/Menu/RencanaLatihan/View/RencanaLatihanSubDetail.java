@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
@@ -12,11 +13,26 @@ import com.example.fitness.scripfit.R;
 import java.util.List;
 
 public class RencanaLatihanSubDetail extends AppCompatActivity implements RencanaPresenter.View {
+    TextView tv_keteranganDetail;
+    TextView tv_tujuanUtama;
+    TextView tv_tingkatPelatihan;
+    TextView tv_waktuLatihan;
+    TextView tv_peralatan;
+    TextView tv_penulis;
+    TextView tv_sumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rencana_latihan_sub_detail);
+
+        tv_keteranganDetail = (TextView)findViewById(R.id.tv_keteranganDetail);
+        tv_tujuanUtama = (TextView)findViewById(R.id.tv_tujuanUtama);
+        tv_tingkatPelatihan = (TextView)findViewById(R.id.tv_tingkatPelatihan);
+        tv_waktuLatihan = (TextView)findViewById(R.id.tv_waktuLatihan);
+        tv_peralatan = (TextView)findViewById(R.id.tv_peralatan);
+        tv_penulis = (TextView)findViewById(R.id.tv_penulis);
+        tv_sumber = (TextView)findViewById(R.id.tv_sumber);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        getSupportActionBar().setTitle("NEWS");

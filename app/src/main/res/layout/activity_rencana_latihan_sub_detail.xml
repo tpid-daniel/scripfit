@@ -82,7 +82,7 @@
 
         <TextView
             android:id="@+id/tv_peralatan"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
             tools:layout_editor_absoluteX="16dp"
