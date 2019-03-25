@@ -1087,6 +1087,7 @@ id blocking
 id bottom
 id bottom_navigation
 id btn_addReminder
+id button
 id buttonPanel
 id cancel_action
 id center
