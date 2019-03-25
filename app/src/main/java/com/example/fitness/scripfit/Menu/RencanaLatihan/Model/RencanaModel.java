@@ -18,6 +18,9 @@ public class RencanaModel {
     @SerializedName("keterangan")
     @Expose
     private String keterangan;
+    @SerializedName("tingkatpelatihan")
+    @Expose
+    private String tingkatpelatihan;
     @SerializedName("linkimage")
     @Expose
     private String linkimage;
@@ -57,6 +60,21 @@ public class RencanaModel {
     @SerializedName("minggu")
     @Expose
     private String minggu;
+    @SerializedName("tujuanutama")
+    @Expose
+    private String tujuanutama;
+    @SerializedName("waktuperlatihan")
+    @Expose
+    private String waktuperlatihan;
+    @SerializedName("peralatan")
+    @Expose
+    private String peralatan;
+    @SerializedName("penulis")
+    @Expose
+    private String penulis;
+    @SerializedName("sumber")
+    @Expose
+    private String sumber;
 
 
     public RencanaModel(String judul, String judulketerangan, String keterangan, String linkimage) {
@@ -96,6 +114,14 @@ public class RencanaModel {
 
     public void setKeterangan(String keterangan) {
         this.keterangan = keterangan;
+    }
+
+    public String getTingkatpelatihan() {
+        return tingkatpelatihan;
+    }
+
+    public void setTingkatpelatihan(String tingkatpelatihan) {
+        this.tingkatpelatihan = tingkatpelatihan;
     }
 
     public String getLinkimage() {
@@ -200,6 +226,46 @@ public class RencanaModel {
 
     public void setMinggu(String minggu) {
         this.minggu = minggu;
+    }
+
+    public String getTujuanutama() {
+        return tujuanutama;
+    }
+
+    public void setTujuanutama(String tujuanutama) {
+        this.tujuanutama = tujuanutama;
+    }
+
+    public String getWaktuperlatihan() {
+        return waktuperlatihan;
+    }
+
+    public void setWaktuperlatihan(String waktuperlatihan) {
+        this.waktuperlatihan = waktuperlatihan;
+    }
+
+    public String getPeralatan() {
+        return peralatan;
+    }
+
+    public void setPeralatan(String peralatan) {
+        this.peralatan = peralatan;
+    }
+
+    public String getPenulis() {
+        return penulis;
+    }
+
+    public void setPenulis(String penulis) {
+        this.penulis = penulis;
+    }
+
+    public String getSumber() {
+        return sumber;
+    }
+
+    public void setSumber(String sumber) {
+        this.sumber = sumber;
     }
 
 }

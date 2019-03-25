@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanSub"></activity>
+        <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanSubDetail"></activity>
+        <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanSub" />
         <activity
             android:name=".Menu.RencanaLatihan.View.RencanaLatihanDetail"
             android:screenOrientation="portrait" />
