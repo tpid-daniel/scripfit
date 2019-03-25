@@ -1,8 +1,44 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
+                {
+                    "source": "/Users/macbook2015/Documents/scripfit/1/scripfit/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,10,17,28",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "54,372,695,1175",
+                        "endLines": "8,15,26,30",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "366,689,1169,1335"
+                    },
+                    "to": {
+                        "startLines": "613,619,2048,2688",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "40591,40908,133548,178914",
+                        "endLines": "618,624,2057,2690",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "40903,41225,134022,179074"
+                    }
+                },
+                {
+                    "source": "/Users/macbook2015/Documents/scripfit/1/scripfit/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "16,121",
+                        "endColumns": "45,69",
+                        "endOffsets": "57,186"
+                    },
+                    "to": {
+                        "startLines": "587,594",
+                        "startColumns": "4,4",
+                        "startOffsets": "37840,38647",
+                        "endColumns": "45,69",
+                        "endOffsets": "37881,38712"
+                    }
+                },
                 {
                     "source": "/Users/macbook2015/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c0552c0f3fa151e40fca63a257bf7321/res/values/values.xml",
                     "from": {
@@ -42,25 +78,6 @@
                     }
                 },
                 {
-                    "source": "/Users/macbook2015/Documents/scripfit/scripfit/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,10,17,28",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "54,372,695,1175",
-                        "endLines": "8,15,26,30",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "366,689,1169,1335"
-                    },
-                    "to": {
-                        "startLines": "613,619,2048,2688",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "40591,40908,133548,178914",
-                        "endLines": "618,624,2057,2690",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "40903,41225,134022,179074"
-                    }
-                },
-                {
                     "source": "/Users/macbook2015/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/da9441a4f6b03d4f181a031a1b276270/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178,6,13,56,88,125",
@@ -77,23 +94,6 @@
                         "endLines": "253,254,354,355,356,357,358,359,360,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,495,496,504,505,517,518,519,520,521,525,547,603,2311,2315,2317,2323,2325,2691,2692,3759,3959,3991,4029,4036",
                         "endColumns": "68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
                         "endOffsets": "16478,16541,23393,23461,23533,23603,23664,23738,23811,30696,30757,30819,30883,30945,31006,31074,31174,31234,31300,31373,31442,31499,31551,31613,32350,32426,32806,32841,33431,33492,33549,33583,33618,33796,35077,39867,153680,153881,154057,154441,154636,179146,179213,240421,258669,260734,262696,263073"
-                    }
-                },
-                {
-                    "source": "/Users/macbook2015/Documents/scripfit/scripfit/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "16,121",
-                        "endColumns": "45,69",
-                        "endOffsets": "57,186"
-                    },
-                    "to": {
-                        "startLines": "587,594",
-                        "startColumns": "4,4",
-                        "startOffsets": "37840,38647",
-                        "endColumns": "45,69",
-                        "endOffsets": "37881,38712"
                     }
                 },
                 {
@@ -169,7 +169,7 @@
                     }
                 },
                 {
-                    "source": "/Users/macbook2015/Documents/scripfit/scripfit/app/src/main/res/values/colors.xml",
+                    "source": "/Users/macbook2015/Documents/scripfit/1/scripfit/app/src/main/res/values/colors.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
@@ -186,22 +186,22 @@
                     }
                 },
                 {
-                    "source": "/Users/macbook2015/Documents/scripfit/scripfit/app/src/main/res/values/preloaded_fonts.xml",
+                    "source": "/Users/macbook2015/Documents/scripfit/1/scripfit/app/src/main/res/values/font_certs.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "162"
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,257,1982",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "252,1977,3567"
                     },
                     "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "3667",
-                        "endLines": "18",
-                        "endColumns": "12",
-                        "endOffsets": "3774"
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "150,352,2077",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "347,2072,3662"
                     }
                 },
                 {
@@ -224,25 +224,6 @@
                     }
                 },
                 {
-                    "source": "/Users/macbook2015/Documents/scripfit/scripfit/app/src/main/res/values/font_certs.xml",
-                    "from": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,257,1982",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "252,1977,3567"
-                    },
-                    "to": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "150,352,2077",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "347,2072,3662"
-                    }
-                },
-                {
                     "source": "/Users/macbook2015/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/fb4b27f0547d39f26f431c312bdf1a6d/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -259,6 +240,25 @@
                         "endLines": "32,205,206,207,208,351,352,353,652,2041,2044,2047,3699",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "4410,13409,13471,13533,13597,23212,23269,23323,43090,133289,133415,133543,236017"
+                    }
+                },
+                {
+                    "source": "/Users/macbook2015/Documents/scripfit/1/scripfit/app/src/main/res/values/preloaded_fonts.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "162"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "3667",
+                        "endLines": "18",
+                        "endColumns": "12",
+                        "endOffsets": "3774"
                     }
                 }
             ]

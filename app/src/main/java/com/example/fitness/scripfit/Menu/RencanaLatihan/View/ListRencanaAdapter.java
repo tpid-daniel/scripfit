@@ -19,18 +19,25 @@ public class ListRencanaAdapter extends RecyclerView.Adapter<ListRencanaAdapter.
     List<RencanaModel> mData;
     private LayoutInflater mInflater;
     Context context;
+    int status = 0;
 
-    public ListRencanaAdapter(Context context, List<RencanaModel> data) {
+    public ListRencanaAdapter(Context context, List<RencanaModel> data, int status) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
         this.context = context;
+        this.status = status;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
         View v;
-        v= mInflater.inflate(R.layout.rencana_item, parent, false);
+        if(status == 0) {
+            v = mInflater.inflate(R.layout.rencana_item, parent, false);
+        }
+        else{
+            v = mInflater.inflate(R.layout.rencana_item_detail, parent, false);
+        }
         final ViewHolder vHolder = new ViewHolder(v);
         return vHolder;
     }

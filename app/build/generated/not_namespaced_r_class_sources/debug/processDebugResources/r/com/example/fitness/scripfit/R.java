@@ -5495,11 +5495,12 @@ public final class R {
     public static final int notification_template_part_time=0x7f0d0042;
     public static final int reminder_item=0x7f0d0043;
     public static final int rencana_item=0x7f0d0044;
-    public static final int select_dialog_item_material=0x7f0d0045;
-    public static final int select_dialog_multichoice_material=0x7f0d0046;
-    public static final int select_dialog_singlechoice_material=0x7f0d0047;
-    public static final int support_simple_spinner_dropdown_item=0x7f0d0048;
-    public static final int toolbar_activity=0x7f0d0049;
+    public static final int rencana_item_detail=0x7f0d0045;
+    public static final int select_dialog_item_material=0x7f0d0046;
+    public static final int select_dialog_multichoice_material=0x7f0d0047;
+    public static final int select_dialog_singlechoice_material=0x7f0d0048;
+    public static final int support_simple_spinner_dropdown_item=0x7f0d0049;
+    public static final int toolbar_activity=0x7f0d004a;
   }
   public static final class menu {
     public static final int bottom_navigation=0x7f0e0000;

@@ -48,7 +48,7 @@ public class RencanaLatihanDetail extends AppCompatActivity implements RencanaPr
     }
 
     public void list(){
-        adapter = new ListRencanaAdapter(RencanaLatihanDetail.this, dataDetail);
+        adapter = new ListRencanaAdapter(RencanaLatihanDetail.this, dataDetail, 1);
 
         rv_rencanaDetail.setLayoutManager(new LinearLayoutManager(RencanaLatihanDetail.this, LinearLayoutManager.VERTICAL, false));
 

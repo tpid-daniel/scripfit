@@ -121,7 +121,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void listRecentOpen(){
-        adapter = new ListRencanaAdapter(getContext(), menuRecentOpen);
+        adapter = new ListRencanaAdapter(getContext(), menuRecentOpen, 0);
 
         rv_recentOpen.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -129,7 +129,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list1(){
-        adapter = new ListRencanaAdapter(getContext(), menuList1);
+        adapter = new ListRencanaAdapter(getContext(), menuList1, 0);
 
         rv_list1.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -137,7 +137,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list2(){
-        adapter = new ListRencanaAdapter(getContext(), menuList2);
+        adapter = new ListRencanaAdapter(getContext(), menuList2, 0);
 
         rv_list2.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -145,7 +145,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list3(){
-        adapter = new ListRencanaAdapter(getContext(), menuList3);
+        adapter = new ListRencanaAdapter(getContext(), menuList3, 0);
 
         rv_list3.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -153,7 +153,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list4(){
-        adapter = new ListRencanaAdapter(getContext(), menuList4);
+        adapter = new ListRencanaAdapter(getContext(), menuList4, 0);
 
         rv_list4.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -161,7 +161,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list5(){
-        adapter = new ListRencanaAdapter(getContext(), menuList5);
+        adapter = new ListRencanaAdapter(getContext(), menuList5, 0);
 
         rv_list5.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
