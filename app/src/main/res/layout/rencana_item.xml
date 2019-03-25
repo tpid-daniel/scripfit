@@ -16,6 +16,7 @@
 
 
         <android.support.v7.widget.CardView
+            android:id="@+id/cv_rencanaItem"
             android:layout_width="316dp"
             android:layout_height="wrap_content">
 
