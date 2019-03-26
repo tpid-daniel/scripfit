@@ -1,5 +1,6 @@
 package com.example.fitness.scripfit.Menu.RencanaLatihan.View;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -64,6 +65,15 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
         id = intent.getIntExtra("id", 0);
 
         rencanaPresenter.getDataById(id);
+
+        linear_penjelasan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDetail.class);
+                data.putExtra("id", id);
+                startActivity(data);
+            }
+        });
     }
 
     public void setText(){

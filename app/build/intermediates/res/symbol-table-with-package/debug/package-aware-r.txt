@@ -1166,7 +1166,7 @@ id latihan_search
 id left
 id line1
 id line3
-id linearLayout
+id linear_penjelasan
 id listMode
 id list_item
 id masked
@@ -1268,6 +1268,7 @@ id textView
 id textView10
 id textView12
 id textView2
+id textView20
 id textView3
 id textView5
 id textView6
@@ -1304,10 +1305,13 @@ id tv_judulKeterangan
 id tv_jumat
 id tv_kamis
 id tv_keterangan
+id tv_keteranganDetail
 id tv_latihanItem
 id tv_minggu
 id tv_noRecent
 id tv_penjelasan
+id tv_penulis
+id tv_peralatan
 id tv_rabu
 id tv_recentOpen
 id tv_sabtu
@@ -1318,6 +1322,10 @@ id tv_selengkapnya3
 id tv_selengkapnya4
 id tv_selengkapnya5
 id tv_senin
+id tv_sumber
+id tv_tingkatPelatihan
+id tv_tujuanUtama
+id tv_waktuLatihan
 id uniform
 id unlabeled
 id up
@@ -1377,6 +1385,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_rencana_latihan_detail
 layout activity_rencana_latihan_sub
+layout activity_rencana_latihan_sub_detail
 layout blog_item
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

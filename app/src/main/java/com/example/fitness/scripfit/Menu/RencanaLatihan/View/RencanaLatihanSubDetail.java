@@ -1,5 +1,6 @@
 package com.example.fitness.scripfit.Menu.RencanaLatihan.View;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -10,6 +11,7 @@ import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
 import com.example.fitness.scripfit.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RencanaLatihanSubDetail extends AppCompatActivity implements RencanaPresenter.View {
@@ -20,7 +22,8 @@ public class RencanaLatihanSubDetail extends AppCompatActivity implements Rencan
     TextView tv_peralatan;
     TextView tv_penulis;
     TextView tv_sumber;
-
+    int id;
+    List<RencanaModel> dataDetail = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +48,23 @@ public class RencanaLatihanSubDetail extends AppCompatActivity implements Rencan
             }
         });
 
+        RencanaPresenter rencanaPresenter = new RencanaPresenter(this);
+        Intent intent = getIntent();
+        id = intent.getIntExtra("id", 0);
 
+        rencanaPresenter.getDataById(id);
+    }
+
+    public void setText(){
+        for(RencanaModel rencanaModel : dataDetail){
+            tv_keteranganDetail.setText(rencanaModel.getSubketerangandetail());
+            tv_tujuanUtama.setText(rencanaModel.getTujuanutama());
+            tv_tingkatPelatihan.setText(rencanaModel.getTingkatpelatihan());
+            tv_waktuLatihan.setText(rencanaModel.getWaktuperlatihan());
+            tv_peralatan.setText(rencanaModel.getPeralatan());
+            tv_penulis.setText(rencanaModel.getPenulis());
+            tv_sumber.setText(rencanaModel.getSumber());
+        }
     }
 
     @Override
@@ -85,6 +104,7 @@ public class RencanaLatihanSubDetail extends AppCompatActivity implements Rencan
 
     @Override
     public void resultDataDetail(List<RencanaModel> data) {
-
+        dataDetail = data;
+        setText();
     }
 }
