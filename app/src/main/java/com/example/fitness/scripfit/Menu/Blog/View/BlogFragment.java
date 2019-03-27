@@ -1,4 +1,4 @@
-package com.example.fitness.scripfit.Menu.Blog;
+package com.example.fitness.scripfit.Menu.Blog.View;
 
 
 import android.os.Bundle;
@@ -13,9 +13,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
-import com.example.fitness.scripfit.Menu.Latihan.LatihanAdapter;
-import com.example.fitness.scripfit.Menu.Latihan.LatihanModel;
+import com.example.fitness.scripfit.Menu.Blog.BlogAdapter;
+import com.example.fitness.scripfit.Menu.Blog.Model.BlogModel;
+import com.example.fitness.scripfit.Menu.Blog.Presenter.BlogPresenter;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.R;
 
 import java.util.ArrayList;
@@ -25,9 +28,10 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BlogFragment extends Fragment {
+public class BlogFragment extends Fragment implements BlogPresenter.View {
     RecyclerView rv_blog;
     BlogAdapter adapter;
+    List<BlogModel> menu = new ArrayList<>();
 
     public BlogFragment() {
         // Required empty public constructor
@@ -43,7 +47,9 @@ public class BlogFragment extends Fragment {
         Toolbar actionBarToolBar = (Toolbar) rootView.findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(actionBarToolBar);
         rv_blog = (RecyclerView) rootView.findViewById(R.id.rv_blog);
-        data();
+
+        BlogPresenter blogPresenter = new BlogPresenter(this);
+        blogPresenter.getListBlog();
         return rootView;
     }
 
@@ -53,11 +59,6 @@ public class BlogFragment extends Fragment {
     }
 
     public void data(){
-        List<BlogModel> menu;
-        menu = new ArrayList<>();
-        menu.add(new BlogModel("5 makanan yang membuat anda sehat", "berikut ini merupakan makanan yang membuat anda sehat", "https://cbsnews1.cbsistatic.com/hub/i/2015/08/24/7b3027e3-6c06-4d2f-ba65-8c179c66f50e/istock000039803170medium.jpg"));
-        menu.add(new BlogModel("5 makanan yang membuat anda sehat", "berikut ini merupakan makanan yang membuat anda sehat", "https://cbsnews1.cbsistatic.com/hub/i/2015/08/24/7b3027e3-6c06-4d2f-ba65-8c179c66f50e/istock000039803170medium.jpg"));
-        menu.add(new BlogModel("5 makanan yang membuat anda sehat", "berikut ini merupakan makanan yang membuat anda sehat", "https://cbsnews1.cbsistatic.com/hub/i/2015/08/24/7b3027e3-6c06-4d2f-ba65-8c179c66f50e/istock000039803170medium.jpg"));
 
         adapter = new BlogAdapter(getContext(), menu);
 
@@ -78,5 +79,16 @@ public class BlogFragment extends Fragment {
             }
         });
         super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public void showErrorMessage(String errorMessage) {
+        Toast.makeText(getContext(), errorMessage, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void resultDataDetail(List<BlogModel> data) {
+        menu = data;
+        data();
     }
 }

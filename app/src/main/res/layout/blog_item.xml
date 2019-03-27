@@ -50,5 +50,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_selanjutnyaBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:gravity="right"
+            android:text="Selanjutnya" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
