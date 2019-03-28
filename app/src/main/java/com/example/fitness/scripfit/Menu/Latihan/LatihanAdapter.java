@@ -1,6 +1,7 @@
 package com.example.fitness.scripfit.Menu.Latihan;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,6 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
+import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetail;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSub;
 import com.example.fitness.scripfit.R;
 
 import java.util.ArrayList;
@@ -47,7 +51,9 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
             @Override
             public void onClick(View view) {
                 if(data == "CARDIO"){
-                    Toast.makeText(context, "CARDIO", Toast.LENGTH_SHORT).show();
+                    Intent data = new Intent(context, LatihanDetail.class);
+                    data.putExtra("jenis", "CARDIO");
+                    context.startActivity(data);
                 }
                 else if(data == "PUNGGUNG"){
                     Toast.makeText(context, "PUNGGUNG", Toast.LENGTH_SHORT).show();
@@ -70,6 +76,8 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
                 else if(data == "BAHU"){
                     Toast.makeText(context, "BAHU", Toast.LENGTH_SHORT).show();
                 }
+
+
             }
         });
     }

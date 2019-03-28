@@ -1105,6 +1105,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cv_latihanGrid
 id cv_rencanaItem
 id decor_content_parent
 id default_activity_button
@@ -1155,6 +1156,7 @@ id iv_close
 id iv_gambarRencana
 id iv_jumat
 id iv_kamis
+id iv_latihanGrid
 id iv_minggu
 id iv_rabu
 id iv_sabtu
@@ -1205,6 +1207,7 @@ id right_icon
 id right_side
 id rv_blog
 id rv_latihan
+id rv_latihanDetail
 id rv_list1
 id rv_list2
 id rv_list3
@@ -1309,6 +1312,7 @@ id tv_kamis
 id tv_keterangan
 id tv_keteranganBlogDetail
 id tv_keteranganDetail
+id tv_latihanGrid
 id tv_latihanItem
 id tv_minggu
 id tv_noRecent
@@ -1387,6 +1391,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_blog_detail
+layout activity_latihan_detail
 layout activity_main
 layout activity_rencana_latihan_detail
 layout activity_rencana_latihan_sub
@@ -1411,6 +1416,7 @@ layout fragment_latihan
 layout fragment_reminder
 layout fragment_rencana_latihan
 layout latihan_item
+layout latihan_item_grid
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

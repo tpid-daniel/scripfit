@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu.Blog.View.BlogDetail"></activity>
+        <activity android:name=".Menu.Latihan.View.LatihanDetail"></activity>
+        <activity android:name=".Menu.Blog.View.BlogDetail" />
         <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanSubDetail" />
         <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanSub" />
         <activity

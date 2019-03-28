@@ -1,6 +1,7 @@
 package com.example.fitness.scripfit.Network;
 
 import com.example.fitness.scripfit.Menu.Blog.Model.BlogMainModel;
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanMainModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaMainModel;
 
 import retrofit2.Call;
@@ -12,4 +13,7 @@ public interface Api {
 
     @GET("blog?transform=1")
     Call<BlogMainModel> getBlog();
+
+    @GET("latihan?transform=1")
+    Call<LatihanMainModel> getLatihanData();
 }

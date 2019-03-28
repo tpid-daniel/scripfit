@@ -6,25 +6,25 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1553752701901"
+    timestamp="1553779681900"
     token="5188499711395091643"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1656" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="41" />
     <task
         name="verifier"
-        duration="0" />
+        duration="20" />
 
     <artifact
-        location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
         location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -37,9 +37,6 @@
         type="SPLIT" />
     <artifact
         location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
         location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -60,15 +57,18 @@
         location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
     <artifact
+        location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1553752701901"
+        timestamp="1553779681900"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -81,9 +81,6 @@
             type="SPLIT" />
         <artifact
             location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -102,6 +99,9 @@
             type="SPLIT" />
         <artifact
             location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
