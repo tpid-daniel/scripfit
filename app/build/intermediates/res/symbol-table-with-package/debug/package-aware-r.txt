@@ -1149,6 +1149,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_blogDetail
 id iv_blogItem
 id iv_close
 id iv_gambarRencana
@@ -1301,10 +1302,12 @@ id tv_judul2
 id tv_judul3
 id tv_judul4
 id tv_judul5
+id tv_judulBlog
 id tv_judulKeterangan
 id tv_jumat
 id tv_kamis
 id tv_keterangan
+id tv_keteranganBlogDetail
 id tv_keteranganDetail
 id tv_latihanItem
 id tv_minggu
@@ -1315,6 +1318,7 @@ id tv_peralatan
 id tv_rabu
 id tv_recentOpen
 id tv_sabtu
+id tv_selanjutnyaBlog
 id tv_selasa
 id tv_selengkapnya1
 id tv_selengkapnya2
@@ -1382,6 +1386,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_blog_detail
 layout activity_main
 layout activity_rencana_latihan_detail
 layout activity_rencana_latihan_sub

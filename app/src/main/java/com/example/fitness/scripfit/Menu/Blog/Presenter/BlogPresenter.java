@@ -51,6 +51,37 @@ public class BlogPresenter {
 
     }
 
+    public void getListBlogById(final int Id){
+        final List<BlogModel> dataBlog = new ArrayList<>();
+
+        mService = Common.getAPIService();
+
+        Call<BlogMainModel> call = mService.getBlog();
+
+        call.enqueue(new Callback<BlogMainModel>() {
+            @Override
+            public void onResponse(Call<BlogMainModel> call, Response<BlogMainModel> response) {
+                try{
+                    for(BlogModel blogModel : response.body().getBlog()){
+                        if(blogModel.getId().equals(Id)){
+                            dataBlog.add(blogModel);
+                        }
+                    }
+                    view.resultDataDetail(dataBlog);
+                }
+                catch (Exception e){
+                    view.showErrorMessage(e.toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<BlogMainModel> call, Throwable t) {
+                view.showErrorMessage(t.toString());
+            }
+        });
+
+    }
+
     public interface View {
 
         void showErrorMessage(String errorMessage);
