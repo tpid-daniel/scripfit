@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1553779681900"
+    timestamp="1553838180386"
     token="5188499711395091643"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1656" />
+        duration="1257" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="41" />
+        duration="94" />
     <task
         name="verifier"
-        duration="20" />
+        duration="115" />
 
     <artifact
         location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -65,7 +65,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1553779681900"
+        timestamp="1553838180386"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
