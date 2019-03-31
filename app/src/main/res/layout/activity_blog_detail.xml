@@ -6,23 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".Menu.Blog.View.BlogDetail">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme1"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Blog"
+        app:titleMarginStart="130dp" />
+
     <ScrollView
         android:id="@+id/scroll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintTop_toTopOf="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="715dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp">
 
             <ImageView
                 android:id="@+id/iv_blogDetail"
-                android:layout_width="409dp"
+                android:layout_width="match_parent"
                 android:layout_height="205dp"
                 app:srcCompat="@drawable/asset_2"
                 tools:layout_editor_absoluteX="0dp"
@@ -35,31 +46,15 @@
                 android:layout_marginEnd="15dp">
 
                 <TextView
-                    android:id="@+id/tv_judul"
+                    android:id="@+id/tv_judulBlog"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Judul"
                     android:textSize="18sp" />
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="23dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="6dp"
-                    app:srcCompat="@drawable/ic_love" />
-
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/tv_judulBlog"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
-                android:text="TextView" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

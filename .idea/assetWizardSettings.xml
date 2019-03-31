@@ -46,10 +46,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../calendar-vector-icon-8.jpg" />
-                                      <entry key="outputName" value="ic_calendar" />
+                                      <entry key="imageAsset" value="D:\Scripfit\scripfit\app\src\main\res\drawable-mdpi\ic_arrow_right.png" />
+                                      <entry key="outputName" value="ic_arrow_right_white" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="000000" />
+                                      <entry key="themeColor" value="fafff4" />
                                     </map>
                                   </option>
                                 </PersistentState>

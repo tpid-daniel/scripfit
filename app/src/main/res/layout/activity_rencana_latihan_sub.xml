@@ -37,15 +37,34 @@
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="64dp">
 
-                <TextView
-                    android:id="@+id/textView"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Penjelasan"
-                    android:textSize="20sp" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_judul1"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_light"
+                        android:text="Penjelasan"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_selengkapnya1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/open_sans_light"
+                        android:gravity="right"
+                        android:text=">"
+                        android:textColor="#000" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_penjelasan"
+                    android:fontFamily="@font/open_sans_light"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
@@ -76,13 +95,16 @@
                         android:id="@+id/textView8"
                         android:layout_width="55dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_weight="1"
+                        android:textColor="#000"
                         android:text="Durasi Program" />
 
                     <TextView
                         android:id="@+id/tv_durasi"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_weight="1"
                         android:gravity="left"
                         android:text="TextView" />
@@ -98,12 +120,15 @@
                         android:layout_width="55dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/open_sans_light"
+                        android:textColor="#000"
                         android:text="Hari Per Minggu" />
 
                     <TextView
                         android:id="@+id/tv_hariperminggu"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_weight="1"
                         android:gravity="left"
                         android:text="TextView" />
@@ -131,6 +156,8 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Senin" />
@@ -138,6 +165,7 @@
                     <TextView
                         android:id="@+id/tv_senin"
                         android:layout_width="match_parent"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
                 </LinearLayout>
@@ -164,12 +192,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Selasa" />
 
                     <TextView
                         android:id="@+id/tv_selasa"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -197,12 +228,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Rabu" />
 
                     <TextView
                         android:id="@+id/tv_rabu"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -230,12 +264,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Kamis" />
 
                     <TextView
                         android:id="@+id/tv_kamis"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -263,12 +300,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Jumat" />
 
                     <TextView
                         android:id="@+id/tv_jumat"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -296,12 +336,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Sabtu" />
 
                     <TextView
                         android:id="@+id/tv_sabtu"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -329,12 +372,15 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#000"
                         android:layout_width="match_parent"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_height="wrap_content"
                         android:text="Minggu" />
 
                     <TextView
                         android:id="@+id/tv_minggu"
+                        android:fontFamily="@font/open_sans_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />

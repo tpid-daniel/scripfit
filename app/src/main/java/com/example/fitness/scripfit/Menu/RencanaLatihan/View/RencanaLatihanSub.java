@@ -108,21 +108,6 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
     }
 
     @Override
-    public void resultList3(List<RencanaModel> data) {
-
-    }
-
-    @Override
-    public void resultList4(List<RencanaModel> data) {
-
-    }
-
-    @Override
-    public void resultList5(List<RencanaModel> data) {
-
-    }
-
-    @Override
     public void showErrorMessage(String errorMessage) {
         Log.e("Error", errorMessage);
     }

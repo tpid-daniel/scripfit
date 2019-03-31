@@ -1,6 +1,7 @@
 package com.example.fitness.scripfit.Menu.Latihan;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,6 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
+import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetail;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSub;
 import com.example.fitness.scripfit.R;
 
 import java.util.ArrayList;
@@ -46,30 +50,10 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
         viewHolder.latihanItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(data == "CARDIO"){
-                    Toast.makeText(context, "CARDIO", Toast.LENGTH_SHORT).show();
-                }
-                else if(data == "PUNGGUNG"){
-                    Toast.makeText(context, "PUNGGUNG", Toast.LENGTH_SHORT).show();
-                }
-                else if(data == "BISEP"){
-                    Toast.makeText(context, "BISEP", Toast.LENGTH_SHORT).show();
-                }
-                else if(data == "BETIS"){
-                    Toast.makeText(context, "BETIS", Toast.LENGTH_SHORT).show();
-                }
-                else if(data == "DADA"){
-                    Toast.makeText(context, "DADA", Toast.LENGTH_SHORT).show();
-                }
-                else if(data == "LENGAN BAWAH"){
-                    Toast.makeText(context, "LENGAN BAWAH", Toast.LENGTH_SHORT).show();
-                }
-                else if(data == "KAKI"){
-                    Toast.makeText(context, "KAKI", Toast.LENGTH_SHORT).show();
-                }
-                else if(data == "BAHU"){
-                    Toast.makeText(context, "BAHU", Toast.LENGTH_SHORT).show();
-                }
+                Intent intent = new Intent(context, LatihanDetail.class);
+                intent.putExtra("jenis", data);
+                context.startActivity(intent);
+
             }
         });
     }

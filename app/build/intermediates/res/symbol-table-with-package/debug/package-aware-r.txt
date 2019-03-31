@@ -256,7 +256,9 @@ attr fontStyle
 attr fontVariationSettings
 attr fontWeight
 attr foregroundInsidePadding
+attr freezesAnimation
 attr gapBetweenBars
+attr gifSource
 attr goIcon
 attr headerLayout
 attr height
@@ -286,6 +288,7 @@ attr indeterminateProgressStyle
 attr initialActivityCount
 attr insetForeground
 attr isLightTheme
+attr isOpaque
 attr itemBackground
 attr itemHorizontalPadding
 attr itemHorizontalTranslationEnabled
@@ -379,6 +382,7 @@ attr listPreferredItemPaddingLeft
 attr listPreferredItemPaddingRight
 attr logo
 attr logoDescription
+attr loopCount
 attr materialButtonStyle
 attr materialCardViewStyle
 attr maxActionInlineWidth
@@ -610,6 +614,7 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
+color colorAccent1
 color colorPrimary
 color colorPrimaryDark
 color design_bottom_navigation_shadow_color
@@ -1013,6 +1018,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_action_back
 drawable ic_arrow_right
+drawable ic_arrow_right_white
 drawable ic_bell
 drawable ic_bell_fill
 drawable ic_blog
@@ -1105,6 +1111,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cv_latihanGrid
 id cv_rencanaItem
 id decor_content_parent
 id default_activity_button
@@ -1142,18 +1149,21 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id imageView2
-id imageView3
 id imageView6
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_bagianOtotLatihanSub
+id iv_blogDetail
 id iv_blogItem
 id iv_close
 id iv_gambarRencana
 id iv_jumat
 id iv_kamis
+id iv_latihanGrid
 id iv_minggu
 id iv_rabu
 id iv_sabtu
@@ -1166,6 +1176,7 @@ id latihan_search
 id left
 id line1
 id line3
+id linearLayout
 id linear_penjelasan
 id listMode
 id list_item
@@ -1204,11 +1215,9 @@ id right_icon
 id right_side
 id rv_blog
 id rv_latihan
+id rv_latihanDetail
 id rv_list1
 id rv_list2
-id rv_list3
-id rv_list4
-id rv_list5
 id rv_recentOpen
 id rv_rencanaDetail
 id save_image_matrix
@@ -1264,9 +1273,9 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView10
 id textView12
+id textView17
 id textView2
 id textView20
 id textView3
@@ -1292,39 +1301,44 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_bagianOtotLatihanSub
 id tv_clock
 id tv_durasi
+id tv_gifLatihanSub
 id tv_hariperminggu
 id tv_judul
 id tv_judul1
 id tv_judul2
-id tv_judul3
-id tv_judul4
-id tv_judul5
+id tv_judulBlog
 id tv_judulKeterangan
+id tv_judulLatihanSub
 id tv_jumat
 id tv_kamis
 id tv_keterangan
+id tv_keteranganBlogDetail
 id tv_keteranganDetail
+id tv_latihanGrid
 id tv_latihanItem
 id tv_minggu
 id tv_noRecent
 id tv_penjelasan
 id tv_penulis
 id tv_peralatan
+id tv_peralatanLatihanSub
+id tv_petunjukLatihanSub
 id tv_rabu
 id tv_recentOpen
 id tv_sabtu
+id tv_selanjutnyaBlog
 id tv_selasa
 id tv_selengkapnya1
 id tv_selengkapnya2
-id tv_selengkapnya3
-id tv_selengkapnya4
-id tv_selengkapnya5
 id tv_senin
 id tv_sumber
+id tv_tingkatLatihanSub
 id tv_tingkatPelatihan
 id tv_tujuanUtama
+id tv_videoLatihanSub
 id tv_waktuLatihan
 id uniform
 id unlabeled
@@ -1382,6 +1396,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_blog_detail
+layout activity_latihan_detail
+layout activity_latihan_detail_sub
 layout activity_main
 layout activity_rencana_latihan_detail
 layout activity_rencana_latihan_sub
@@ -1406,6 +1423,7 @@ layout fragment_latihan
 layout fragment_reminder
 layout fragment_rencana_latihan
 layout latihan_item
+layout latihan_item_grid
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -2038,6 +2056,8 @@ styleable FlowLayout itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
+styleable GifTextureView gifSource isOpaque
+styleable GifView freezesAnimation loopCount
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable LinearConstraintLayout android_orientation
