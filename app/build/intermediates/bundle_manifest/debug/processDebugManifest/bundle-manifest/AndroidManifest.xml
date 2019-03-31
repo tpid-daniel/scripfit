@@ -21,6 +21,21 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetailSub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fitness.scripfit.Menu.Blog.View.BlogDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSubDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSub"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanDetail"
             android:screenOrientation="portrait" />
         <activity

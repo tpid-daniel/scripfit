@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.fitness.scripfit.Menu.Blog.BlogFragment;
-import com.example.fitness.scripfit.Menu.Latihan.LatihanFragment;
+import com.example.fitness.scripfit.Menu.Blog.View.BlogFragment;
+import com.example.fitness.scripfit.Menu.Latihan.View.LatihanFragment;
 import com.example.fitness.scripfit.Menu.Reminder.ReminderFragment;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanFragment;
 

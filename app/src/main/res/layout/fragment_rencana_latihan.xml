@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
     tools:context=".Menu.RencanaLatihan.View.RencanaLatihanFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -41,13 +42,17 @@
                     android:id="@+id/tv_recentOpen"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
-                    android:text="Rencana Saya" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Rencana Saya"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_recentOpen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
                 android:orientation="horizontal">
 
             </android.support.v7.widget.RecyclerView>
@@ -56,8 +61,8 @@
                 android:id="@+id/tv_noRecent"
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:text="Tidak ada rencana latihan" />
+                android:text="Tidak ada rencana latihan"
+                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -69,14 +74,19 @@
                     android:id="@+id/tv_judul1"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tv_selengkapnya1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Selengkapnya >" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Selengkapnya >"
+                    android:textColor="@color/colorAccent1" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -97,14 +107,19 @@
                     android:id="@+id/tv_judul2"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tv_selengkapnya2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Selengkapnya >" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Selengkapnya >"
+                    android:textColor="@color/colorAccent1" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -125,14 +140,19 @@
                     android:id="@+id/tv_judul3"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tv_selengkapnya3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Selengkapnya >" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Selengkapnya >"
+                    android:textColor="@color/colorAccent1" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -153,14 +173,19 @@
                     android:id="@+id/tv_judul4"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tv_selengkapnya4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Selengkapnya >" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Selengkapnya >"
+                    android:textColor="@color/colorAccent1" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -181,14 +206,19 @@
                     android:id="@+id/tv_judul5"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tv_selengkapnya5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Selengkapnya >" />
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Selengkapnya >"
+                    android:textColor="@color/colorAccent1" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView

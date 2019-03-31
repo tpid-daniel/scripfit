@@ -113,6 +113,37 @@ public class RencanaPresenter {
         });
     }
 
+    public void getDataById(final int id){
+        final List<RencanaModel> dataId = new ArrayList<>();
+        mService = Common.getAPIService();
+
+        Call<RencanaMainModel> call = mService.getRencana();
+
+        call.enqueue(new Callback<RencanaMainModel>() {
+            @Override
+            public void onResponse(Call<RencanaMainModel> call, Response<RencanaMainModel> response) {
+                try {
+                    List<RencanaModel> lists = response.body().getRencana();
+                    for(RencanaModel listModel : lists){
+                        if(listModel.getId() == id){
+                            dataId.add(listModel);
+                        }
+
+                    }
+                    view.resultDataDetail(dataId);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RencanaMainModel> call, Throwable t) {
+                view.showErrorMessage(t.toString());
+            }
+        });
+    }
+
 
     public interface View {
 
