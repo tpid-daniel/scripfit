@@ -29,17 +29,12 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     RecyclerView rv_recentOpen;
     RecyclerView rv_list1;
     RecyclerView rv_list2;
-    RecyclerView rv_list3;
-    RecyclerView rv_list4;
-    RecyclerView rv_list5;
+
     ListRencanaAdapter adapter;
     RencanaPresenter rencanaPresenter;
     List<RencanaModel> menuRecentOpen = new ArrayList<>();
-        List<RencanaModel> menuList1 = new ArrayList<>();
+    List<RencanaModel> menuList1 = new ArrayList<>();
     List<RencanaModel> menuList2 = new ArrayList<>();
-    List<RencanaModel> menuList3 = new ArrayList<>();
-    List<RencanaModel> menuList4 = new ArrayList<>();
-    List<RencanaModel> menuList5 = new ArrayList<>();
     public RencanaLatihanFragment() {
         // Required empty public constructor
     }
@@ -53,14 +48,10 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         rv_recentOpen = (RecyclerView) rootView.findViewById(R.id.rv_recentOpen);
         rv_list1 = (RecyclerView) rootView.findViewById(R.id.rv_list1);
         rv_list2 = (RecyclerView) rootView.findViewById(R.id.rv_list2);
-        rv_list3 = (RecyclerView) rootView.findViewById(R.id.rv_list3);
-        rv_list4 = (RecyclerView) rootView.findViewById(R.id.rv_list4);
-        rv_list5 = (RecyclerView) rootView.findViewById(R.id.rv_list5);
+
         TextView tv_selengkapnya1 = (TextView) rootView.findViewById(R.id.tv_selengkapnya1);
         TextView tv_selengkapnya2 = (TextView) rootView.findViewById(R.id.tv_selengkapnya2);
-        TextView tv_selengkapnya3 = (TextView) rootView.findViewById(R.id.tv_selengkapnya3);
-        TextView tv_selengkapnya4 = (TextView) rootView.findViewById(R.id.tv_selengkapnya4);
-        TextView tv_selengkapnya5 = (TextView) rootView.findViewById(R.id.tv_selengkapnya5);
+
         rencanaPresenter = new RencanaPresenter(this);
         rencanaPresenter.getListRencana();
 
@@ -82,32 +73,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
             }
         });
 
-        tv_selengkapnya3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
-                data.putExtra("judul", "list3");
-                getActivity().startActivity(data);
-            }
-        });
 
-        tv_selengkapnya4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
-                data.putExtra("judul", "list4");
-                getActivity().startActivity(data);
-            }
-        });
-
-        tv_selengkapnya5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent data = new Intent(getActivity(), RencanaLatihanDetail.class);
-                data.putExtra("judul", "list5");
-                getActivity().startActivity(data);
-            }
-        });
         return rootView;
     }
 
@@ -116,9 +82,6 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         listRecentOpen();
         list1();
         list2();
-        list3();
-        list4();
-        list5();
     }
 
     public void listRecentOpen(){
@@ -145,29 +108,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         rv_list2.setAdapter(adapter);
     }
 
-    public void list3(){
-        adapter = new ListRencanaAdapter(getContext(), menuList3, 0);
 
-        rv_list3.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
-
-        rv_list3.setAdapter(adapter);
-    }
-
-    public void list4(){
-        adapter = new ListRencanaAdapter(getContext(), menuList4, 0);
-
-        rv_list4.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
-
-        rv_list4.setAdapter(adapter);
-    }
-
-    public void list5(){
-        adapter = new ListRencanaAdapter(getContext(), menuList5, 0);
-
-        rv_list5.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
-
-        rv_list5.setAdapter(adapter);
-    }
 
     @Override
     public void resultRecentOpen(List<RencanaModel> data) {
@@ -185,24 +126,6 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     public void resultList2(List<RencanaModel> data) {
         menuList2 = data;
         list2();
-    }
-
-    @Override
-    public void resultList3(List<RencanaModel> data) {
-        menuList3 = data;
-        list3();
-    }
-
-    @Override
-    public void resultList4(List<RencanaModel> data) {
-        menuList4 = data;
-        list4();
-    }
-
-    @Override
-    public void resultList5(List<RencanaModel> data) {
-        menuList5 = data;
-        list5();
     }
 
     @Override

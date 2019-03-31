@@ -23,6 +23,28 @@ public class LatihanPresenter {
         this.view = view;
     }
 
+    public void getLatihan(){
+        final List<LatihanModel> data = new ArrayList<>();
+        mService = Common.getAPIService();
+
+        Call<LatihanMainModel> call = mService.getLatihanData();
+
+        call.enqueue(new Callback<LatihanMainModel>() {
+            @Override
+            public void onResponse(Call<LatihanMainModel> call, Response<LatihanMainModel> response) {
+                for(LatihanModel latihanModel : response.body().getLatihan()){
+                        data.add(latihanModel);
+                }
+                view.resultDataDetail(data);
+            }
+
+            @Override
+            public void onFailure(Call<LatihanMainModel> call, Throwable t) {
+                view.showErrorMessage(t.toString());
+            }
+        });
+    }
+
     public void listLatihan(final String jenis){
         final List<LatihanModel> data = new ArrayList<>();
         mService = Common.getAPIService();

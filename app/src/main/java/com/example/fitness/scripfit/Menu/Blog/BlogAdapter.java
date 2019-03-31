@@ -55,6 +55,14 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogAdapter.ViewHolder>{
                 context.startActivity(data);
             }
         });
+        viewHolder.iv_blogItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(context, BlogDetail.class);
+                data.putExtra("id", id);
+                context.startActivity(data);
+            }
+        });
     }
 
     @Override

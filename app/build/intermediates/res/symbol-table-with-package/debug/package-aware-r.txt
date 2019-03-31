@@ -1151,7 +1151,6 @@ id ifRoom
 id image
 id imageView
 id imageView2
-id imageView3
 id imageView6
 id info
 id invisible
@@ -1219,9 +1218,6 @@ id rv_latihan
 id rv_latihanDetail
 id rv_list1
 id rv_list2
-id rv_list3
-id rv_list4
-id rv_list5
 id rv_recentOpen
 id rv_rencanaDetail
 id save_image_matrix
@@ -1313,9 +1309,6 @@ id tv_hariperminggu
 id tv_judul
 id tv_judul1
 id tv_judul2
-id tv_judul3
-id tv_judul4
-id tv_judul5
 id tv_judulBlog
 id tv_judulKeterangan
 id tv_judulLatihanSub
@@ -1340,9 +1333,6 @@ id tv_selanjutnyaBlog
 id tv_selasa
 id tv_selengkapnya1
 id tv_selengkapnya2
-id tv_selengkapnya3
-id tv_selengkapnya4
-id tv_selengkapnya5
 id tv_senin
 id tv_sumber
 id tv_tingkatLatihanSub

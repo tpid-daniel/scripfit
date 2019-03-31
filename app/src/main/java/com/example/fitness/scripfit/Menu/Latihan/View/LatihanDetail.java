@@ -5,7 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -17,11 +20,13 @@ import com.example.fitness.scripfit.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.Inflater;
 
 public class LatihanDetail extends AppCompatActivity implements LatihanPresenter.View {
     RecyclerView rv_latihanDetail;
     String jenis;
     List<LatihanModel> dataDetail = new ArrayList<>();
+    LatihanGridAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,11 +54,33 @@ public class LatihanDetail extends AppCompatActivity implements LatihanPresenter
     }
 
     public void getDataLatihan(){
-        LatihanGridAdapter adapter = new LatihanGridAdapter(getApplicationContext(), dataDetail);
+        adapter = new LatihanGridAdapter(getApplicationContext(), dataDetail);
 
         rv_latihanDetail.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
 
         rv_latihanDetail.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        Inflater.inflate(R.menu.search_latihan, menu);
+        MenuItem searchItem = menu.findItem(R.id.latihan_search);
+        SearchView searchView = (SearchView) searchItem.getActionView();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                adapter.getFilter().filter(s);
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override

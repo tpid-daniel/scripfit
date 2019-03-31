@@ -68,20 +68,6 @@ public class BlogFragment extends Fragment implements BlogPresenter.View {
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.history_blog, menu);
-        MenuItem historyBlog = menu.findItem(R.id.history_blog);
-
-        historyBlog.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                return false;
-            }
-        });
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    @Override
     public void showErrorMessage(String errorMessage) {
         Toast.makeText(getContext(), errorMessage, Toast.LENGTH_SHORT).show();
     }

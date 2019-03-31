@@ -72,21 +72,6 @@ public class RencanaLatihanDetail extends AppCompatActivity implements RencanaPr
     }
 
     @Override
-    public void resultList3(List<RencanaModel> data) {
-
-    }
-
-    @Override
-    public void resultList4(List<RencanaModel> data) {
-
-    }
-
-    @Override
-    public void resultList5(List<RencanaModel> data) {
-
-    }
-
-    @Override
     public void showErrorMessage(String errorMessage) {
         Toast.makeText(RencanaLatihanDetail.this, errorMessage, Toast.LENGTH_SHORT).show();
         Log.i("errorRencana", errorMessage);
