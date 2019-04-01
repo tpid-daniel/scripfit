@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Scripfit\\scripfit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "/Users/macbook2015/Documents/scripfit/1/scripfit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/macbook2015/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c0552c0f3fa151e40fca63a257bf7321/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

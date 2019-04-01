@@ -1304,7 +1304,6 @@ id transition_transform
 id tv_bagianOtotLatihanSub
 id tv_clock
 id tv_durasi
-id tv_gifLatihanSub
 id tv_hariperminggu
 id tv_judul
 id tv_judul1
@@ -1338,7 +1337,6 @@ id tv_sumber
 id tv_tingkatLatihanSub
 id tv_tingkatPelatihan
 id tv_tujuanUtama
-id tv_videoLatihanSub
 id tv_waktuLatihan
 id uniform
 id unlabeled

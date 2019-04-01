@@ -19,8 +19,6 @@ import java.util.List;
 
 public class LatihanDetailSub extends AppCompatActivity implements LatihanPresenter.View {
     int id;
-    TextView tv_gifLatihanSub;
-    TextView tv_videoLatihanSub;
     TextView tv_judulLatihanSub;
     TextView tv_tingkatLatihanSub;
     TextView tv_peralatanLatihanSub;
@@ -46,8 +44,6 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
         Intent intent = getIntent();
         id = intent.getIntExtra("id", 0);
 
-        tv_gifLatihanSub = (TextView) findViewById(R.id.tv_gifLatihanSub);
-        tv_videoLatihanSub = (TextView) findViewById(R.id.tv_videoLatihanSub);
         tv_judulLatihanSub = (TextView) findViewById(R.id.tv_judulLatihanSub);
         tv_tingkatLatihanSub = (TextView) findViewById(R.id.tv_tingkatLatihanSub);
         tv_peralatanLatihanSub = (TextView) findViewById(R.id.tv_peralatanLatihanSub);
