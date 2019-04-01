@@ -52,7 +52,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         TextView tv_selengkapnya1 = (TextView) rootView.findViewById(R.id.tv_selengkapnya1);
         TextView tv_selengkapnya2 = (TextView) rootView.findViewById(R.id.tv_selengkapnya2);
 
-        rencanaPresenter = new RencanaPresenter(this);
+        rencanaPresenter = new RencanaPresenter(this, getContext());
         rencanaPresenter.getListRencana();
 
         tv_selengkapnya1.setOnClickListener(new View.OnClickListener() {

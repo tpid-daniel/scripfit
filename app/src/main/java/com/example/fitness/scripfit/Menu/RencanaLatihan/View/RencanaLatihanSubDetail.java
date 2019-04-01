@@ -48,7 +48,7 @@ public class RencanaLatihanSubDetail extends AppCompatActivity implements Rencan
             }
         });
 
-        RencanaPresenter rencanaPresenter = new RencanaPresenter(this);
+        RencanaPresenter rencanaPresenter = new RencanaPresenter(this, getApplicationContext());
         Intent intent = getIntent();
         id = intent.getIntExtra("id", 0);
 

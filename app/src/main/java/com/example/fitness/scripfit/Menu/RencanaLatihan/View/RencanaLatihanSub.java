@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
+import com.example.fitness.scripfit.Preferences;
 import com.example.fitness.scripfit.R;
 
 import java.util.ArrayList;
@@ -29,9 +31,11 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
     TextView tv_jumat;
     TextView tv_sabtu;
     TextView tv_minggu;
+    Button btn_start;
     LinearLayout linear_penjelasan;
     RencanaPresenter rencanaPresenter;
     List<RencanaModel> dataDetail = new ArrayList<>();
+    Preferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +52,9 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
         tv_jumat = (TextView)findViewById(R.id.tv_jumat);
         tv_sabtu = (TextView)findViewById(R.id.tv_sabtu);
         tv_minggu = (TextView)findViewById(R.id.tv_minggu);
+        btn_start = (Button) findViewById(R.id.btn_Start);
         linear_penjelasan = (LinearLayout)findViewById(R.id.linear_penjelasan);
-        rencanaPresenter = new RencanaPresenter(this);
+        rencanaPresenter = new RencanaPresenter(this, getApplicationContext());
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        getSupportActionBar().setTitle("NEWS");
 
@@ -72,6 +77,15 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
                 Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDetail.class);
                 data.putExtra("id", id);
                 startActivity(data);
+            }
+        });
+
+        preferences = new Preferences(getApplicationContext());
+
+        btn_start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                preferences.savePref(String.valueOf(id));
             }
         });
     }

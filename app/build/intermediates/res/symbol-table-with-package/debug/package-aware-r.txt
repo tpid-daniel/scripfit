@@ -1009,6 +1009,7 @@ drawable abc_vector_test
 drawable asset_2
 drawable avd_hide_password
 drawable avd_show_password
+drawable border_button_enable
 drawable bottom_nav_color
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1092,8 +1093,8 @@ id beginning
 id blocking
 id bottom
 id bottom_navigation
+id btn_Start
 id btn_addReminder
-id button
 id buttonPanel
 id cancel_action
 id center

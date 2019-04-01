@@ -44,7 +44,7 @@ public class RencanaLatihanDetail extends AppCompatActivity implements RencanaPr
         Intent intent = getIntent();
         judul = intent.getStringExtra("judul");
 
-        rencanaPresenter = new RencanaPresenter(this);
+        rencanaPresenter = new RencanaPresenter(this, getApplicationContext());
         rencanaPresenter.getDataDetail(judul);
     }
 

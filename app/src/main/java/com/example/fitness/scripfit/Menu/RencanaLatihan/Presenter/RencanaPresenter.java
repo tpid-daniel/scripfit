@@ -1,11 +1,13 @@
 package com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaMainModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Network.Api;
 import com.example.fitness.scripfit.Network.Common;
+import com.example.fitness.scripfit.Preferences;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,12 +19,16 @@ import retrofit2.Response;
 public class RencanaPresenter {
     Api mService;
     private View view;
+    Context context;
+    Preferences preferences;
 
-    public RencanaPresenter(View view) {
+    public RencanaPresenter(View view, Context context) {
         this.view = view;
+        this.context = context;
     }
 
     public void getListRencana(){
+        preferences = new Preferences(context);
         final List<RencanaModel> dataRecentOpen = new ArrayList<>();
         final List<RencanaModel> dataList1 = new ArrayList<>();
         final List<RencanaModel> dataList2 = new ArrayList<>();
@@ -45,10 +51,12 @@ public class RencanaPresenter {
                         else if(listModel.getJudul().contains("list2")){
                             dataList2.add(listModel);
                         }
-
-                        if(listModel.getOpen() == 1){
-                            dataRecentOpen.add(listModel);
+                        if(preferences.getPref() != null){
+                            if(Integer.valueOf(preferences.getPref()) == listModel.getId()){
+                                dataRecentOpen.add(listModel);
+                            }
                         }
+
                     }
                     view.resultRecentOpen(dataRecentOpen);
                     view.resultList1(dataList1);
