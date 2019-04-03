@@ -1112,6 +1112,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cv_day
 id cv_latihanGrid
 id cv_rencanaItem
 id decor_content_parent
@@ -1161,6 +1162,7 @@ id iv_bagianOtotLatihanSub
 id iv_blogDetail
 id iv_blogItem
 id iv_close
+id iv_day
 id iv_gambarRencana
 id iv_jumat
 id iv_kamis
@@ -1181,6 +1183,13 @@ id linearLayout
 id linear_penjelasan
 id listMode
 id list_item
+id ll_jumat
+id ll_kamis
+id ll_minggu
+id ll_rabu
+id ll_sabtu
+id ll_selasa
+id ll_senin
 id masked
 id media_actions
 id message
@@ -1221,6 +1230,7 @@ id rv_list1
 id rv_list2
 id rv_recentOpen
 id rv_rencanaDetail
+id rv_rencanaSubDay
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1275,6 +1285,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView10
+id textView11
 id textView12
 id textView17
 id textView2
@@ -1304,6 +1315,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv_bagianOtotLatihanSub
 id tv_clock
+id tv_dayJudul
+id tv_dayRepetisi
+id tv_daySet
 id tv_durasi
 id tv_hariperminggu
 id tv_judul
@@ -1401,6 +1415,7 @@ layout activity_latihan_detail_sub
 layout activity_main
 layout activity_rencana_latihan_detail
 layout activity_rencana_latihan_sub
+layout activity_rencana_latihan_sub_day
 layout activity_rencana_latihan_sub_detail
 layout blog_item
 layout design_bottom_navigation_item
@@ -1421,6 +1436,7 @@ layout fragment_blog
 layout fragment_latihan
 layout fragment_reminder
 layout fragment_rencana_latihan
+layout item_rencana_day
 layout latihan_item
 layout latihan_item_grid
 layout mtrl_layout_snackbar

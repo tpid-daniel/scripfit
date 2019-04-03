@@ -3,6 +3,8 @@ package com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter;
 import android.content.Context;
 import android.util.Log;
 
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayMainModel;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaMainModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Network.Api;
@@ -136,6 +138,39 @@ public class RencanaPresenter {
         });
     }
 
+    public void getDataByIdDay(final int id, final int day){
+        final List<RencanaDayModel> data = new ArrayList<>();
+        mService = Common.getAPIService();
+
+        Call<RencanaDayMainModel> call = mService.getRencanaDay();
+
+        call.enqueue(new Callback<RencanaDayMainModel>() {
+            @Override
+            public void onResponse(Call<RencanaDayMainModel> call, Response<RencanaDayMainModel> response) {
+                try{
+
+                        for(RencanaDayModel rencanaDayModel : response.body().getRencanaday()){
+                            if(rencanaDayModel.getIdRencana().equals(id) && rencanaDayModel.getHari().equals(day)){
+                                data.add(rencanaDayModel);
+                                Log.i("dayJudulId", rencanaDayModel.getIdRencana().toString());
+                                Log.i("dayJudulDay",rencanaDayModel.getJudul());
+                            }
+                        }
+                        view.resultDataDay(data);
+
+                }
+                catch (Exception e){
+                    view.showErrorMessage(e.toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RencanaDayMainModel> call, Throwable t) {
+                view.showErrorMessage(t.toString());
+            }
+        });
+    }
+
 
     public interface View {
 
@@ -148,5 +183,7 @@ public class RencanaPresenter {
         void showErrorMessage(String errorMessage);
 
         void resultDataDetail(List<RencanaModel> data);
+
+        void resultDataDay(List<RencanaDayModel> data);
     }
 }

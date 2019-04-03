@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaAdapter;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
 import com.example.fitness.scripfit.R;
@@ -35,6 +36,8 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     List<RencanaModel> menuRecentOpen = new ArrayList<>();
     List<RencanaModel> menuList1 = new ArrayList<>();
     List<RencanaModel> menuList2 = new ArrayList<>();
+    private boolean shouldRefreshOnResume = false;
+
     public RencanaLatihanFragment() {
         // Required empty public constructor
     }
@@ -77,11 +80,20 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         return rootView;
     }
 
+
     public void onResume() {
         super.onResume();
-        listRecentOpen();
-        list1();
-        list2();
+        if(shouldRefreshOnResume){
+            // refresh fragment
+            rencanaPresenter.getListRencana();
+        }
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        shouldRefreshOnResume = true;
     }
 
     public void listRecentOpen(){
@@ -130,12 +142,23 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
 
     @Override
     public void showErrorMessage(String errorMessage) {
-        Toast.makeText(getActivity(), errorMessage, Toast.LENGTH_SHORT).show();
-        Log.i("errorRencana", errorMessage);
+        try{
+            Toast.makeText(getActivity(), errorMessage, Toast.LENGTH_SHORT).show();
+            Log.i("errorRencana", errorMessage);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 
     @Override
     public void resultDataDetail(List<RencanaModel> data) {
+
+    }
+
+    @Override
+    public void resultDataDay(List<RencanaDayModel> data) {
 
     }
 }

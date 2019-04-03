@@ -11,21 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Menu.RencanaLatihan.View.RencanaLatihanSubDay"></activity>
         <activity
-            android:screenOrientation="portrait"
-            android:name=".Menu.Latihan.View.LatihanDetailSub"></activity>
+            android:name=".Menu.Latihan.View.LatihanDetailSub"
+            android:screenOrientation="portrait" />
         <activity
-            android:screenOrientation="portrait"
-            android:name=".Menu.Latihan.View.LatihanDetail" />
+            android:name=".Menu.Latihan.View.LatihanDetail"
+            android:screenOrientation="portrait" />
         <activity
-            android:screenOrientation="portrait"
-            android:name=".Menu.Blog.View.BlogDetail" />
+            android:name=".Menu.Blog.View.BlogDetail"
+            android:screenOrientation="portrait" />
         <activity
-            android:screenOrientation="portrait"
-            android:name=".Menu.RencanaLatihan.View.RencanaLatihanSubDetail" />
+            android:name=".Menu.RencanaLatihan.View.RencanaLatihanSubDetail"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Menu.RencanaLatihan.View.RencanaLatihanSub"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Menu.RencanaLatihan.View.RencanaLatihanDetail"
             android:screenOrientation="portrait" />

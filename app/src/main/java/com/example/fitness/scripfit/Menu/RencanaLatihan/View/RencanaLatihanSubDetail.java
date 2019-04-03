@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
 import com.example.fitness.scripfit.R;
@@ -91,5 +92,10 @@ public class RencanaLatihanSubDetail extends AppCompatActivity implements Rencan
     public void resultDataDetail(List<RencanaModel> data) {
         dataDetail = data;
         setText();
+    }
+
+    @Override
+    public void resultDataDay(List<RencanaDayModel> data) {
+
     }
 }

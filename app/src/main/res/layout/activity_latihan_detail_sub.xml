@@ -35,6 +35,24 @@
             android:layout_height="217dp"
             app:srcCompat="@drawable/asset_2" />
 
+        <TextView
+            android:id="@+id/tv_judulLatihanSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rope Jumping"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_tingkatLatihanSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Tingkat : Menengah"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="333dp" />
+
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -63,22 +81,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_judulLatihanSub"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rope Jumping"
-                android:textColor="#000"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tv_tingkatLatihanSub"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tingkat : Menengah"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="333dp" />
 
             <TextView
                 android:id="@+id/tv_peralatanLatihanSub"

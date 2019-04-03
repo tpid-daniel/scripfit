@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaAdapter;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
 import com.example.fitness.scripfit.R;
@@ -81,5 +82,10 @@ public class RencanaLatihanDetail extends AppCompatActivity implements RencanaPr
     public void resultDataDetail(List<RencanaModel> data) {
         dataDetail = data;
         list();
+    }
+
+    @Override
+    public void resultDataDay(List<RencanaDayModel> data) {
+
     }
 }

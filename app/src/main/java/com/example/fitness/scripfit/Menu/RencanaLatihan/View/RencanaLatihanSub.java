@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
 import com.example.fitness.scripfit.Preferences;
@@ -33,6 +34,13 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
     TextView tv_minggu;
     Button btn_start;
     LinearLayout linear_penjelasan;
+    LinearLayout ll_senin;
+    LinearLayout ll_selasa;
+    LinearLayout ll_rabu;
+    LinearLayout ll_kamis;
+    LinearLayout ll_jumat;
+    LinearLayout ll_sabtu;
+    LinearLayout ll_minggu;
     RencanaPresenter rencanaPresenter;
     List<RencanaModel> dataDetail = new ArrayList<>();
     Preferences preferences;
@@ -54,6 +62,14 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
         tv_minggu = (TextView)findViewById(R.id.tv_minggu);
         btn_start = (Button) findViewById(R.id.btn_Start);
         linear_penjelasan = (LinearLayout)findViewById(R.id.linear_penjelasan);
+        ll_senin = (LinearLayout) findViewById(R.id.ll_senin);
+        ll_selasa = (LinearLayout) findViewById(R.id.ll_selasa);
+        ll_rabu = (LinearLayout) findViewById(R.id.ll_rabu);
+        ll_kamis = (LinearLayout) findViewById(R.id.ll_kamis);
+        ll_jumat = (LinearLayout) findViewById(R.id.ll_jumat);
+        ll_sabtu = (LinearLayout) findViewById(R.id.ll_sabtu);
+        ll_minggu = (LinearLayout) findViewById(R.id.ll_minggu);
+
         rencanaPresenter = new RencanaPresenter(this, getApplicationContext());
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        getSupportActionBar().setTitle("NEWS");
@@ -70,6 +86,7 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
         id = intent.getIntExtra("id", 0);
 
         rencanaPresenter.getDataById(id);
+        preferences = new Preferences(getApplicationContext());
 
         linear_penjelasan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,12 +97,80 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
             }
         });
 
-        preferences = new Preferences(getApplicationContext());
-
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 preferences.savePref(String.valueOf(id));
+            }
+        });
+
+        ll_senin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                data.putExtra("id", id);
+                data.putExtra("day", 1);
+                startActivity(data);
+            }
+        });
+
+        ll_selasa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                data.putExtra("id", id);
+                data.putExtra("day", 2);
+                startActivity(data);
+            }
+        });
+
+        ll_rabu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                data.putExtra("id", id);
+                data.putExtra("day", 3);
+                startActivity(data);
+            }
+        });
+
+        ll_kamis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                data.putExtra("id", id);
+                data.putExtra("day", 4);
+                startActivity(data);
+            }
+        });
+
+        ll_jumat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                data.putExtra("id", id);
+                data.putExtra("day", 5);
+                startActivity(data);
+            }
+        });
+
+        ll_sabtu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                data.putExtra("id", id);
+                data.putExtra("day", 6);
+                startActivity(data);
+            }
+        });
+
+        ll_minggu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                data.putExtra("id", id);
+                data.putExtra("day", 7);
+                startActivity(data);
             }
         });
     }
@@ -130,5 +215,10 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
     public void resultDataDetail(List<RencanaModel> data) {
         dataDetail = data;
         setText();
+    }
+
+    @Override
+    public void resultDataDay(List<RencanaDayModel> data) {
+
     }
 }
