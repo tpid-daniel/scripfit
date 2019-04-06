@@ -92,24 +92,24 @@
         "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable-mdpi\\ic_latihan.png"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_latihan.png.flat",
         "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable-xxhdpi\\ic_latihan.png"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -128,20 +128,20 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_latihan.png.flat",
-        "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable-hdpi\\ic_latihan.png"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_latihan.png.flat",
         "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable-xhdpi\\ic_latihan.png"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_latihan.png.flat",
+        "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable-hdpi\\ic_latihan.png"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -168,12 +168,12 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\interpolator\\mtrl_linear.xml"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
@@ -200,12 +200,12 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -216,12 +216,12 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
@@ -244,20 +244,24 @@
         "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\layout\\activity_rencana_latihan_detail.xml"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ef9c5d88521cf62bba2dbfc3282fa598\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_text_color.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\color\\mtrl_chip_text_color.xml"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\layout_reminder_item.xml.flat",
-        "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\layout\\reminder_item.xml"
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ef9c5d88521cf62bba2dbfc3282fa598\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_play_circle.xml.flat",
+        "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable\\ic_play_circle.xml"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\layout_reminder_item.xml.flat",
+        "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\layout\\reminder_item.xml"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
@@ -280,12 +284,12 @@
         "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable-hdpi\\ic_calendar.png"
     },
     {
-        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
@@ -982,6 +986,10 @@
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_stop.xml.flat",
+        "source": "D:\\Scripfit\\1\\scripfit\\app\\src\\main\\res\\drawable\\ic_stop.xml"
     },
     {
         "merged": "D:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",

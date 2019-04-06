@@ -22,6 +22,10 @@ public class RencanaDayModel {
     @SerializedName("repetisi")
     @Expose
     private String repetisi;
+    @SerializedName("linkVideo")
+    @Expose
+    private String linkVideo;
+
 
     public Integer getId() {
         return id;
@@ -71,4 +75,11 @@ public class RencanaDayModel {
         this.repetisi = repetisi;
     }
 
+    public String getLinkVideo() {
+        return linkVideo;
+    }
+
+    public void setLinkVideo(String linkVideo) {
+        this.linkVideo = linkVideo;
+    }
 }

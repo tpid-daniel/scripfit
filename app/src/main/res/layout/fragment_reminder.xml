@@ -24,11 +24,7 @@
         android:layout_marginTop="60dp"
         android:orientation="vertical">
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </android.support.v7.widget.RecyclerView>
+        <include layout="@layout/reminder_item" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -36,15 +32,27 @@
 
             <Button
                 android:id="@+id/btn_addReminder"
-                android:layout_width="wrap_content"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="122.5dp"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="122.5dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border_button_enable"
                 android:text="Tambah Pengingat" />
+
+            <Button
+                android:id="@+id/btn_resetReminder"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="35dp"
+                android:layout_toEndOf="@+id/btn_addReminder"
+                android:background="@drawable/border_button_enable"
+                android:text="Reset/Hapus" />
         </RelativeLayout>
 
     </LinearLayout>

@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetailSub;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSub;
@@ -43,10 +44,21 @@ public class ListRencanaDayAdapter extends RecyclerView.Adapter<ListRencanaDayAd
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+        final int data = mData.get(i).getId();
         viewHolder.tv_dayJudul.setText(mData.get(i).getJudul());
         viewHolder.tv_daySet.setText(": "+mData.get(i).getSetNumber().toString());
         viewHolder.tv_dayRepetisi.setText(": "+mData.get(i).getRepetisi());
         viewHolder.iv_day.setImageResource(R.drawable.ic_latihan);
+        viewHolder.cv_day.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, LatihanDetailSub.class);
+                intent.putExtra("id", data);
+                intent.putExtra("jenis", "rencana");
+                context.startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -61,6 +73,7 @@ public class ListRencanaDayAdapter extends RecyclerView.Adapter<ListRencanaDayAd
         public TextView tv_daySet;
         public TextView tv_dayRepetisi;
         public ImageView iv_day;
+        public  CardView cv_day;
 
         public ViewHolder(View v) {
             super(v);
@@ -68,6 +81,7 @@ public class ListRencanaDayAdapter extends RecyclerView.Adapter<ListRencanaDayAd
             tv_daySet= (TextView) v.findViewById(R.id.tv_daySet);
             tv_dayRepetisi= (TextView) v.findViewById(R.id.tv_dayRepetisi);
             iv_day = (ImageView) v.findViewById(R.id.iv_day);
+            cv_day = (CardView) v.findViewById(R.id.cv_day);
         }
     }
 }

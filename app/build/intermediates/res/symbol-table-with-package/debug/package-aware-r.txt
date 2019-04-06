@@ -1034,9 +1034,11 @@ drawable ic_love
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_play_circle
 drawable ic_reminder
 drawable ic_rencanalatihan
 drawable ic_search
+drawable ic_stop
 drawable logo
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1095,6 +1097,7 @@ id bottom
 id bottom_navigation
 id btn_Start
 id btn_addReminder
+id btn_resetReminder
 id buttonPanel
 id cancel_action
 id center
@@ -1151,7 +1154,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
 id imageView2
 id imageView6
 id info
@@ -1161,13 +1163,13 @@ id item_touch_helper_previous_elevation
 id iv_bagianOtotLatihanSub
 id iv_blogDetail
 id iv_blogItem
-id iv_close
 id iv_day
 id iv_gambarRencana
 id iv_jumat
 id iv_kamis
 id iv_latihanGrid
 id iv_minggu
+id iv_playpause
 id iv_rabu
 id iv_sabtu
 id iv_selasa
@@ -1220,9 +1222,13 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id rdiGroup
+id rdi_once
+id rdi_repeat
 id right
 id right_icon
 id right_side
+id rl_latihan
 id rv_blog
 id rv_latihan
 id rv_latihanDetail
@@ -1359,6 +1365,7 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id vv_latihan
 id withText
 id wrap
 id wrap_content

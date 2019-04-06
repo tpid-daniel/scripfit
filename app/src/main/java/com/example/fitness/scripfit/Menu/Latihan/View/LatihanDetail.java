@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.fitness.scripfit.Menu.Latihan.LatihanGridAdapter;
 import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.Latihan.Presenter.LatihanPresenter;
+import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.R;
 
@@ -66,5 +67,10 @@ public class LatihanDetail extends AppCompatActivity implements LatihanPresenter
     public void resultDataDetail(List<LatihanModel> data) {
         dataDetail = data;
         getDataLatihan();
+    }
+
+    @Override
+    public void resultDataDetailRencana(List<RencanaDayModel> data) {
+
     }
 }

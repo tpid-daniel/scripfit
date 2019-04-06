@@ -34,17 +34,32 @@
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="307dp"
                 android:layout_toEndOf="@+id/imageView2"
-                android:text="14.30" />
+                android:text="00 : 00" />
 
-            <ImageView
-                android:id="@+id/iv_close"
+            <RadioGroup
+                android:id="@+id/rdiGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
-                app:srcCompat="@drawable/ic_close" />
+                android:layout_marginEnd="7dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdi_once"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Sekali" />
+
+                <RadioButton
+                    android:id="@+id/rdi_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berulang" />
+
+            </RadioGroup>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,7 +70,7 @@
                 <ImageView
                     android:id="@+id/iv_senin"
                     android:layout_width="43dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="25dp"
                     app:srcCompat="@drawable/ic_bell" />
 
                 <TextView
@@ -67,8 +82,8 @@
 
                 <ImageView
                     android:id="@+id/iv_selasa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_bell" />
 
@@ -81,8 +96,8 @@
 
                 <ImageView
                     android:id="@+id/iv_rabu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_bell" />
 
@@ -95,8 +110,8 @@
 
                 <ImageView
                     android:id="@+id/iv_kamis"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_bell" />
 
@@ -119,8 +134,8 @@
 
                 <ImageView
                     android:id="@+id/iv_jumat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_bell" />
 
@@ -133,8 +148,8 @@
 
                 <ImageView
                     android:id="@+id/iv_sabtu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_bell" />
 
@@ -147,8 +162,8 @@
 
                 <ImageView
                     android:id="@+id/iv_minggu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_bell" />
 

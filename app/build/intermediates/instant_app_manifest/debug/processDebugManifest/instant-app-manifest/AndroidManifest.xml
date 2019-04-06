@@ -54,6 +54,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <receiver android:name="com.example.fitness.scripfit.Menu.Reminder.AlarmNotificationReceiver" />
+
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
             android:authorities="com.example.fitness.scripfit.com.android.tools.ir.server.InstantRunContentProvider"

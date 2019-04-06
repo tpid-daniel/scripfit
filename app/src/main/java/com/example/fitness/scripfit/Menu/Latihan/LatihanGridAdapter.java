@@ -41,6 +41,7 @@ public class LatihanGridAdapter extends RecyclerView.Adapter<LatihanGridAdapter.
             public void onClick(View v) {
                 Intent intent = new Intent(context, LatihanDetailSub.class);
                 intent.putExtra("id", data);
+                intent.putExtra("jenis", "latihan");
                 context.startActivity(intent);
             }
         });
