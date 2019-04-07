@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,15 +20,18 @@ import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetail;
 import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetailSub;
 import com.example.fitness.scripfit.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class LatihanGridAdapter extends RecyclerView.Adapter<LatihanGridAdapter.ViewHolder> {
+public class LatihanGridAdapter extends RecyclerView.Adapter<LatihanGridAdapter.ViewHolder> implements Filterable {
     Context context;
     List<LatihanModel> mData;
+    List<LatihanModel> mDataFull;
 
     public LatihanGridAdapter(Context context, List<LatihanModel> mData) {
         this.context = context;
         this.mData = mData;
+        mDataFull = new ArrayList<>(mData);
     }
 
     @NonNull
@@ -62,8 +67,44 @@ public class LatihanGridAdapter extends RecyclerView.Adapter<LatihanGridAdapter.
         return mData.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder{
+    @Override
+    public Filter getFilter() {
+        return filterList;
+    }
 
+    private Filter filterList = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence charSequence) {
+            List<LatihanModel> filterListData = new ArrayList<>();
+
+            if(charSequence == null || charSequence.length() == 0){
+                filterListData.addAll(mDataFull);
+            }
+            else{
+                String filterPattern = charSequence.toString().toLowerCase().trim();
+
+                for (LatihanModel item : mDataFull){
+                    if(item.getJudul().toLowerCase().contains(filterPattern)){
+                        filterListData.add(item);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filterListData;
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+            mData.clear();
+
+                mData.addAll((List) filterResults.values);
+                notifyDataSetChanged();
+
+        }
+    };
+
+    public static class ViewHolder extends RecyclerView.ViewHolder{
         TextView tv_latihanGrid;
         ImageView iv_latihanGrid;
         CardView cv_latihanGrid;

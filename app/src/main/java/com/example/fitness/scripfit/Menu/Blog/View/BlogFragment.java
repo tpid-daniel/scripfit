@@ -1,6 +1,7 @@
 package com.example.fitness.scripfit.Menu.Blog.View;
 
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -32,7 +33,7 @@ public class BlogFragment extends Fragment implements BlogPresenter.View {
     RecyclerView rv_blog;
     BlogAdapter adapter;
     List<BlogModel> menu = new ArrayList<>();
-
+    ProgressDialog mProgress;
     public BlogFragment() {
         // Required empty public constructor
     }
@@ -47,10 +48,17 @@ public class BlogFragment extends Fragment implements BlogPresenter.View {
         Toolbar actionBarToolBar = (Toolbar) rootView.findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(actionBarToolBar);
         rv_blog = (RecyclerView) rootView.findViewById(R.id.rv_blog);
-
+        progress();
+        mProgress.show();
         BlogPresenter blogPresenter = new BlogPresenter(this);
         blogPresenter.getListBlog();
         return rootView;
+    }
+
+    public void progress(){
+        mProgress = new ProgressDialog(getContext());
+        mProgress.setMessage("Please wait...");
+        mProgress.setCanceledOnTouchOutside(false);
     }
 
     public void onResume() {
@@ -65,6 +73,8 @@ public class BlogFragment extends Fragment implements BlogPresenter.View {
         rv_blog.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         rv_blog.setAdapter(adapter);
+
+        mProgress.dismiss();
     }
 
     @Override

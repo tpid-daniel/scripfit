@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
@@ -101,76 +102,95 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
             @Override
             public void onClick(View v) {
                 preferences.savePref(String.valueOf(id));
+                Toast.makeText(getApplicationContext(), "Memulai latihan", Toast.LENGTH_SHORT).show();
             }
         });
 
         ll_senin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
-                data.putExtra("id", id);
-                data.putExtra("day", 1);
-                startActivity(data);
+                if(!tv_senin.getText().toString().contains("Istirahat")){
+                    Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                    data.putExtra("id", id);
+                    data.putExtra("day", 1);
+                    startActivity(data);
+                }
             }
         });
 
         ll_selasa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
-                data.putExtra("id", id);
-                data.putExtra("day", 2);
-                startActivity(data);
+                if(!tv_selasa.getText().toString().contains("Istirahat")){
+                    Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                    data.putExtra("id", id);
+                    data.putExtra("day", 2);
+                    startActivity(data);
+                }
             }
         });
 
         ll_rabu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
-                data.putExtra("id", id);
-                data.putExtra("day", 3);
-                startActivity(data);
+                if(!tv_rabu.getText().toString().contains("Istirahat")){
+                    Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                    data.putExtra("id", id);
+                    data.putExtra("day", 3);
+                    startActivity(data);
+                }
             }
         });
 
         ll_kamis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
-                data.putExtra("id", id);
-                data.putExtra("day", 4);
-                startActivity(data);
+                if(!tv_kamis.getText().toString().contains("Istirahat")){
+                    Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                    data.putExtra("id", id);
+                    data.putExtra("day", 4);
+                    startActivity(data);
+                }
+
             }
         });
 
         ll_jumat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
-                data.putExtra("id", id);
-                data.putExtra("day", 5);
-                startActivity(data);
+                if(!tv_jumat.getText().toString().contains("Istirahat")){
+                    Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                    data.putExtra("id", id);
+                    data.putExtra("day", 5);
+                    startActivity(data);
+                }
+
             }
         });
 
         ll_sabtu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
-                data.putExtra("id", id);
-                data.putExtra("day", 6);
-                startActivity(data);
+                if(!tv_sabtu.getText().toString().contains("Istirahat")){
+                    Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                    data.putExtra("id", id);
+                    data.putExtra("day", 6);
+                    startActivity(data);
+                }
+
             }
         });
 
         ll_minggu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
-                data.putExtra("id", id);
-                data.putExtra("day", 7);
-                startActivity(data);
+                if(!tv_minggu.getText().toString().contains("Istirahat")){
+                    Intent data = new Intent(getApplicationContext(), RencanaLatihanSubDay.class);
+                    data.putExtra("id", id);
+                    data.putExtra("day", 7);
+                    startActivity(data);
+                }
+
             }
         });
     }
@@ -180,13 +200,42 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
             tv_penjelasan.setText(rencanaModel.getSubketerangan());
             tv_durasi.setText(rencanaModel.getDurasi());
             tv_hariPerMinggu.setText(rencanaModel.getHari().toString());
-            tv_senin.setText(rencanaModel.getSenin());
-            tv_selasa.setText(rencanaModel.getSelasa());
-            tv_rabu.setText(rencanaModel.getRabu());
-            tv_kamis.setText(rencanaModel.getKamis());
-            tv_jumat.setText(rencanaModel.getJumat());
-            tv_sabtu.setText(rencanaModel.getSabtu());
-            tv_minggu.setText(rencanaModel.getMinggu());
+            if(rencanaModel.getSenin().isEmpty()){
+                tv_senin.setText("Istirahat");
+            }else{
+                tv_senin.setText(rencanaModel.getSenin());
+            }
+            if(rencanaModel.getSelasa().isEmpty()){
+                tv_selasa.setText("Istirahat");
+            }else{
+                tv_selasa.setText(rencanaModel.getSelasa());
+            }
+            if(rencanaModel.getRabu().isEmpty()){
+                tv_rabu.setText("Istirahat");
+            }else{
+                tv_rabu.setText(rencanaModel.getRabu());
+            }
+            if(rencanaModel.getKamis().isEmpty()){
+                tv_kamis.setText("Istirahat");
+            }else {
+                tv_kamis.setText(rencanaModel.getKamis());
+            }
+            if(rencanaModel.getJumat().isEmpty()){
+                tv_jumat.setText("Istirahat");
+            }else {
+                tv_jumat.setText(rencanaModel.getJumat());
+            }
+            if(rencanaModel.getSabtu().isEmpty()){
+                tv_sabtu.setText("Istirahat");
+            }else {
+                tv_sabtu.setText(rencanaModel.getSabtu());
+            }
+            if(rencanaModel.getMinggu().isEmpty()){
+                tv_minggu.setText("Istirahat");
+            }else {
+                tv_minggu.setText(rencanaModel.getMinggu());
+            }
+
         }
     }
 

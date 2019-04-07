@@ -1,6 +1,7 @@
 package com.example.fitness.scripfit.Menu.RencanaLatihan.View;
 
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetailSub;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaAdapter;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
@@ -30,7 +32,8 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     RecyclerView rv_recentOpen;
     RecyclerView rv_list1;
     RecyclerView rv_list2;
-
+    View v_noRecent;
+    ProgressDialog mProgress;
     ListRencanaAdapter adapter;
     RencanaPresenter rencanaPresenter;
     List<RencanaModel> menuRecentOpen = new ArrayList<>();
@@ -51,13 +54,13 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         rv_recentOpen = (RecyclerView) rootView.findViewById(R.id.rv_recentOpen);
         rv_list1 = (RecyclerView) rootView.findViewById(R.id.rv_list1);
         rv_list2 = (RecyclerView) rootView.findViewById(R.id.rv_list2);
-
+        v_noRecent = (View) rootView.findViewById(R.id.v_noRencent);
         TextView tv_selengkapnya1 = (TextView) rootView.findViewById(R.id.tv_selengkapnya1);
         TextView tv_selengkapnya2 = (TextView) rootView.findViewById(R.id.tv_selengkapnya2);
-
+        progress();
         rencanaPresenter = new RencanaPresenter(this, getContext());
         rencanaPresenter.getListRencana();
-
+        mProgress.show();
         tv_selengkapnya1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,6 +83,11 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         return rootView;
     }
 
+    public void progress(){
+        mProgress = new ProgressDialog(getContext());
+        mProgress.setMessage("Please wait...");
+        mProgress.setCanceledOnTouchOutside(false);
+    }
 
     public void onResume() {
         super.onResume();
@@ -97,11 +105,20 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void listRecentOpen(){
-        adapter = new ListRencanaAdapter(getContext(), menuRecentOpen, 1);
+        if(menuRecentOpen.isEmpty()){
+            v_noRecent.setVisibility(View.VISIBLE);
+            rv_recentOpen.setVisibility(View.GONE);
+        }else{
+            v_noRecent.setVisibility(View.GONE);
 
-        rv_recentOpen.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+            rv_recentOpen.setVisibility(View.VISIBLE);
 
-        rv_recentOpen.setAdapter(adapter);
+            adapter = new ListRencanaAdapter(getContext(), menuRecentOpen, 1);
+
+            rv_recentOpen.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+
+            rv_recentOpen.setAdapter(adapter);
+        }
     }
 
     public void list1(){
@@ -110,6 +127,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         rv_list1.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
         rv_list1.setAdapter(adapter);
+        mProgress.dismiss();
     }
 
     public void list2(){
@@ -118,6 +136,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
         rv_list2.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
         rv_list2.setAdapter(adapter);
+        mProgress.dismiss();
     }
 
 

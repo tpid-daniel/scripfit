@@ -130,13 +130,19 @@ public class ReminderFragment extends Fragment {
         manager.cancel(pendingIntent);
         tv_clock.setText("00 : 00");
         if(preferences.getPrefJam() != null){
-            preferences.savePrefReminder("", "", false, false, false, false, false, false, false);
+            preferences.savePrefReminder("", "once", false, false, false, false, false, false, false);
         }
+        hour =0;
+        minuteTime=0;
     }
 
     public void getCheckReminderPref(){
         if(preferences.getPrefJam() != null){
-            tv_clock.setText(preferences.getPrefJam());
+            if (preferences.getPrefJam() == ""){
+                tv_clock.setText("00 : 00");
+            }else{
+                tv_clock.setText(preferences.getPrefJam());
+            }
         }
         else{
             tv_clock.setText("00 : 00");
@@ -329,7 +335,7 @@ public class ReminderFragment extends Fragment {
 
     public void setReminder(){
         Toast.makeText(getContext(), "Pengingat berhasil ditambahkan", Toast.LENGTH_SHORT).show();
-        if(hour==0 || minuteTime==0 || myCalender.get(Calendar.DAY_OF_WEEK)==0){
+        if(hour==0 || minuteTime==0 && myCalender.get(Calendar.DAY_OF_WEEK)==0){
             Toast.makeText(getContext(), "Isi semua data terlebih dahulu", Toast.LENGTH_SHORT).show();
         }else{
             if(day2){

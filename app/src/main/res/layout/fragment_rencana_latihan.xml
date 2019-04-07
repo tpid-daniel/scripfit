@@ -55,11 +55,9 @@
 
             </android.support.v7.widget.RecyclerView>
 
-            <TextView
-                android:id="@+id/tv_noRecent"
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:text="Tidak ada rencana latihan"
+            <include
+                android:id="@+id/v_noRencent"
+                layout="@layout/rencana_item_none"
                 android:visibility="gone" />
 
             <LinearLayout
