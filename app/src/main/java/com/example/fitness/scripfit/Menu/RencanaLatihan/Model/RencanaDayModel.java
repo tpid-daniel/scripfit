@@ -25,7 +25,18 @@ public class RencanaDayModel {
     @SerializedName("linkVideo")
     @Expose
     private String linkVideo;
-
+    @SerializedName("tingkat")
+    @Expose
+    private String tingkat;
+    @SerializedName("peralatan")
+    @Expose
+    private String peralatan;
+    @SerializedName("bagianOtot")
+    @Expose
+    private String bagianOtot;
+    @SerializedName("petunjuk")
+    @Expose
+    private String petunjuk;
 
     public Integer getId() {
         return id;
@@ -81,5 +92,37 @@ public class RencanaDayModel {
 
     public void setLinkVideo(String linkVideo) {
         this.linkVideo = linkVideo;
+    }
+
+    public String getTingkat() {
+        return tingkat;
+    }
+
+    public void setTingkat(String tingkat) {
+        this.tingkat = tingkat;
+    }
+
+    public String getPeralatan() {
+        return peralatan;
+    }
+
+    public void setPeralatan(String peralatan) {
+        this.peralatan = peralatan;
+    }
+
+    public String getBagianOtot() {
+        return bagianOtot;
+    }
+
+    public void setBagianOtot(String bagianOtot) {
+        this.bagianOtot = bagianOtot;
+    }
+
+    public String getPetunjuk() {
+        return petunjuk;
+    }
+
+    public void setPetunjuk(String petunjuk) {
+        this.petunjuk = petunjuk;
     }
 }

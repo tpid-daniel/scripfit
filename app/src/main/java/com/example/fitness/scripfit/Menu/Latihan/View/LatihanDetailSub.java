@@ -146,9 +146,14 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
         else{
             for(RencanaDayModel rencanaDayModel : mDay){
                 tv_judulLatihanSub.setText(rencanaDayModel.getJudul());
+                tv_tingkatLatihanSub.setText("Tingkat : "+rencanaDayModel.getTingkat());
+                tv_peralatanLatihanSub.setText("Peralatan : "+rencanaDayModel.getPeralatan());
+                tv_petunjukLatihanSub.setText(rencanaDayModel.getPetunjuk());
+                Glide.with(getApplicationContext())
+                        .load(rencanaDayModel.getBagianOtot())
+                        .into(iv_bagianOtotLatihanSub);
                 urlVideo = rencanaDayModel.getLinkVideo();
-                Log.i("url", urlVideo);
-                Log.i("judul", rencanaDayModel.getJudul());
+
             }
         }
 
