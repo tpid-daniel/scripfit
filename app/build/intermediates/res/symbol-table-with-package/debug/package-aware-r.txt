@@ -1328,6 +1328,7 @@ id tv_judul2
 id tv_judulBlog
 id tv_judulKeterangan
 id tv_judulLatihanSub
+id tv_judulRencanaSub
 id tv_jumat
 id tv_kamis
 id tv_keterangan

@@ -24,6 +24,7 @@ import java.util.List;
 
 public class RencanaLatihanSub extends AppCompatActivity implements RencanaPresenter.View {
     int id;
+    TextView tv_judulRencanaSub;
     TextView tv_penjelasan;
     TextView tv_durasi;
     TextView tv_hariPerMinggu;
@@ -52,6 +53,7 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rencana_latihan_sub);
 
+        tv_judulRencanaSub = (TextView)findViewById(R.id.tv_judulRencanaSub);
         tv_penjelasan = (TextView)findViewById(R.id.tv_penjelasan);
         tv_durasi = (TextView)findViewById(R.id.tv_durasi);
         tv_hariPerMinggu = (TextView)findViewById(R.id.tv_hariperminggu);
@@ -198,6 +200,7 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
 
     public void setText(){
         for(RencanaModel rencanaModel : dataDetail){
+            tv_judulRencanaSub.setText(rencanaModel.getJudulketerangan());
             tv_penjelasan.setText(rencanaModel.getSubketerangan());
             tv_durasi.setText(rencanaModel.getDurasi());
             tv_hariPerMinggu.setText(rencanaModel.getHari().toString());

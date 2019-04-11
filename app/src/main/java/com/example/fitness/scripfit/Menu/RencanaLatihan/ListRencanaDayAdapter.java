@@ -49,7 +49,9 @@ public class ListRencanaDayAdapter extends RecyclerView.Adapter<ListRencanaDayAd
         viewHolder.tv_dayJudul.setText(mData.get(i).getJudul());
         viewHolder.tv_daySet.setText(": "+mData.get(i).getSetNumber().toString());
         viewHolder.tv_dayRepetisi.setText(": "+mData.get(i).getRepetisi());
-        viewHolder.iv_day.setImageResource(R.drawable.ic_latihan);
+        Glide.with(context)
+                .load(mData.get(i).getLinkImage())
+                .into(viewHolder.iv_day);
         viewHolder.cv_day.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
