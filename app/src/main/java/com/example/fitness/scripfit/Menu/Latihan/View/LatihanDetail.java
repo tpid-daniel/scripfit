@@ -7,6 +7,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -94,6 +95,10 @@ public class LatihanDetail extends AppCompatActivity implements LatihanPresenter
     }
 
     public void getDataLatihan(){
+        for(LatihanModel latihanModel : dataDetail){
+            Log.i("id latihan 1", latihanModel.getId().toString());
+        }
+
         adapter = new LatihanGridAdapter(getApplicationContext(), dataDetail);
 
         rv_latihanDetail.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));

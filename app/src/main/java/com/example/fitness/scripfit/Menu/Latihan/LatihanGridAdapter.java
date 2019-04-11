@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,19 +39,8 @@ public class LatihanGridAdapter extends RecyclerView.Adapter<LatihanGridAdapter.
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
         View v;
-        final int data = mData.get(i).getId();
         v= LayoutInflater.from(context).inflate(R.layout.latihan_item_grid, parent, false);
         final ViewHolder vHolder = new ViewHolder(v);
-        vHolder.cv_latihanGrid.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, LatihanDetailSub.class);
-                intent.putExtra("id", data);
-                intent.putExtra("jenis", "latihan");
-                context.startActivity(intent);
-            }
-        });
-
         return vHolder;
     }
 
@@ -60,6 +50,18 @@ public class LatihanGridAdapter extends RecyclerView.Adapter<LatihanGridAdapter.
         Glide.with(context)
                 .load(mData.get(i).getLinkImage())
                 .into(viewHolder.iv_latihanGrid);
+        final int data = mData.get(i).getId();
+        Log.i("id latihan", String.valueOf(mData.get(i).getId()));
+        viewHolder.cv_latihanGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, LatihanDetailSub.class);
+                intent.putExtra("id", data);
+                intent.putExtra("jenis", "latihan");
+                context.startActivity(intent);
+
+            }
+        });
     }
 
     @Override
@@ -97,7 +99,6 @@ public class LatihanGridAdapter extends RecyclerView.Adapter<LatihanGridAdapter.
         @Override
         protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
             mData.clear();
-
                 mData.addAll((List) filterResults.values);
                 notifyDataSetChanged();
 

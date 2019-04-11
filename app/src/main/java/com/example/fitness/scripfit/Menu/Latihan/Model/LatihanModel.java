@@ -49,6 +49,9 @@ public class LatihanModel {
     @SerializedName("linkVideo")
     @Expose
     private String linkVideo;
+    @SerializedName("id_rencana")
+    @Expose
+    private Integer id_rencana;
 
     public Integer getId() {
         return id;
@@ -128,5 +131,13 @@ public class LatihanModel {
 
     public void setLinkVideo(String linkVideo) {
         this.linkVideo = linkVideo;
+    }
+
+    public Integer getIdRencana() {
+        return id_rencana;
+    }
+
+    public void setIdRencana(Integer id_rencana) {
+        this.id_rencana = id_rencana;
     }
 }

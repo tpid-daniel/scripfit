@@ -69,13 +69,13 @@ public class ReminderFragment extends Fragment {
         Button btn_addReminder = (Button) rootView.findViewById(R.id.btn_addReminder);
         Button btn_resetReminder = (Button) rootView.findViewById(R.id.btn_resetReminder);
         tv_clock = (TextView) rootView.findViewById(R.id.tv_clock);
-        iv_senin =(ImageView) rootView.findViewById(R.id.iv_senin);
-        iv_selasa=(ImageView) rootView.findViewById(R.id.iv_selasa);
-        iv_rabu =(ImageView) rootView.findViewById(R.id.iv_rabu);
-        iv_kamis =(ImageView) rootView.findViewById(R.id.iv_kamis);
-        iv_jumat =(ImageView) rootView.findViewById(R.id.iv_jumat);
-        iv_sabtu=(ImageView) rootView.findViewById(R.id.iv_sabtu);
-        iv_minggu =(ImageView) rootView.findViewById(R.id.iv_minggu);
+//        iv_senin =(ImageView) rootView.findViewById(R.id.iv_senin);
+//        iv_selasa=(ImageView) rootView.findViewById(R.id.iv_selasa);
+//        iv_rabu =(ImageView) rootView.findViewById(R.id.iv_rabu);
+//        iv_kamis =(ImageView) rootView.findViewById(R.id.iv_kamis);
+//        iv_jumat =(ImageView) rootView.findViewById(R.id.iv_jumat);
+//        iv_sabtu=(ImageView) rootView.findViewById(R.id.iv_sabtu);
+//        iv_minggu =(ImageView) rootView.findViewById(R.id.iv_minggu);
         once = (RadioButton) rootView.findViewById(R.id.rdi_once);
         repeat = (RadioButton) rootView.findViewById(R.id.rdi_repeat);
 
@@ -215,102 +215,102 @@ public class ReminderFragment extends Fragment {
             tv_clock.setText("00 : 00");
         }
         tv_clock.setText("00 : 00");
-        iv_senin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(day2==false){
-                    iv_senin.setImageResource(R.drawable.ic_bell_fill);
-                    day2=true;
-                }else {
-                    iv_senin.setImageResource(R.drawable.ic_bell);
-                    day2=false;
-                }
-
-            }
-        });
-
-        iv_selasa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(day3==false){
-                    iv_selasa.setImageResource(R.drawable.ic_bell_fill);
-                    day3=true;
-                }else {
-                    iv_selasa.setImageResource(R.drawable.ic_bell);
-                    day3=false;
-                }
-
-            }
-        });
-
-        iv_rabu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(day4==false){
-                    iv_rabu.setImageResource(R.drawable.ic_bell_fill);
-                    day4=true;
-                }else {
-                    iv_rabu.setImageResource(R.drawable.ic_bell);
-                    day4=false;
-                }
-            }
-        });
-
-        iv_kamis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(day5==false){
-                    iv_kamis.setImageResource(R.drawable.ic_bell_fill);
-                    day5=true;
-                }else {
-                    iv_kamis.setImageResource(R.drawable.ic_bell);
-                    day5=false;
-                }
-
-            }
-        });
-
-        iv_jumat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(day6==false){
-                    iv_jumat.setImageResource(R.drawable.ic_bell_fill);
-                    day6=true;
-                }else {
-                    iv_jumat.setImageResource(R.drawable.ic_bell);
-                    day6=false;
-                }
-
-            }
-        });
-
-        iv_sabtu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(day7==false){
-                    iv_sabtu.setImageResource(R.drawable.ic_bell_fill);
-                    day7=true;
-                }else {
-                    iv_sabtu.setImageResource(R.drawable.ic_bell);
-                    day7=false;
-                }
-
-            }
-        });
-
-        iv_minggu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(day1==false){
-                    iv_minggu.setImageResource(R.drawable.ic_bell_fill);
-                    day1=true;
-                }else {
-                    iv_minggu.setImageResource(R.drawable.ic_bell);
-                    day1=false;
-                }
-
-            }
-        });
+//        iv_senin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(day2==false){
+//                    iv_senin.setImageResource(R.drawable.ic_bell_fill);
+//                    day2=true;
+//                }else {
+//                    iv_senin.setImageResource(R.drawable.ic_bell);
+//                    day2=false;
+//                }
+//
+//            }
+//        });
+//
+//        iv_selasa.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(day3==false){
+//                    iv_selasa.setImageResource(R.drawable.ic_bell_fill);
+//                    day3=true;
+//                }else {
+//                    iv_selasa.setImageResource(R.drawable.ic_bell);
+//                    day3=false;
+//                }
+//
+//            }
+//        });
+//
+//        iv_rabu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(day4==false){
+//                    iv_rabu.setImageResource(R.drawable.ic_bell_fill);
+//                    day4=true;
+//                }else {
+//                    iv_rabu.setImageResource(R.drawable.ic_bell);
+//                    day4=false;
+//                }
+//            }
+//        });
+//
+//        iv_kamis.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(day5==false){
+//                    iv_kamis.setImageResource(R.drawable.ic_bell_fill);
+//                    day5=true;
+//                }else {
+//                    iv_kamis.setImageResource(R.drawable.ic_bell);
+//                    day5=false;
+//                }
+//
+//            }
+//        });
+//
+//        iv_jumat.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(day6==false){
+//                    iv_jumat.setImageResource(R.drawable.ic_bell_fill);
+//                    day6=true;
+//                }else {
+//                    iv_jumat.setImageResource(R.drawable.ic_bell);
+//                    day6=false;
+//                }
+//
+//            }
+//        });
+//
+//        iv_sabtu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(day7==false){
+//                    iv_sabtu.setImageResource(R.drawable.ic_bell_fill);
+//                    day7=true;
+//                }else {
+//                    iv_sabtu.setImageResource(R.drawable.ic_bell);
+//                    day7=false;
+//                }
+//
+//            }
+//        });
+//
+//        iv_minggu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(day1==false){
+//                    iv_minggu.setImageResource(R.drawable.ic_bell_fill);
+//                    day1=true;
+//                }else {
+//                    iv_minggu.setImageResource(R.drawable.ic_bell);
+//                    day1=false;
+//                }
+//
+//            }
+//        });
     }
 
     public void showHourPicker() {

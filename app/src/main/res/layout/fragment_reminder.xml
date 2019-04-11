@@ -39,7 +39,7 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_button_enable"
-                android:text="Tambah Pengingat" />
+                android:text="Simpan Pengingat" />
 
             <Button
                 android:id="@+id/btn_resetReminder"

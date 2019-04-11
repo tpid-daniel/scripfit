@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/asset_2" />
 
     <RelativeLayout
-        android:layout_width="495dp"
+        android:layout_width="match_parent"
         android:layout_height="125dp">
 
         <TextView
@@ -31,7 +31,6 @@
             android:layout_marginStart="1dp"
             android:layout_marginBottom="26dp"
             android:fontFamily="@font/open_sans_light"
-            android:paddingRight="20dp"
             android:text="TextView"
             android:textColor="#fff"
             android:textSize="14sp" />
