@@ -44,8 +44,8 @@ public class LatihanFragment extends Fragment {
         rv_latihan = (RecyclerView) rootView.findViewById(R.id.rv_latihan);
         data();
 
-        Toolbar actionBarToolBar = (Toolbar) rootView.findViewById(R.id.toolbar);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(actionBarToolBar);
+//        Toolbar actionBarToolBar = (Toolbar) rootView.findViewById(R.id.toolbar);
+//        ((AppCompatActivity)getActivity()).setSupportActionBar(actionBarToolBar);
 
         return rootView;
     }
@@ -58,14 +58,16 @@ public class LatihanFragment extends Fragment {
     public void data(){
         List<LatihanModel> menu;
         menu = new ArrayList<>();
-        menu.add(new LatihanModel("CARDIO"));
-        menu.add(new LatihanModel("PUNGGUNG"));
-        menu.add(new LatihanModel("BISEP"));
-        menu.add(new LatihanModel("BETIS"));
         menu.add(new LatihanModel("DADA"));
-        menu.add(new LatihanModel("LENGAN BAWAH"));
-        menu.add(new LatihanModel("KAKI"));
+        menu.add(new LatihanModel("PUNGGUNG"));
         menu.add(new LatihanModel("BAHU"));
+        menu.add(new LatihanModel("TRAPEZIUS"));
+        menu.add(new LatihanModel("BISEP"));
+        menu.add(new LatihanModel("TRISEP"));
+        menu.add(new LatihanModel("PERUT"));
+        menu.add(new LatihanModel("BETIS"));
+        menu.add(new LatihanModel("PAHA"));
+        menu.add(new LatihanModel("CARDIO"));
 
         adapter = new LatihanAdapter(getContext(), menu);
 
@@ -74,25 +76,25 @@ public class LatihanFragment extends Fragment {
         rv_latihan.setAdapter(adapter);
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.search_latihan, menu);
-        MenuItem searchItem = menu.findItem(R.id.latihan_search);
-        SearchView searchView = (SearchView) searchItem.getActionView();
-
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                adapter.getFilter().filter(s);
-                return false;
-            }
-        });
-//        return true;
-        super.onCreateOptionsMenu(menu, inflater);
-    }
+//    @Override
+//    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//        inflater.inflate(R.menu.search_latihan, menu);
+//        MenuItem searchItem = menu.findItem(R.id.latihan_search);
+//        SearchView searchView = (SearchView) searchItem.getActionView();
+//
+//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String s) {
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String s) {
+//                adapter.getFilter().filter(s);
+//                return false;
+//            }
+//        });
+////        return true;
+//        super.onCreateOptionsMenu(menu, inflater);
+//    }
 }

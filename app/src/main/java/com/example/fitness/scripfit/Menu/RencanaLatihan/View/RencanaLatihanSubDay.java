@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaAdapter;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaDayAdapter;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
@@ -22,7 +23,7 @@ import java.util.List;
 public class RencanaLatihanSubDay extends AppCompatActivity implements RencanaPresenter.View {
     RecyclerView rv_rencanaSubDay;
     ListRencanaDayAdapter adapter;
-    List<RencanaDayModel> menuDay = new ArrayList<>();
+    List<LatihanModel> menuDay = new ArrayList<>();
     RencanaPresenter rencanaPresenter;
     int id;
     int day;
@@ -56,10 +57,6 @@ public class RencanaLatihanSubDay extends AppCompatActivity implements RencanaPr
     }
 
     public void listDay(){
-        for(RencanaDayModel rencanaDayModel : menuDay){
-            Log.i("hasil 1", rencanaDayModel.getJudul());
-        }
-
         adapter = new ListRencanaDayAdapter(getApplicationContext(), menuDay);
 
         rv_rencanaSubDay.setLayoutManager(new LinearLayoutManager(getApplication(), LinearLayoutManager.VERTICAL, false));
@@ -93,7 +90,7 @@ public class RencanaLatihanSubDay extends AppCompatActivity implements RencanaPr
     }
 
     @Override
-    public void resultDataDay(List<RencanaDayModel> data) {
+    public void resultDataDay(List<LatihanModel> data) {
         menuDay = data;
         listDay();
     }

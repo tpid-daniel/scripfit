@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
@@ -267,7 +268,8 @@ public class RencanaLatihanSub extends AppCompatActivity implements RencanaPrese
     }
 
     @Override
-    public void resultDataDay(List<RencanaDayModel> data) {
+    public void resultDataDay(List<LatihanModel> data) {
 
     }
+
 }

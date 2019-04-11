@@ -68,12 +68,7 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
         rl_latihan = (RelativeLayout) findViewById(R.id.rl_latihan);
         iv_playpause = (ImageView) findViewById(R.id.iv_playpause);
         LatihanPresenter latihanPresenter = new LatihanPresenter(this);
-        if(jenis.contains("latihan")){
-            latihanPresenter.listLatihanById(id);
-        }
-        else{
-            latihanPresenter.listLatihanByIdRencana(id);
-        }
+        latihanPresenter.listLatihanById(id);
 
         rl_latihan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,38 +121,19 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
             }
         });
 
-
-
     }
 
     public void getText(){
-        if(jenis.contains("latihan")){
-            for(LatihanModel latihanModel : mData){
-                tv_judulLatihanSub.setText(latihanModel.getJudul());
-                tv_tingkatLatihanSub.setText("Tingkat : "+latihanModel.getTingkat());
-                tv_peralatanLatihanSub.setText("Peralatan : "+latihanModel.getPeralatan());
-                tv_petunjukLatihanSub.setText(latihanModel.getPetunjuk());
-                Glide.with(getApplicationContext())
-                        .load(latihanModel.getBagianOtot())
-                        .into(iv_bagianOtotLatihanSub);
-                urlVideo = latihanModel.getLinkVideo();
-            }
+        for(LatihanModel latihanModel : mData){
+            tv_judulLatihanSub.setText(latihanModel.getJudul());
+            tv_tingkatLatihanSub.setText("Tingkat : "+latihanModel.getTingkat());
+            tv_peralatanLatihanSub.setText("Peralatan : "+latihanModel.getPeralatan());
+            tv_petunjukLatihanSub.setText(latihanModel.getPetunjuk());
+            Glide.with(getApplicationContext())
+                    .load(latihanModel.getBagianOtot())
+                    .into(iv_bagianOtotLatihanSub);
+            urlVideo = latihanModel.getLinkVideo();
         }
-        else{
-            for(RencanaDayModel rencanaDayModel : mDay){
-                tv_judulLatihanSub.setText(rencanaDayModel.getJudul());
-                tv_tingkatLatihanSub.setText("Tingkat : "+rencanaDayModel.getTingkat());
-                tv_peralatanLatihanSub.setText("Peralatan : "+rencanaDayModel.getPeralatan());
-                tv_petunjukLatihanSub.setText(rencanaDayModel.getPetunjuk());
-                Glide.with(getApplicationContext())
-                        .load(rencanaDayModel.getBagianOtot())
-                        .into(iv_bagianOtotLatihanSub);
-                urlVideo = rencanaDayModel.getLinkVideo();
-
-            }
-        }
-
-
     }
 
     @Override

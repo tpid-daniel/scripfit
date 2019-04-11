@@ -52,6 +52,15 @@ public class LatihanModel {
     @SerializedName("id_rencana")
     @Expose
     private Integer id_rencana;
+    @SerializedName("day")
+    @Expose
+    private Integer day;
+    @SerializedName("set_number")
+    @Expose
+    private Integer setNumber;
+    @SerializedName("repetisi")
+    @Expose
+    private String repetisi;
 
     public Integer getId() {
         return id;
@@ -140,4 +149,29 @@ public class LatihanModel {
     public void setIdRencana(Integer id_rencana) {
         this.id_rencana = id_rencana;
     }
+
+    public Integer getDay() {
+        return day;
+    }
+
+    public void setDay(Integer day) {
+        this.day = day;
+    }
+
+    public Integer getSetNumber() {
+        return setNumber;
+    }
+
+    public void setSetNumber(Integer setNumber) {
+        this.setNumber = setNumber;
+    }
+
+    public String getRepetisi() {
+        return repetisi;
+    }
+
+    public void setRepetisi(String repetisi) {
+        this.repetisi = repetisi;
+    }
+
 }

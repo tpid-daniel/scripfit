@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetailSub;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaAdapter;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
@@ -177,7 +178,8 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     @Override
-    public void resultDataDay(List<RencanaDayModel> data) {
+    public void resultDataDay(List<LatihanModel> data) {
 
     }
+
 }

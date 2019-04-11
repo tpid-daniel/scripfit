@@ -6,26 +6,23 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1554948976906"
+    timestamp="1554996084498"
     token="-5585758844237408621"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2890" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="81" />
+        duration="0" />
     <task
         name="verifier"
-        duration="24" />
+        duration="0" />
 
-    <artifact
-        location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
     <artifact
         location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
@@ -34,6 +31,9 @@
         type="SPLIT" />
     <artifact
         location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
         location="D:\Scripfit\1\scripfit\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
@@ -65,11 +65,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1554948976906"
+        timestamp="1554996084498"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
         <artifact
             location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
@@ -78,6 +75,9 @@
             type="SPLIT" />
         <artifact
             location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Scripfit\1\scripfit\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="D:\Scripfit\1\scripfit\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"

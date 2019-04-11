@@ -1057,9 +1057,9 @@ public final class R {
         public static final int icon = 0x7f0a0063;
         public static final int icon_group = 0x7f0a0064;
         public static final int image = 0x7f0a0066;
-        public static final int info = 0x7f0a0069;
-        public static final int italic = 0x7f0a006b;
-        public static final int item_touch_helper_previous_elevation = 0x7f0a006c;
+        public static final int info = 0x7f0a0068;
+        public static final int italic = 0x7f0a006a;
+        public static final int item_touch_helper_previous_elevation = 0x7f0a006b;
         public static final int labeled = 0x7f0a0074;
         public static final int largeLabel = 0x7f0a0075;
         public static final int left = 0x7f0a0078;

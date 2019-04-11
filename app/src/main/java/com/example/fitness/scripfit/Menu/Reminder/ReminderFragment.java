@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -36,19 +37,20 @@ public class ReminderFragment extends Fragment {
     int hour = 0;
     int minuteTime = 0;
     TextView tv_clock;
-    ImageView iv_senin;
+    ImageView iv_clockReminder;
+    CheckBox cb_senin;
     boolean day2=false;
-    ImageView iv_selasa;
+    CheckBox cb_selasa;
     boolean day3=false;
-    ImageView iv_rabu;
+    CheckBox cb_rabu;
     boolean day4=false;
-    ImageView iv_kamis;
+    CheckBox cb_kamis;
     boolean day5=false;
-    ImageView iv_jumat;
+    CheckBox cb_jumat;
     boolean day6=false;
-    ImageView iv_sabtu;
+    CheckBox cb_sabtu;
     boolean day7=false;
-    ImageView iv_minggu;
+    CheckBox cb_minggu;
     boolean day1=false;
     AlarmManager manager;
     Intent myIntent;
@@ -69,16 +71,16 @@ public class ReminderFragment extends Fragment {
         Button btn_addReminder = (Button) rootView.findViewById(R.id.btn_addReminder);
         Button btn_resetReminder = (Button) rootView.findViewById(R.id.btn_resetReminder);
         tv_clock = (TextView) rootView.findViewById(R.id.tv_clock);
-//        iv_senin =(ImageView) rootView.findViewById(R.id.iv_senin);
-//        iv_selasa=(ImageView) rootView.findViewById(R.id.iv_selasa);
-//        iv_rabu =(ImageView) rootView.findViewById(R.id.iv_rabu);
-//        iv_kamis =(ImageView) rootView.findViewById(R.id.iv_kamis);
-//        iv_jumat =(ImageView) rootView.findViewById(R.id.iv_jumat);
-//        iv_sabtu=(ImageView) rootView.findViewById(R.id.iv_sabtu);
-//        iv_minggu =(ImageView) rootView.findViewById(R.id.iv_minggu);
+        cb_senin =(CheckBox) rootView.findViewById(R.id.cb_senin);
+        cb_selasa=(CheckBox) rootView.findViewById(R.id.cb_selasa);
+        cb_rabu =(CheckBox) rootView.findViewById(R.id.cb_rabu);
+        cb_kamis =(CheckBox) rootView.findViewById(R.id.cb_kamis);
+        cb_jumat =(CheckBox) rootView.findViewById(R.id.cb_jumat);
+        cb_sabtu=(CheckBox) rootView.findViewById(R.id.cb_sabtu);
+        cb_minggu =(CheckBox) rootView.findViewById(R.id.cb_minggu);
         once = (RadioButton) rootView.findViewById(R.id.rdi_once);
         repeat = (RadioButton) rootView.findViewById(R.id.rdi_repeat);
-
+        iv_clockReminder = (ImageView) rootView.findViewById(R.id.iv_clockReminder);
         manager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
 
         myIntent = new Intent(getActivity(),AlarmNotificationReceiver.class);
@@ -103,7 +105,12 @@ public class ReminderFragment extends Fragment {
                 showHourPicker();
             }
         });
-
+        iv_clockReminder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showHourPicker();
+            }
+        });
         setDay();
         preferences = new Preferences(getContext());
         getCheckReminderPref();
@@ -120,13 +127,13 @@ public class ReminderFragment extends Fragment {
         day5=false;
         day6=false;
         day7=false;
-        iv_senin.setImageResource(R.drawable.ic_bell);
-        iv_selasa.setImageResource(R.drawable.ic_bell);
-        iv_rabu.setImageResource(R.drawable.ic_bell);
-        iv_kamis.setImageResource(R.drawable.ic_bell);
-        iv_jumat.setImageResource(R.drawable.ic_bell);
-        iv_sabtu.setImageResource(R.drawable.ic_bell);
-        iv_minggu.setImageResource(R.drawable.ic_bell);
+        cb_senin.setChecked(false);
+        cb_selasa.setChecked(false);
+        cb_rabu.setChecked(false);
+        cb_kamis.setChecked(false);
+        cb_jumat.setChecked(false);
+        cb_sabtu.setChecked(false);
+        cb_minggu.setChecked(false);
         manager.cancel(pendingIntent);
         tv_clock.setText("00 : 00");
         if(preferences.getPrefJam() != null){
@@ -160,31 +167,31 @@ public class ReminderFragment extends Fragment {
         }
 
         if(preferences.getPrefSenin() != false){
-            iv_senin.setImageResource(R.drawable.ic_bell_fill);
+            cb_senin.setChecked(true);
             day2=true;
         }
         if(preferences.getPrefSelasa() != false){
-            iv_selasa.setImageResource(R.drawable.ic_bell_fill);
+            cb_selasa.setChecked(true);
             day3=true;
         }
         if(preferences.getPrefRabu() != false){
-            iv_rabu.setImageResource(R.drawable.ic_bell_fill);
+            cb_rabu.setChecked(true);
             day4=true;
         }
         if(preferences.getPrefKamis() != false){
-            iv_kamis.setImageResource(R.drawable.ic_bell_fill);
+            cb_kamis.setChecked(true);
             day5=true;
         }
         if(preferences.getPrefJumat() != false){
-            iv_jumat.setImageResource(R.drawable.ic_bell_fill);
+            cb_jumat.setChecked(true);
             day6=true;
         }
         if(preferences.getPrefSabtu() != false){
-            iv_sabtu.setImageResource(R.drawable.ic_bell_fill);
+            cb_sabtu.setChecked(true);
             day7=true;
         }
         if(preferences.getPrefMinggu() != false){
-            iv_minggu.setImageResource(R.drawable.ic_bell_fill);
+            cb_minggu.setChecked(true);
             day1=true;
         }
         if(day2){
@@ -215,102 +222,42 @@ public class ReminderFragment extends Fragment {
             tv_clock.setText("00 : 00");
         }
         tv_clock.setText("00 : 00");
-//        iv_senin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(day2==false){
-//                    iv_senin.setImageResource(R.drawable.ic_bell_fill);
-//                    day2=true;
-//                }else {
-//                    iv_senin.setImageResource(R.drawable.ic_bell);
-//                    day2=false;
-//                }
-//
-//            }
-//        });
-//
-//        iv_selasa.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(day3==false){
-//                    iv_selasa.setImageResource(R.drawable.ic_bell_fill);
-//                    day3=true;
-//                }else {
-//                    iv_selasa.setImageResource(R.drawable.ic_bell);
-//                    day3=false;
-//                }
-//
-//            }
-//        });
-//
-//        iv_rabu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(day4==false){
-//                    iv_rabu.setImageResource(R.drawable.ic_bell_fill);
-//                    day4=true;
-//                }else {
-//                    iv_rabu.setImageResource(R.drawable.ic_bell);
-//                    day4=false;
-//                }
-//            }
-//        });
-//
-//        iv_kamis.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(day5==false){
-//                    iv_kamis.setImageResource(R.drawable.ic_bell_fill);
-//                    day5=true;
-//                }else {
-//                    iv_kamis.setImageResource(R.drawable.ic_bell);
-//                    day5=false;
-//                }
-//
-//            }
-//        });
-//
-//        iv_jumat.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(day6==false){
-//                    iv_jumat.setImageResource(R.drawable.ic_bell_fill);
-//                    day6=true;
-//                }else {
-//                    iv_jumat.setImageResource(R.drawable.ic_bell);
-//                    day6=false;
-//                }
-//
-//            }
-//        });
-//
-//        iv_sabtu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(day7==false){
-//                    iv_sabtu.setImageResource(R.drawable.ic_bell_fill);
-//                    day7=true;
-//                }else {
-//                    iv_sabtu.setImageResource(R.drawable.ic_bell);
-//                    day7=false;
-//                }
-//
-//            }
-//        });
-//
-//        iv_minggu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(day1==false){
-//                    iv_minggu.setImageResource(R.drawable.ic_bell_fill);
-//                    day1=true;
-//                }else {
-//                    iv_minggu.setImageResource(R.drawable.ic_bell);
-//                    day1=false;
-//                }
-//
-//            }
-//        });
+        if(cb_senin.isChecked()!=false){
+            day2=true;
+        }else {
+            day2=false;
+        }
+        if(cb_selasa.isChecked()!=false){
+            day3=true;
+        }else {
+            day3=false;
+        }
+        if(cb_rabu.isChecked()!=false){
+            day4=true;
+        }else {
+            day4=false;
+        }
+        if(cb_kamis.isChecked()!=false){
+            day5=true;
+        }else {
+            day5=false;
+        }
+        if(cb_jumat.isChecked()!=false){
+            day6=true;
+        }else {
+            day6=false;
+        }
+        if(cb_sabtu.isChecked()!=false){
+            day7=true;
+        }else {
+            day7=false;
+        }
+        if(cb_minggu.isChecked()!=false){
+            day1=true;
+        }else {
+            day1=false;
+        }
+
     }
 
     public void showHourPicker() {

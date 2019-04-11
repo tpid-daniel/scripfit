@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetailSub;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
@@ -22,11 +23,11 @@ import com.example.fitness.scripfit.R;
 import java.util.List;
 
 public class ListRencanaDayAdapter extends RecyclerView.Adapter<ListRencanaDayAdapter.ViewHolder> {
-    List<RencanaDayModel> mData;
+    List<LatihanModel> mData;
     private LayoutInflater mInflater;
     Context context;
 
-    public ListRencanaDayAdapter(Context context, List<RencanaDayModel> data) {
+    public ListRencanaDayAdapter(Context context, List<LatihanModel> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
         this.context = context;

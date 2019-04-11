@@ -16,7 +16,7 @@
         app:layout_scrollFlags="scroll|enterAlways|snap"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="Rencana"
-        app:titleMarginStart="150dp" />
+        app:titleMarginStart="160dp" />
 
 
     <ScrollView
@@ -41,6 +41,7 @@
                     android:id="@+id/tv_recentOpen"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/open_sans_light"
                     android:text="Rencana Saya"
                     android:textSize="18sp" />

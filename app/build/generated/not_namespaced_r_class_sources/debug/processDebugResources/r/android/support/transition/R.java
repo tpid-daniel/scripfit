@@ -90,8 +90,8 @@ public final class R {
         public static final int ghost_view = 0x7f0a005c;
         public static final int icon = 0x7f0a0063;
         public static final int icon_group = 0x7f0a0064;
-        public static final int info = 0x7f0a0069;
-        public static final int italic = 0x7f0a006b;
+        public static final int info = 0x7f0a0068;
+        public static final int italic = 0x7f0a006a;
         public static final int line1 = 0x7f0a0079;
         public static final int line3 = 0x7f0a007a;
         public static final int normal = 0x7f0a0095;

@@ -1161,7 +1161,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView2
 id imageView6
 id info
 id invisible
@@ -1170,6 +1169,7 @@ id item_touch_helper_previous_elevation
 id iv_bagianOtotLatihanSub
 id iv_blogDetail
 id iv_blogItem
+id iv_clockReminder
 id iv_day
 id iv_gambarRencana
 id iv_latihanGrid

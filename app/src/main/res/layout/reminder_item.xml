@@ -7,13 +7,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/open_sans_light"
             android:text="Silahkan centang pada hari yang anda pilih :"
             android:textColor="#000" />
 
@@ -21,42 +24,49 @@
             android:id="@+id/cb_senin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
             android:text="Senin" />
 
         <CheckBox
             android:id="@+id/cb_selasa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
             android:text="Selasa" />
 
         <CheckBox
             android:id="@+id/cb_rabu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
             android:text="Rabu" />
 
         <CheckBox
             android:id="@+id/cb_kamis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
             android:text="Kamis" />
 
         <CheckBox
             android:id="@+id/cb_jumat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
             android:text="Jumat" />
 
         <CheckBox
             android:id="@+id/cb_sabtu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
             android:text="Sabtu" />
 
         <CheckBox
             android:id="@+id/cb_minggu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
             android:text="Minggu" />
 
         <RelativeLayout
@@ -72,12 +82,13 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="4dp"
+                android:fontFamily="@font/open_sans_light"
                 android:text="Waktu"
                 android:textColor="#000"
                 android:textSize="18sp" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/iv_clockReminder"
                 android:layout_width="43dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -92,7 +103,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="3dp"
                 android:layout_marginTop="4dp"
-                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/iv_clockReminder"
+                android:fontFamily="@font/open_sans_light"
                 android:text="00 : 00"
                 android:textSize="18sp" />
 
@@ -109,13 +121,17 @@
                     android:id="@+id/rdi_once"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
                     android:checked="true"
+                    android:fontFamily="@font/open_sans_light"
                     android:text="Sekali" />
 
                 <RadioButton
                     android:id="@+id/rdi_repeat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/open_sans_light"
                     android:text="Berulang" />
 
             </RadioGroup>

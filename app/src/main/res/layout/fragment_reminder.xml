@@ -39,6 +39,7 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_button_enable"
+                android:fontFamily="@font/open_sans_light"
                 android:text="Simpan Pengingat" />
 
             <Button
@@ -52,6 +53,7 @@
                 android:layout_marginEnd="35dp"
                 android:layout_toEndOf="@+id/btn_addReminder"
                 android:background="@drawable/border_button_enable"
+                android:fontFamily="@font/open_sans_light"
                 android:text="Reset/Hapus" />
         </RelativeLayout>
 

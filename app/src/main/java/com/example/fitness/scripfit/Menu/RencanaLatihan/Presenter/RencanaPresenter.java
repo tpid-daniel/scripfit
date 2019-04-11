@@ -3,6 +3,8 @@ package com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter;
 import android.content.Context;
 import android.util.Log;
 
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanMainModel;
+import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayMainModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaMainModel;
@@ -139,24 +141,22 @@ public class RencanaPresenter {
     }
 
     public void getDataByIdDay(final int id, final int day){
-        final List<RencanaDayModel> data = new ArrayList<>();
+        final List<LatihanModel> data = new ArrayList<>();
         mService = Common.getAPIService();
 
-        Call<RencanaDayMainModel> call = mService.getRencanaDay();
+        Call<LatihanMainModel> call = mService.getLatihanData();
 
-        call.enqueue(new Callback<RencanaDayMainModel>() {
+        call.enqueue(new Callback<LatihanMainModel>() {
             @Override
-            public void onResponse(Call<RencanaDayMainModel> call, Response<RencanaDayMainModel> response) {
+            public void onResponse(Call<LatihanMainModel> call, Response<LatihanMainModel> response) {
                 try{
 
-                        for(RencanaDayModel rencanaDayModel : response.body().getRencanaday()){
-                            if(rencanaDayModel.getIdRencana().equals(id) && rencanaDayModel.getHari().equals(day)){
-                                data.add(rencanaDayModel);
-                                Log.i("dayJudulId", rencanaDayModel.getIdRencana().toString());
-                                Log.i("dayJudulDay",rencanaDayModel.getJudul());
-                            }
+                    for(LatihanModel latihanModel : response.body().getLatihan()){
+                        if(latihanModel.getIdRencana().equals(id) && latihanModel.getDay().equals(day)){
+                            data.add(latihanModel);
                         }
-                        view.resultDataDay(data);
+                    }
+                    view.resultDataDay(data);
 
                 }
                 catch (Exception e){
@@ -165,10 +165,11 @@ public class RencanaPresenter {
             }
 
             @Override
-            public void onFailure(Call<RencanaDayMainModel> call, Throwable t) {
-                view.showErrorMessage(t.toString());
+            public void onFailure(Call<LatihanMainModel> call, Throwable t) {
+
             }
         });
+
     }
 
 
@@ -184,6 +185,6 @@ public class RencanaPresenter {
 
         void resultDataDetail(List<RencanaModel> data);
 
-        void resultDataDay(List<RencanaDayModel> data);
+        void resultDataDay(List<LatihanModel> data);
     }
 }
