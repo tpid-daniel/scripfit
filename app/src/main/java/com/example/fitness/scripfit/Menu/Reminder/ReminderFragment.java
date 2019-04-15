@@ -166,31 +166,31 @@ public class ReminderFragment extends Fragment {
             }
         }
 
-        if(preferences.getPrefSenin() != false){
+        if(preferences.getPrefSenin()){
             cb_senin.setChecked(true);
             day2=true;
         }
-        if(preferences.getPrefSelasa() != false){
+        if(preferences.getPrefSelasa()){
             cb_selasa.setChecked(true);
             day3=true;
         }
-        if(preferences.getPrefRabu() != false){
+        if(preferences.getPrefRabu()){
             cb_rabu.setChecked(true);
             day4=true;
         }
-        if(preferences.getPrefKamis() != false){
+        if(preferences.getPrefKamis()){
             cb_kamis.setChecked(true);
             day5=true;
         }
-        if(preferences.getPrefJumat() != false){
+        if(preferences.getPrefJumat()){
             cb_jumat.setChecked(true);
             day6=true;
         }
-        if(preferences.getPrefSabtu() != false){
+        if(preferences.getPrefSabtu()){
             cb_sabtu.setChecked(true);
             day7=true;
         }
-        if(preferences.getPrefMinggu() != false){
+        if(preferences.getPrefMinggu()){
             cb_minggu.setChecked(true);
             day1=true;
         }
@@ -222,37 +222,37 @@ public class ReminderFragment extends Fragment {
             tv_clock.setText("00 : 00");
         }
         tv_clock.setText("00 : 00");
-        if(cb_senin.isChecked()!=false){
+        if(cb_senin.isChecked()){
             day2=true;
         }else {
             day2=false;
         }
-        if(cb_selasa.isChecked()!=false){
+        if(cb_selasa.isChecked()){
             day3=true;
         }else {
             day3=false;
         }
-        if(cb_rabu.isChecked()!=false){
+        if(cb_rabu.isChecked()){
             day4=true;
         }else {
             day4=false;
         }
-        if(cb_kamis.isChecked()!=false){
+        if(cb_kamis.isChecked()){
             day5=true;
         }else {
             day5=false;
         }
-        if(cb_jumat.isChecked()!=false){
+        if(cb_jumat.isChecked()){
             day6=true;
         }else {
             day6=false;
         }
-        if(cb_sabtu.isChecked()!=false){
+        if(cb_sabtu.isChecked()){
             day7=true;
         }else {
             day7=false;
         }
-        if(cb_minggu.isChecked()!=false){
+        if(cb_minggu.isChecked()){
             day1=true;
         }else {
             day1=false;

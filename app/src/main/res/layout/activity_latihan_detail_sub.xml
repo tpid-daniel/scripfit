@@ -29,25 +29,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-        <VideoView
-            android:id="@+id/vv_latihan"
-            android:layout_width="wrap_content"
-            android:layout_height="225dp" />
-
         <RelativeLayout
             android:id="@+id/rl_latihan"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@android:color/darker_gray">
 
-            <ImageView
-                android:id="@+id/iv_playpause"
-                android:layout_width="0dp"
+            <WebView
+                android:id="@+id/wv_latihan"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:foregroundGravity="center"
-                app:srcCompat="@drawable/ic_play_circle" />
+                tools:layout_editor_absoluteY="56dp" />
+
         </RelativeLayout>
 
         <TextView

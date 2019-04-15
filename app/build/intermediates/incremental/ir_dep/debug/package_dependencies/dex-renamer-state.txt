@@ -1,4 +1,4 @@
-#Sat Apr 06 08:52:36 ICT 2019
-base.0=D\:\\Scripfit\\1\\scripfit\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+#Mon Apr 15 15:35:39 WIB 2019
+base.0=/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/transforms/dexMerger/debug/10
 path.0=classes.dex
 renamed.0=classes.dex

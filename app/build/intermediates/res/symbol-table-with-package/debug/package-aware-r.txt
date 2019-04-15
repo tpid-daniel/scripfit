@@ -1173,7 +1173,6 @@ id iv_clockReminder
 id iv_day
 id iv_gambarRencana
 id iv_latihanGrid
-id iv_playpause
 id labeled
 id largeLabel
 id latihanItem
@@ -1362,10 +1361,10 @@ id useLogo
 id v_noRencent
 id view_offset_helper
 id visible
-id vv_latihan
 id withText
 id wrap
 id wrap_content
+id wv_latihan
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration

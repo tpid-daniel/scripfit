@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -28,7 +32,7 @@ import java.util.List;
 public class LatihanDetailSub extends AppCompatActivity implements LatihanPresenter.View {
     int id;
     String jenis;
-    VideoView vv_latihan;
+    WebView wv_latihan;
     RelativeLayout rl_latihan;
     ImageView iv_playpause;
     ProgressDialog mProgress;
@@ -64,62 +68,81 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
         tv_peralatanLatihanSub = (TextView) findViewById(R.id.tv_peralatanLatihanSub);
         iv_bagianOtotLatihanSub = (ImageView) findViewById(R.id.iv_bagianOtotLatihanSub);
         tv_petunjukLatihanSub = (TextView) findViewById(R.id.tv_petunjukLatihanSub);
-        vv_latihan = (VideoView) findViewById(R.id.vv_latihan);
+        wv_latihan = (WebView) findViewById(R.id.wv_latihan);
         rl_latihan = (RelativeLayout) findViewById(R.id.rl_latihan);
-        iv_playpause = (ImageView) findViewById(R.id.iv_playpause);
+//        iv_playpause = (ImageView) findViewById(R.id.iv_playpause);
         LatihanPresenter latihanPresenter = new LatihanPresenter(this);
         latihanPresenter.listLatihanById(id);
 
-        rl_latihan.setOnClickListener(new View.OnClickListener() {
+//        rl_latihan.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(vv_latihan.isPlaying()) {
+//                    vv_latihan.pause();
+//                    iv_playpause.setImageResource(R.drawable.ic_play_circle);
+//                }
+//                else{
+//                    mProgress = new ProgressDialog(LatihanDetailSub.this);
+//                    mProgress.setMessage("Please wait...");
+//                    mProgress.setCanceledOnTouchOutside(false);
+//                    if (urlVideo != null || urlVideo != "") {
+//                        mProgress.show();
+//                    }
+//
+//                    iv_playpause.setImageResource(R.drawable.ic_stop);
+//
+//                    try {
+//                        Uri uri = Uri.parse(urlVideo);
+//                        vv_latihan.setVideoURI(uri);
+//                        vv_latihan.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//                            @Override
+//                            public void onCompletion(MediaPlayer mp) {
+//                                iv_playpause.setImageResource(R.drawable.ic_stop);
+//                            }
+//                        });
+//
+//                        if(urlVideo == null && mProgress.isShowing()){
+//                            mProgress.dismiss();
+//                        }
+//                    }catch (Exception e){
+//                        e.printStackTrace();
+//                        if(urlVideo == null && mProgress.isShowing()){
+//                            mProgress.dismiss();
+//                        }
+//                    }
+//                    vv_latihan.requestFocus();
+//                    vv_latihan.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+//                        @Override
+//                        public void onPrepared(MediaPlayer mp) {
+//                            mProgress.dismiss();
+//                            mp.setLooping(true);
+//                            vv_latihan.start();
+//                        }
+//                    });
+//
+//                }
+//
+//            }
+//        });
+
+
+//        wv_latihan.getSettings().setJavaScriptEnabled(true);
+//        wv_latihan.getSettings().setPluginState(WebSettings.PluginState.ON);
+//        wv_latihan.setWebChromeClient(new WebChromeClient());
+//        wv_latihan.loadUrl("http://www.youtube.com/embed/" + "sG2tmUOx0Z4" + "?autoplay=1&vq=small");
+
+        String frameVideo = "<html><body><br><iframe width=\"420\" height=\"315\" src=\""+urlVideo+"\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
+
+        wv_latihan.setWebViewClient(new WebViewClient() {
             @Override
-            public void onClick(View v) {
-                if(vv_latihan.isPlaying()) {
-                    vv_latihan.pause();
-                    iv_playpause.setImageResource(R.drawable.ic_play_circle);
-                }
-                else{
-                    mProgress = new ProgressDialog(LatihanDetailSub.this);
-                    mProgress.setMessage("Please wait...");
-                    mProgress.setCanceledOnTouchOutside(false);
-                    if (urlVideo != null || urlVideo != "") {
-                        mProgress.show();
-                    }
-
-                    iv_playpause.setImageResource(R.drawable.ic_stop);
-
-                    try {
-                        Uri uri = Uri.parse(urlVideo);
-                        vv_latihan.setVideoURI(uri);
-                        vv_latihan.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                            @Override
-                            public void onCompletion(MediaPlayer mp) {
-                                iv_playpause.setImageResource(R.drawable.ic_stop);
-                            }
-                        });
-
-                        if(urlVideo == null && mProgress.isShowing()){
-                            mProgress.dismiss();
-                        }
-                    }catch (Exception e){
-                        e.printStackTrace();
-                        if(urlVideo == null && mProgress.isShowing()){
-                            mProgress.dismiss();
-                        }
-                    }
-                    vv_latihan.requestFocus();
-                    vv_latihan.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                        @Override
-                        public void onPrepared(MediaPlayer mp) {
-                            mProgress.dismiss();
-                            mp.setLooping(true);
-                            vv_latihan.start();
-                        }
-                    });
-
-                }
-
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
             }
         });
+        WebSettings webSettings = wv_latihan.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        wv_latihan.loadData(frameVideo, "text/html", "utf-8");
+
 
     }
 
@@ -133,6 +156,7 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
                     .load(latihanModel.getBagianOtot())
                     .into(iv_bagianOtotLatihanSub);
             urlVideo = latihanModel.getLinkVideo();
+            urlVideo = urlVideo.replace("https://youtu.be/", "https://www.youtube.com/embed/");
         }
     }
 
