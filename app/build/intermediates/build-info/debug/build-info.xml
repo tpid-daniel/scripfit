@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1555384128783"
+    timestamp="1555403392790"
     token="6366248139907093890"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -23,6 +23,9 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
     <artifact
         location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
@@ -59,14 +62,14 @@
     <artifact
         location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
-    <artifact
-        location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1555384128783"
+        timestamp="1555403392790"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
@@ -103,9 +106,6 @@
         <artifact
             location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/macbook2015/Documents/scripfit/scripfit/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
