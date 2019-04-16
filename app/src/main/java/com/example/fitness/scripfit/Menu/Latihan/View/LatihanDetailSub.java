@@ -2,8 +2,8 @@ package com.example.fitness.scripfit.Menu.Latihan.View;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +13,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -23,7 +24,6 @@ import com.bumptech.glide.Glide;
 import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.Latihan.Presenter.LatihanPresenter;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
-import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.R;
 
 import java.util.ArrayList;
@@ -70,78 +70,8 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
         tv_petunjukLatihanSub = (TextView) findViewById(R.id.tv_petunjukLatihanSub);
         wv_latihan = (WebView) findViewById(R.id.wv_latihan);
         rl_latihan = (RelativeLayout) findViewById(R.id.rl_latihan);
-//        iv_playpause = (ImageView) findViewById(R.id.iv_playpause);
         LatihanPresenter latihanPresenter = new LatihanPresenter(this);
         latihanPresenter.listLatihanById(id);
-
-//        rl_latihan.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(vv_latihan.isPlaying()) {
-//                    vv_latihan.pause();
-//                    iv_playpause.setImageResource(R.drawable.ic_play_circle);
-//                }
-//                else{
-//                    mProgress = new ProgressDialog(LatihanDetailSub.this);
-//                    mProgress.setMessage("Please wait...");
-//                    mProgress.setCanceledOnTouchOutside(false);
-//                    if (urlVideo != null || urlVideo != "") {
-//                        mProgress.show();
-//                    }
-//
-//                    iv_playpause.setImageResource(R.drawable.ic_stop);
-//
-//                    try {
-//                        Uri uri = Uri.parse(urlVideo);
-//                        vv_latihan.setVideoURI(uri);
-//                        vv_latihan.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//                            @Override
-//                            public void onCompletion(MediaPlayer mp) {
-//                                iv_playpause.setImageResource(R.drawable.ic_stop);
-//                            }
-//                        });
-//
-//                        if(urlVideo == null && mProgress.isShowing()){
-//                            mProgress.dismiss();
-//                        }
-//                    }catch (Exception e){
-//                        e.printStackTrace();
-//                        if(urlVideo == null && mProgress.isShowing()){
-//                            mProgress.dismiss();
-//                        }
-//                    }
-//                    vv_latihan.requestFocus();
-//                    vv_latihan.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-//                        @Override
-//                        public void onPrepared(MediaPlayer mp) {
-//                            mProgress.dismiss();
-//                            mp.setLooping(true);
-//                            vv_latihan.start();
-//                        }
-//                    });
-//
-//                }
-//
-//            }
-//        });
-
-
-//        wv_latihan.getSettings().setJavaScriptEnabled(true);
-//        wv_latihan.getSettings().setPluginState(WebSettings.PluginState.ON);
-//        wv_latihan.setWebChromeClient(new WebChromeClient());
-//        wv_latihan.loadUrl("http://www.youtube.com/embed/" + "sG2tmUOx0Z4" + "?autoplay=1&vq=small");
-
-        String frameVideo = "<html><body><br><iframe width=\"420\" height=\"315\" src=\""+urlVideo+"\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-
-        wv_latihan.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                return false;
-            }
-        });
-        WebSettings webSettings = wv_latihan.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        wv_latihan.loadData(frameVideo, "text/html", "utf-8");
 
 
     }
@@ -157,6 +87,66 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
                     .into(iv_bagianOtotLatihanSub);
             urlVideo = latihanModel.getLinkVideo();
             urlVideo = urlVideo.replace("https://youtu.be/", "https://www.youtube.com/embed/");
+
+            String frameVideo = "<html><body><br><iframe width=\"100%\" height=\"230px\" src=\""+urlVideo+"\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" mozallowfullscreen=\"mozallowfullscreen\" msallowfullscreen=\"msallowfullscreen\" oallowfullscreen=\"oallowfullscreen\" webkitallowfullscreen=\"webkitallowfullscreen\"></iframe></body></html>";
+
+            wv_latihan.setWebViewClient(new WebViewClient() {
+                @Override
+                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                    view.loadUrl(url);
+                    return true;
+                }
+            });
+            WebSettings webSettings = wv_latihan.getSettings();
+            webSettings.setJavaScriptEnabled(true);
+            wv_latihan.getSettings().setPluginState(WebSettings.PluginState.ON);
+            wv_latihan.setWebChromeClient(new MyWebClient());
+            wv_latihan.loadData(frameVideo, "text/html", "utf-8");
+        }
+    }
+
+    public class MyWebClient
+            extends WebChromeClient
+    {
+        private View mCustomView;
+        private WebChromeClient.CustomViewCallback mCustomViewCallback;
+        protected FrameLayout mFullscreenContainer;
+        private int mOriginalOrientation;
+        private int mOriginalSystemUiVisibility;
+
+        public MyWebClient() {}
+
+        public Bitmap getDefaultVideoPoster()
+        {
+            if (LatihanDetailSub.this == null) {
+                return null;
+            }
+            return BitmapFactory.decodeResource(LatihanDetailSub.this.getApplicationContext().getResources(), 2130837573);
+        }
+
+        public void onHideCustomView()
+        {
+            ((FrameLayout)LatihanDetailSub.this.getWindow().getDecorView()).removeView(this.mCustomView);
+            this.mCustomView = null;
+            LatihanDetailSub.this.getWindow().getDecorView().setSystemUiVisibility(this.mOriginalSystemUiVisibility);
+            LatihanDetailSub.this.setRequestedOrientation(this.mOriginalOrientation);
+            this.mCustomViewCallback.onCustomViewHidden();
+            this.mCustomViewCallback = null;
+        }
+
+        public void onShowCustomView(View paramView, WebChromeClient.CustomViewCallback paramCustomViewCallback)
+        {
+            if (this.mCustomView != null)
+            {
+                onHideCustomView();
+                return;
+            }
+            this.mCustomView = paramView;
+            this.mOriginalSystemUiVisibility = LatihanDetailSub.this.getWindow().getDecorView().getSystemUiVisibility();
+            this.mOriginalOrientation = LatihanDetailSub.this.getRequestedOrientation();
+            this.mCustomViewCallback = paramCustomViewCallback;
+            ((FrameLayout)LatihanDetailSub.this.getWindow().getDecorView()).addView(this.mCustomView, new FrameLayout.LayoutParams(-1, -1));
+            LatihanDetailSub.this.getWindow().getDecorView().setSystemUiVisibility(3846);
         }
     }
 

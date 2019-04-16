@@ -215,6 +215,8 @@ public class ReminderFragment extends Fragment {
         else if(day1){
             myCalender.set(Calendar.DAY_OF_WEEK, 1);
         }
+
+        Log.i("day 2", String.valueOf(day2));
     }
 
     public void setDay(){
@@ -222,41 +224,83 @@ public class ReminderFragment extends Fragment {
             tv_clock.setText("00 : 00");
         }
         tv_clock.setText("00 : 00");
-        if(cb_senin.isChecked()){
-            day2=true;
-        }else {
-            day2=false;
-        }
-        if(cb_selasa.isChecked()){
-            day3=true;
-        }else {
-            day3=false;
-        }
-        if(cb_rabu.isChecked()){
-            day4=true;
-        }else {
-            day4=false;
-        }
-        if(cb_kamis.isChecked()){
-            day5=true;
-        }else {
-            day5=false;
-        }
-        if(cb_jumat.isChecked()){
-            day6=true;
-        }else {
-            day6=false;
-        }
-        if(cb_sabtu.isChecked()){
-            day7=true;
-        }else {
-            day7=false;
-        }
-        if(cb_minggu.isChecked()){
-            day1=true;
-        }else {
-            day1=false;
-        }
+        cb_senin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cb_senin.isChecked()){
+                    day2=true;
+                }else {
+                    day2=false;
+                }
+            }
+        });
+
+        cb_selasa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cb_selasa.isChecked()){
+                    day3=true;
+                }else {
+                    day3=false;
+                }
+            }
+        });
+
+        cb_rabu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cb_rabu.isChecked()){
+                    day4=true;
+                }else {
+                    day4=false;
+                }
+            }
+        });
+
+        cb_kamis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cb_kamis.isChecked()){
+                    day5=true;
+                }else {
+                    day5=false;
+                }
+            }
+        });
+
+        cb_jumat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cb_jumat.isChecked()){
+                    day6=true;
+                }else {
+                    day6=false;
+                }
+            }
+        });
+
+        cb_sabtu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cb_sabtu.isChecked()){
+                    day7=true;
+                }else {
+                    day7=false;
+                }
+            }
+        });
+
+        cb_minggu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cb_minggu.isChecked()){
+                    day1=true;
+                }else {
+                    day1=false;
+                }
+            }
+        });
+
 
     }
 
@@ -315,6 +359,7 @@ public class ReminderFragment extends Fragment {
                 manager.setRepeating(AlarmManager.RTC_WAKEUP, myCalender.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
                 preferences.savePrefReminder(tv_clock.getText().toString(), "repeat", day2, day3, day4, day5, day6, day7, day1);
             }
+            Log.i("day 2.1", String.valueOf(day2));
 
         }
 
