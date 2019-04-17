@@ -1,21 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\ALL_UKDW\\OneDrive - Duta Wacana Christian University\\Seminar & Skripsi\\Andoid\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\values-port_values-port.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\2d122781b2812ec9502b361e84b8db19\\res\\values-port\\values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "E:\\ALL_UKDW\\OneDrive - Duta Wacana Christian University\\Seminar & Skripsi\\Andoid\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\values-hi_values-hi.arsc.flat",
             "map": [
                 {
@@ -43,6 +28,21 @@
                         "startOffsets": "105,211,308,418,504,606,728,805,883,974,1067,1163,1257,1358,1451,1546,1640,1731,1822,1912,2021,2124,2226,2336,2437,2549,2711,2812",
                         "endColumns": "105,96,109,85,101,121,76,77,90,92,95,93,100,92,94,93,90,90,89,108,102,101,109,100,111,161,100,79",
                         "endOffsets": "206,303,413,499,601,723,800,878,969,1062,1158,1252,1353,1446,1541,1635,1726,1817,1907,2016,2119,2221,2331,2432,2544,2706,2807,2887"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\ALL_UKDW\\OneDrive - Duta Wacana Christian University\\Seminar & Skripsi\\Andoid\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\values-port_values-port.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\2d122781b2812ec9502b361e84b8db19\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
                     }
                 }
             ]
@@ -1534,6 +1534,21 @@
             ]
         },
         {
+            "outputFile": "E:\\ALL_UKDW\\OneDrive - Duta Wacana Christian University\\Seminar & Skripsi\\Andoid\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4_values-xlarge-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\2d122781b2812ec9502b361e84b8db19\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "E:\\ALL_UKDW\\OneDrive - Duta Wacana Christian University\\Seminar & Skripsi\\Andoid\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\values-pt-rPT_values-pt-rPT.arsc.flat",
             "map": [
                 {
@@ -1561,21 +1576,6 @@
                         "startOffsets": "2949",
                         "endColumns": "100",
                         "endOffsets": "3045"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "E:\\ALL_UKDW\\OneDrive - Duta Wacana Christian University\\Seminar & Skripsi\\Andoid\\scripfit\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4_values-xlarge-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\2d122781b2812ec9502b361e84b8db19\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,126,197,267,337,405",
-                        "endColumns": "70,70,69,69,67,67",
-                        "endOffsets": "121,192,262,332,400,468"
                     }
                 }
             ]

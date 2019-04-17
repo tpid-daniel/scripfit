@@ -117,9 +117,9 @@ public final class R {
         public static final int tag_transition_group = 0x7f0a00df;
         public static final int text = 0x7f0a00e2;
         public static final int text2 = 0x7f0a00e3;
-        public static final int time = 0x7f0a00f3;
-        public static final int title = 0x7f0a00f4;
-        public static final int top = 0x7f0a00f8;
+        public static final int time = 0x7f0a00f2;
+        public static final int title = 0x7f0a00f3;
+        public static final int top = 0x7f0a00f7;
     }
     public static final class integer {
         private integer() {}

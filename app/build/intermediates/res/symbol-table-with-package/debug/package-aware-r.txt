@@ -1293,7 +1293,6 @@ id textView
 id textView11
 id textView12
 id textView17
-id textView2
 id textView20
 id textView3
 id textView8
@@ -1354,6 +1353,7 @@ id tv_tingkatLatihanSub
 id tv_tingkatPelatihan
 id tv_tujuanUtama
 id tv_waktuLatihan
+id tv_waktuReminder
 id uniform
 id unlabeled
 id up

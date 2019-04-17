@@ -38,6 +38,7 @@ public class ReminderFragment extends Fragment {
     int minuteTime = 0;
     TextView tv_clock;
     ImageView iv_clockReminder;
+    TextView tv_waktuReminder;
     CheckBox cb_senin;
     boolean day2=false;
     CheckBox cb_selasa;
@@ -81,6 +82,7 @@ public class ReminderFragment extends Fragment {
         once = (RadioButton) rootView.findViewById(R.id.rdi_once);
         repeat = (RadioButton) rootView.findViewById(R.id.rdi_repeat);
         iv_clockReminder = (ImageView) rootView.findViewById(R.id.iv_clockReminder);
+        tv_waktuReminder = (TextView) rootView.findViewById(R.id.tv_waktuReminder);
         manager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
 
         myIntent = new Intent(getActivity(),AlarmNotificationReceiver.class);
@@ -106,6 +108,12 @@ public class ReminderFragment extends Fragment {
             }
         });
         iv_clockReminder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showHourPicker();
+            }
+        });
+        tv_waktuReminder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showHourPicker();
@@ -320,15 +328,15 @@ public class ReminderFragment extends Fragment {
             }
         };
         TimePickerDialog timePickerDialog = new TimePickerDialog(getActivity(), R.style.DatePickerTheme, myTimeListener, hour, minuteTime, true);
-        timePickerDialog.setTitle("Choose hour:");
+        timePickerDialog.setTitle("Pilih waktu:");
         timePickerDialog.show();
     }
 
     public void setReminder(){
-        Toast.makeText(getContext(), "Pengingat berhasil ditambahkan", Toast.LENGTH_SHORT).show();
-        if(hour==0 || minuteTime==0 && myCalender.get(Calendar.DAY_OF_WEEK)==0){
+        if(hour==0 || minuteTime==0 && day1 == false && day2 == false && day3 == false && day4 == false && day5 == false && day6 == false && day7 == false){
             Toast.makeText(getContext(), "Isi semua data terlebih dahulu", Toast.LENGTH_SHORT).show();
         }else{
+            Toast.makeText(getContext(), "Pengingat berhasil ditambahkan", Toast.LENGTH_SHORT).show();
             if(day2){
                 myCalender.set(Calendar.DAY_OF_WEEK, 2);
             }
