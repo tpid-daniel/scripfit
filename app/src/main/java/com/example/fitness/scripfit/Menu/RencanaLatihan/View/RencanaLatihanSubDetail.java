@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
-import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
 import com.example.fitness.scripfit.R;

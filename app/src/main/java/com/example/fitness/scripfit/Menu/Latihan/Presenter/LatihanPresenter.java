@@ -25,28 +25,6 @@ public class LatihanPresenter {
         this.view = view;
     }
 
-    public void getLatihan(){
-        final List<LatihanModel> data = new ArrayList<>();
-        mService = Common.getAPIService();
-
-        Call<LatihanMainModel> call = mService.getLatihanData();
-
-        call.enqueue(new Callback<LatihanMainModel>() {
-            @Override
-            public void onResponse(Call<LatihanMainModel> call, Response<LatihanMainModel> response) {
-                for(LatihanModel latihanModel : response.body().getLatihan()){
-                        data.add(latihanModel);
-                }
-                view.resultDataDetail(data);
-            }
-
-            @Override
-            public void onFailure(Call<LatihanMainModel> call, Throwable t) {
-                view.showErrorMessage(t.toString());
-            }
-        });
-    }
-
     public void listLatihan(final String jenis){
         final List<LatihanModel> data = new ArrayList<>();
         mService = Common.getAPIService();
@@ -95,36 +73,11 @@ public class LatihanPresenter {
         });
     }
 
-    public void listLatihanByIdRencana(final int id){
-        final List<RencanaDayModel> data = new ArrayList<>();
-        mService = Common.getAPIService();
-
-        Call<RencanaDayMainModel> call = mService.getRencanaDay();
-
-        call.enqueue(new Callback<RencanaDayMainModel>() {
-            @Override
-            public void onResponse(Call<RencanaDayMainModel> call, Response<RencanaDayMainModel> response) {
-                for (RencanaDayModel rencanaDayModel : response.body().getRencanaday()){
-                    if(rencanaDayModel.getId().equals(id)){
-                        data.add(rencanaDayModel);
-                    }
-                }
-                view.resultDataDetailRencana(data);
-            }
-
-            @Override
-            public void onFailure(Call<RencanaDayMainModel> call, Throwable t) {
-
-            }
-        });
-    }
-
     public interface View {
 
         void showErrorMessage(String errorMessage);
 
         void resultDataDetail(List<LatihanModel> data);
 
-        void resultDataDetailRencana(List<RencanaDayModel> data);
     }
 }

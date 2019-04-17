@@ -10,9 +10,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
-import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaAdapter;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.ListRencanaDayAdapter;
-import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaModel;
 import com.example.fitness.scripfit.Menu.RencanaLatihan.Presenter.RencanaPresenter;
 import com.example.fitness.scripfit.R;
@@ -46,8 +44,6 @@ public class RencanaLatihanSubDay extends AppCompatActivity implements RencanaPr
         Intent intent = getIntent();
         id = intent.getIntExtra("id", 0);
         day = intent.getIntExtra("day", 0);
-        Log.i("day id", String.valueOf(id));
-        Log.i("day", String.valueOf(day));
 
         rencanaPresenter = new RencanaPresenter(this, getApplicationContext());
 

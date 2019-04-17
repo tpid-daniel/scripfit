@@ -118,8 +118,4 @@ public class LatihanDetail extends AppCompatActivity implements LatihanPresenter
         getDataLatihan();
     }
 
-    @Override
-    public void resultDataDetailRencana(List<RencanaDayModel> data) {
-
-    }
 }

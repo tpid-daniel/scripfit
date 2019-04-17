@@ -12,11 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
+        android:gravity="center"
         android:theme="@style/AppTheme1"
         app:layout_scrollFlags="scroll|enterAlways|snap"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="Pengingat Latihan"
-        app:titleMarginStart="110dp" />
+        app:titleMarginStart="120dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +39,9 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/open_sans_light"
                     android:text="Silahkan centang pada hari yang anda pilih :"
@@ -155,6 +158,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
+                            android:layout_marginEnd="10dp"
                             android:fontFamily="@font/open_sans_light"
                             android:text="Berulang" />
 
@@ -178,7 +182,8 @@
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_button_enable"
                 android:fontFamily="@font/open_sans_light"
-                android:text="Simpan Pengingat" />
+                android:text="Simpan Pengingat"
+                android:textColor="#FFF" />
 
             <Button
                 android:id="@+id/btn_resetReminder"
@@ -192,7 +197,8 @@
                 android:layout_toEndOf="@+id/btn_addReminder"
                 android:background="@drawable/border_button_enable"
                 android:fontFamily="@font/open_sans_light"
-                android:text="Reset/Hapus" />
+                android:text="Reset/Hapus"
+                android:textColor="#FFF" />
         </RelativeLayout>
 
     </LinearLayout>

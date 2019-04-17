@@ -1,13 +1,11 @@
 package com.example.fitness.scripfit.Menu.Latihan.View;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -15,15 +13,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 import com.bumptech.glide.Glide;
 import com.example.fitness.scripfit.Menu.Latihan.Model.LatihanModel;
 import com.example.fitness.scripfit.Menu.Latihan.Presenter.LatihanPresenter;
-import com.example.fitness.scripfit.Menu.RencanaLatihan.Model.RencanaDayModel;
 import com.example.fitness.scripfit.R;
 
 import java.util.ArrayList;
@@ -34,15 +29,12 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
     String jenis;
     WebView wv_latihan;
     RelativeLayout rl_latihan;
-    ImageView iv_playpause;
-    ProgressDialog mProgress;
     TextView tv_judulLatihanSub;
     TextView tv_tingkatLatihanSub;
     TextView tv_peralatanLatihanSub;
     ImageView iv_bagianOtotLatihanSub;
     TextView tv_petunjukLatihanSub;
     List<LatihanModel> mData = new ArrayList<>();
-    List<RencanaDayModel> mDay = new ArrayList<>();
     String urlVideo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -161,9 +153,4 @@ public class LatihanDetailSub extends AppCompatActivity implements LatihanPresen
         getText();
     }
 
-    @Override
-    public void resultDataDetailRencana(List<RencanaDayModel> data) {
-        mDay = data;
-        getText();
-    }
 }
