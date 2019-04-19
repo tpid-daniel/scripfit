@@ -29,11 +29,10 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BlogFragment extends Fragment implements BlogPresenter.View {
+public class BlogFragment extends Fragment implements BlogPresenter.View { //implements interface blogpresenter
     RecyclerView rv_blog;
     BlogAdapter adapter;
     List<BlogModel> menu = new ArrayList<>();
-    ProgressDialog mProgress;
     public BlogFragment() {
         // Required empty public constructor
     }
@@ -44,21 +43,16 @@ public class BlogFragment extends Fragment implements BlogPresenter.View {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
+        //kegunaannya view itu agar bisa findviewbyid yang ada di layout
         View rootView = inflater.inflate(R.layout.fragment_blog, container, false);
         Toolbar actionBarToolBar = (Toolbar) rootView.findViewById(R.id.toolbar);
+        //pakai appcompat khusus di fragment (harus pakai klo di fragment)
         ((AppCompatActivity)getActivity()).setSupportActionBar(actionBarToolBar);
         rv_blog = (RecyclerView) rootView.findViewById(R.id.rv_blog);
-        progress();
-        mProgress.show();
+        //cara untuk mengirim ke presenter
         BlogPresenter blogPresenter = new BlogPresenter(this);
         blogPresenter.getListBlog();
         return rootView;
-    }
-
-    public void progress(){
-        mProgress = new ProgressDialog(getContext());
-        mProgress.setMessage("Please wait...");
-        mProgress.setCanceledOnTouchOutside(false);
     }
 
     public void onResume() {
@@ -74,7 +68,6 @@ public class BlogFragment extends Fragment implements BlogPresenter.View {
 
         rv_blog.setAdapter(adapter);
 
-        mProgress.dismiss();
     }
 
     @Override

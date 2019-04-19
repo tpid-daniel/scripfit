@@ -60,11 +60,13 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
 
     @Override
     public int getItemCount() {
+
         return mData.size();
     }
 
     @Override
     public Filter getFilter() {
+
         return filterList;
     }
 

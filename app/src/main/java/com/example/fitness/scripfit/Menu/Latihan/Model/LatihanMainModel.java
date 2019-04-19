@@ -11,10 +11,12 @@ public class LatihanMainModel {
     private List<LatihanModel> latihan = null;
 
     public List<LatihanModel> getLatihan() {
+
         return latihan;
     }
 
     public void setLatihan(List<LatihanModel> latihan) {
+
         this.latihan = latihan;
     }
 }

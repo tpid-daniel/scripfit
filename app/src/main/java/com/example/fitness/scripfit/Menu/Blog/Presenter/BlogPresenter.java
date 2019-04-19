@@ -19,6 +19,7 @@ public class BlogPresenter {
     private View view;
 
     public BlogPresenter(View view) {
+
         this.view = view;
     }
 

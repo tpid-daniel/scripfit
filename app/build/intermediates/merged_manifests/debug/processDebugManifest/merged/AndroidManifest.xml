@@ -54,6 +54,12 @@
             android:resource="@array/preloaded_fonts" />
 
         <receiver android:name="com.example.fitness.scripfit.Menu.Reminder.AlarmNotificationReceiver" />
+
+        <provider
+            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.fitness.scripfit.lifecycle-trojan"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

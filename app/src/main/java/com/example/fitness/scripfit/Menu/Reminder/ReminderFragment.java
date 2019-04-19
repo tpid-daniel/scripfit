@@ -68,6 +68,7 @@ public class ReminderFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        //view untuk inisialisasi findviewbyid dari layout frag reminder
         View rootView = inflater.inflate(R.layout.fragment_reminder, container, false);
         Button btn_addReminder = (Button) rootView.findViewById(R.id.btn_addReminder);
         Button btn_resetReminder = (Button) rootView.findViewById(R.id.btn_resetReminder);
@@ -337,7 +338,7 @@ public class ReminderFragment extends Fragment {
             Toast.makeText(getContext(), "Isi semua data terlebih dahulu", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(getContext(), "Pengingat berhasil ditambahkan", Toast.LENGTH_SHORT).show();
-            if(day2){
+            if(day2==true){
                 myCalender.set(Calendar.DAY_OF_WEEK, 2);
             }
             else if(day3){
@@ -367,11 +368,6 @@ public class ReminderFragment extends Fragment {
                 manager.setRepeating(AlarmManager.RTC_WAKEUP, myCalender.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
                 preferences.savePrefReminder(tv_clock.getText().toString(), "repeat", day2, day3, day4, day5, day6, day7, day1);
             }
-            Log.i("day 2.1", String.valueOf(day2));
-
         }
-
     }
-
-
 }

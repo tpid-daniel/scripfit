@@ -8,14 +8,17 @@ public class LatihanModel {
     private String keterangan = null;
 
     public LatihanModel(String keterangan) {
+
         this.keterangan = keterangan;
     }
 
     public String getKeterangan() {
+
         return keterangan;
     }
 
     public void setKeterangan(String keterangan) {
+
         this.keterangan = keterangan;
     }
 

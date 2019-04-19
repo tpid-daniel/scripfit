@@ -34,9 +34,9 @@ public class LatihanPresenter {
         call.enqueue(new Callback<LatihanMainModel>() {
             @Override
             public void onResponse(Call<LatihanMainModel> call, Response<LatihanMainModel> response) {
-                for(LatihanModel latihanModel : response.body().getLatihan()){
-                    if(latihanModel.getJenis().contains(jenis)){
-                        data.add(latihanModel);
+                for(LatihanModel latihanData: response.body().getLatihan()){
+                    if(latihanData.getJenis().contains(jenis)){
+                        data.add(latihanData);
                     }
                 }
                 view.resultDataDetail(data);
