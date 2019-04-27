@@ -1,258 +1,258 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\3f90116d10f4abf80e9a947685c3c467\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\9b0c3945e3a29f4c946d53ecf260c673\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\02923d2bd02588cad359cacb6ba69ddb\AndroidManifest.xml:2:1-11:12
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:17:1-30:12
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\80892d376e3f74f10eb5779d0c5e1c7d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\f29db4e86ffa925bc7b4d1a5a5d90149\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\ce1c8f65f69f200bde4291bac4ce4776\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\65ea5a9ee69ea6835ce6913886e0c73d\AndroidManifest.xml:2:1-13:12
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.16] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.16.aar\a0784b02cc3b8bd9f1ee1cd63c99051a\AndroidManifest.xml:2:1-10:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\5c8bddef51cf62ab76d1a9857db3eae4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\de3e24e0c8e80e7da372431cbde3211a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\7e90f4fdddfcf19621784dcf24ed339a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e542300a9c98782a0828a8bec654980b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\e4b793436337a83a81fb2542be821df0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\a91757d4b6c40adfdbd8438bca3e5dbf\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\bc7bfb192554b443ab4f1888d2bda93e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\89f0a5ee4bdf8f0a99de610517f3fe34\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\82e1fe9e3562f2f4f1a5173b26e02fc2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\48f876ab7b5294fc1979f19c2e3035ec\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\2de1c6cbd64e4845759871c532aee392\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e45019e54c1a179b70b1a6e3bd84138c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\d9f38620e41041f41889e4147d8d28a0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\8e03693cb2927ab79f193f25d167360e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2eb12d06c89bb4b3fe871fc32a768b2d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\86b55599a6d8df8903155a500ebd5447\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\db0c73e8f32c5a69024740cec661c09b\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\0e6b9e1e9c61632880a48ad8a831ea27\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f0fbf70b66c304fad256e3b654e3a475\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\3e82d4b733b958d738271fe62f79503e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4c9a60edc8e1cd235c893227fa5a1b03\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\62696f41fbf4fd08fecd48715590bfec\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\536ecfa09911a556eea03a503f135424\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f6151cfe92aae02239876ed3356f9d2f\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1cac48586ff5087a68caa5802b11491d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\5daadd58a5fbc88a195c88072745fd98\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\b3a671bdeff36c5cd25c32441db3e418\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\e7fb5c7bcfe4ac920298a751275c678b\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f1a1f4ef8aebbecd4b28210f4a6d5d47\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2d122781b2812ec9502b361e84b8db19\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\dfcef3dd9baf60061d220b605feb5a4f\AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\4c54089e4c295ba3f6cdfd1d95dccd43\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\104de4e16993242ab2deffbf1cf2efde\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\844544064d5e843bb3bbe5cd4208c9ac\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\24922c363e5e336e32ac084f2496269c\AndroidManifest.xml:2:1-13:12
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.16] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.16.aar\12c5f931436be3a9e4244acbade8e340\AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c5dca503e3b0286411a993701347129b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\88aea140fb53694d6348b7bbd436842f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c13c06f451554cf3b46dd644dcd3d1d4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5e2220846770dc822620823c6f99aba4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\656bc6ae8a83465d5e00dfcff651c523\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\6073cdf5bb9361d950fadc7e6b8afa77\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\08cffbf2a0d480d00b44cd7a1a7cfcbe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6cfd0569cc37e0f5988162ff6c21c388\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3c45622ab41b4508266c8d688c38d000\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2923b939e216ec54b4c5ad3b9b78cc68\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d97e73e72c70749699e54da9a0c80006\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\dc5b0e3fc9d93064e28672ca6cdafd09\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a9a65d27ba50dfeb92ef8190f38feda3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\50b27f82e22a06fb3c40039f67df820b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e9feb357b1a567371e8381ebd34b38b1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\138045396c0ef6b6dd21a8f137480e73\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\896e0026564be2485782204ab3648e95\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\111bfa68a813ee9c2635878f08767dd9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\00a3905a255b8acb8bc32a7be98b02b4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d94f8ef317c79ce9647630b141789ada\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\821371e2dc47c58062dbb640463dc566\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\34f7ca50fcf6a94f598d059d99eb714e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0719c4e7d9040dd3bcc9b3f364c2d37d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\af9a69a56d623be9d799362e2ce4b8e5\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\7bac1684d7b8fca49684b7e5e958027f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1f39c027a007cf6c750a7547c324f4f0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\8da00f828ed10b1b2033b6f858e37bcf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0ad208ffa733867df394acb8ecf45b7c\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:3:5-43
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:7:5-47:19
-MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\3f90116d10f4abf80e9a947685c3c467\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\3f90116d10f4abf80e9a947685c3c467\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\02923d2bd02588cad359cacb6ba69ddb\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\02923d2bd02588cad359cacb6ba69ddb\AndroidManifest.xml:9:5-20
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:22:5-28:19
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:22:5-28:19
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\65ea5a9ee69ea6835ce6913886e0c73d\AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\65ea5a9ee69ea6835ce6913886e0c73d\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\86b55599a6d8df8903155a500ebd5447\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\86b55599a6d8df8903155a500ebd5447\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\db0c73e8f32c5a69024740cec661c09b\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\db0c73e8f32c5a69024740cec661c09b\AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f6151cfe92aae02239876ed3356f9d2f\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f6151cfe92aae02239876ed3356f9d2f\AndroidManifest.xml:9:5-20
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:7:5-47:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f1a1f4ef8aebbecd4b28210f4a6d5d47\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f1a1f4ef8aebbecd4b28210f4a6d5d47\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\dfcef3dd9baf60061d220b605feb5a4f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\dfcef3dd9baf60061d220b605feb5a4f\AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:22:5-28:19
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\24922c363e5e336e32ac084f2496269c\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\24922c363e5e336e32ac084f2496269c\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\138045396c0ef6b6dd21a8f137480e73\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\138045396c0ef6b6dd21a8f137480e73\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\896e0026564be2485782204ab3648e95\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\896e0026564be2485782204ab3648e95\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\af9a69a56d623be9d799362e2ce4b8e5\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\af9a69a56d623be9d799362e2ce4b8e5\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\86b55599a6d8df8903155a500ebd5447\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\138045396c0ef6b6dd21a8f137480e73\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSubDay
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:14:9-92
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:14:9-92
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:14:19-80
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:14:19-80
 activity#com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetailSub
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:15:9-17:52
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:15:9-17:52
 	android:screenOrientation
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:17:13-49
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:17:13-49
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:16:13-63
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:16:13-63
 activity#com.example.fitness.scripfit.Menu.Latihan.View.LatihanDetail
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:18:9-20:52
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:18:9-20:52
 	android:screenOrientation
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:20:13-49
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:20:13-49
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:19:13-60
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:19:13-60
 activity#com.example.fitness.scripfit.Menu.Blog.View.BlogDetail
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:21:9-23:52
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:21:9-23:52
 	android:screenOrientation
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:23:13-49
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:23:13-49
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:22:13-54
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:22:13-54
 activity#com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSubDetail
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:24:9-26:52
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:24:9-26:52
 	android:screenOrientation
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:26:13-49
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:25:13-77
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:25:13-77
 activity#com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanSub
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:27:9-29:52
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:27:9-29:52
 	android:screenOrientation
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:29:13-49
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:28:13-71
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:28:13-71
 activity#com.example.fitness.scripfit.Menu.RencanaLatihan.View.RencanaLatihanDetail
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:30:9-32:52
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:30:9-32:52
 	android:screenOrientation
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:32:13-49
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:31:13-74
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:31:13-74
 activity#com.example.fitness.scripfit.MainActivity
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:33:9-41:20
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:33:9-41:20
 	android:screenOrientation
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:35:13-49
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:35:13-49
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:34:13-41
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:34:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:36:13-40:29
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:37:17-69
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:39:17-77
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:39:27-74
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:39:27-74
 meta-data#preloaded_fonts
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:43:9-45:57
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:43:9-45:57
 	android:resource
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:45:13-54
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:45:13-54
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:44:13-43
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:44:13-43
 receiver#com.example.fitness.scripfit.Menu.Reminder.AlarmNotificationReceiver
-ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:46:9-76
+ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:46:9-76
 	android:name
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml:46:19-74
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml:46:19-74
 uses-sdk
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\3f90116d10f4abf80e9a947685c3c467\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\3f90116d10f4abf80e9a947685c3c467\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\9b0c3945e3a29f4c946d53ecf260c673\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\9b0c3945e3a29f4c946d53ecf260c673\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\02923d2bd02588cad359cacb6ba69ddb\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\02923d2bd02588cad359cacb6ba69ddb\AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\80892d376e3f74f10eb5779d0c5e1c7d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\80892d376e3f74f10eb5779d0c5e1c7d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\f29db4e86ffa925bc7b4d1a5a5d90149\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\f29db4e86ffa925bc7b4d1a5a5d90149\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\ce1c8f65f69f200bde4291bac4ce4776\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\ce1c8f65f69f200bde4291bac4ce4776\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\65ea5a9ee69ea6835ce6913886e0c73d\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\65ea5a9ee69ea6835ce6913886e0c73d\AndroidManifest.xml:7:5-9:41
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.16] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.16.aar\a0784b02cc3b8bd9f1ee1cd63c99051a\AndroidManifest.xml:6:5-8:41
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.16] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.16.aar\a0784b02cc3b8bd9f1ee1cd63c99051a\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\5c8bddef51cf62ab76d1a9857db3eae4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\5c8bddef51cf62ab76d1a9857db3eae4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\de3e24e0c8e80e7da372431cbde3211a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\de3e24e0c8e80e7da372431cbde3211a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\7e90f4fdddfcf19621784dcf24ed339a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\7e90f4fdddfcf19621784dcf24ed339a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e542300a9c98782a0828a8bec654980b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e542300a9c98782a0828a8bec654980b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\e4b793436337a83a81fb2542be821df0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\e4b793436337a83a81fb2542be821df0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\a91757d4b6c40adfdbd8438bca3e5dbf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\a91757d4b6c40adfdbd8438bca3e5dbf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\bc7bfb192554b443ab4f1888d2bda93e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\bc7bfb192554b443ab4f1888d2bda93e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\89f0a5ee4bdf8f0a99de610517f3fe34\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\89f0a5ee4bdf8f0a99de610517f3fe34\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\82e1fe9e3562f2f4f1a5173b26e02fc2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\82e1fe9e3562f2f4f1a5173b26e02fc2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\48f876ab7b5294fc1979f19c2e3035ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\48f876ab7b5294fc1979f19c2e3035ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\2de1c6cbd64e4845759871c532aee392\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\2de1c6cbd64e4845759871c532aee392\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e45019e54c1a179b70b1a6e3bd84138c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e45019e54c1a179b70b1a6e3bd84138c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\d9f38620e41041f41889e4147d8d28a0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\d9f38620e41041f41889e4147d8d28a0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\8e03693cb2927ab79f193f25d167360e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\8e03693cb2927ab79f193f25d167360e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2eb12d06c89bb4b3fe871fc32a768b2d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2eb12d06c89bb4b3fe871fc32a768b2d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\86b55599a6d8df8903155a500ebd5447\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\86b55599a6d8df8903155a500ebd5447\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\db0c73e8f32c5a69024740cec661c09b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\db0c73e8f32c5a69024740cec661c09b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\0e6b9e1e9c61632880a48ad8a831ea27\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\0e6b9e1e9c61632880a48ad8a831ea27\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f0fbf70b66c304fad256e3b654e3a475\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f0fbf70b66c304fad256e3b654e3a475\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\3e82d4b733b958d738271fe62f79503e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\3e82d4b733b958d738271fe62f79503e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4c9a60edc8e1cd235c893227fa5a1b03\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4c9a60edc8e1cd235c893227fa5a1b03\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\62696f41fbf4fd08fecd48715590bfec\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\62696f41fbf4fd08fecd48715590bfec\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\536ecfa09911a556eea03a503f135424\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\536ecfa09911a556eea03a503f135424\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f6151cfe92aae02239876ed3356f9d2f\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f6151cfe92aae02239876ed3356f9d2f\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1cac48586ff5087a68caa5802b11491d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1cac48586ff5087a68caa5802b11491d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\5daadd58a5fbc88a195c88072745fd98\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\5daadd58a5fbc88a195c88072745fd98\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\b3a671bdeff36c5cd25c32441db3e418\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\b3a671bdeff36c5cd25c32441db3e418\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\e7fb5c7bcfe4ac920298a751275c678b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\e7fb5c7bcfe4ac920298a751275c678b\AndroidManifest.xml:20:5-44
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f1a1f4ef8aebbecd4b28210f4a6d5d47\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f1a1f4ef8aebbecd4b28210f4a6d5d47\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2d122781b2812ec9502b361e84b8db19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2d122781b2812ec9502b361e84b8db19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\dfcef3dd9baf60061d220b605feb5a4f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\dfcef3dd9baf60061d220b605feb5a4f\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\4c54089e4c295ba3f6cdfd1d95dccd43\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\4c54089e4c295ba3f6cdfd1d95dccd43\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\104de4e16993242ab2deffbf1cf2efde\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\104de4e16993242ab2deffbf1cf2efde\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\844544064d5e843bb3bbe5cd4208c9ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\844544064d5e843bb3bbe5cd4208c9ac\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\24922c363e5e336e32ac084f2496269c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\24922c363e5e336e32ac084f2496269c\AndroidManifest.xml:7:5-9:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.16] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.16.aar\12c5f931436be3a9e4244acbade8e340\AndroidManifest.xml:6:5-8:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.16] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.16.aar\12c5f931436be3a9e4244acbade8e340\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c5dca503e3b0286411a993701347129b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c5dca503e3b0286411a993701347129b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\88aea140fb53694d6348b7bbd436842f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\88aea140fb53694d6348b7bbd436842f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c13c06f451554cf3b46dd644dcd3d1d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c13c06f451554cf3b46dd644dcd3d1d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5e2220846770dc822620823c6f99aba4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5e2220846770dc822620823c6f99aba4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\656bc6ae8a83465d5e00dfcff651c523\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\656bc6ae8a83465d5e00dfcff651c523\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\6073cdf5bb9361d950fadc7e6b8afa77\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\6073cdf5bb9361d950fadc7e6b8afa77\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\08cffbf2a0d480d00b44cd7a1a7cfcbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\08cffbf2a0d480d00b44cd7a1a7cfcbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6cfd0569cc37e0f5988162ff6c21c388\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6cfd0569cc37e0f5988162ff6c21c388\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3c45622ab41b4508266c8d688c38d000\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3c45622ab41b4508266c8d688c38d000\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2923b939e216ec54b4c5ad3b9b78cc68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2923b939e216ec54b4c5ad3b9b78cc68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d97e73e72c70749699e54da9a0c80006\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d97e73e72c70749699e54da9a0c80006\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\dc5b0e3fc9d93064e28672ca6cdafd09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\dc5b0e3fc9d93064e28672ca6cdafd09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a9a65d27ba50dfeb92ef8190f38feda3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a9a65d27ba50dfeb92ef8190f38feda3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\50b27f82e22a06fb3c40039f67df820b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\50b27f82e22a06fb3c40039f67df820b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e9feb357b1a567371e8381ebd34b38b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e9feb357b1a567371e8381ebd34b38b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\138045396c0ef6b6dd21a8f137480e73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\138045396c0ef6b6dd21a8f137480e73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\896e0026564be2485782204ab3648e95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\896e0026564be2485782204ab3648e95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\111bfa68a813ee9c2635878f08767dd9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\111bfa68a813ee9c2635878f08767dd9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\00a3905a255b8acb8bc32a7be98b02b4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\00a3905a255b8acb8bc32a7be98b02b4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d94f8ef317c79ce9647630b141789ada\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d94f8ef317c79ce9647630b141789ada\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\821371e2dc47c58062dbb640463dc566\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\821371e2dc47c58062dbb640463dc566\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\34f7ca50fcf6a94f598d059d99eb714e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\34f7ca50fcf6a94f598d059d99eb714e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0719c4e7d9040dd3bcc9b3f364c2d37d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0719c4e7d9040dd3bcc9b3f364c2d37d\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\af9a69a56d623be9d799362e2ce4b8e5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\af9a69a56d623be9d799362e2ce4b8e5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\7bac1684d7b8fca49684b7e5e958027f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\7bac1684d7b8fca49684b7e5e958027f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1f39c027a007cf6c750a7547c324f4f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1f39c027a007cf6c750a7547c324f4f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\8da00f828ed10b1b2033b6f858e37bcf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\8da00f828ed10b1b2033b6f858e37bcf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0ad208ffa733867df394acb8ecf45b7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0ad208ffa733867df394acb8ecf45b7c\AndroidManifest.xml:20:5-44
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-		ADDED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Scripfit\2\scripfit\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+		ADDED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ALL_UKDW\OneDrive - Duta Wacana Christian University\Seminar & Skripsi\Andoid\skripsi\scripfit\app\src\main\AndroidManifest.xml
 provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:23:9-27:43
+ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:23:9-27:43
 	android:authorities
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:25:13-68
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:25:13-68
 	android:multiprocess
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:27:13-40
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:27:13-40
 	android:exported
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:26:13-37
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\9d1883fa5881983f0c4b676afa29bce6\AndroidManifest.xml:24:13-83
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\89975166eacdd57a7a752e7fac45c3c3\AndroidManifest.xml:24:13-83

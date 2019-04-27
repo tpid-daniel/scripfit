@@ -123,7 +123,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list1(){
-        if(menuList1.size()>1){
+        if(menuList1.size()>0){
             adapter = new ListRencanaAdapter(getContext(), menuList1, 0);
         }else{
             adapter = new ListRencanaAdapter(getContext(), menuList1, 1);
@@ -136,7 +136,7 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list2(){
-        if(menuList1.size()>1) {
+        if(menuList1.size()>0) {
             adapter = new ListRencanaAdapter(getContext(), menuList2, 0);
         }else{
             adapter = new ListRencanaAdapter(getContext(), menuList2, 1);
