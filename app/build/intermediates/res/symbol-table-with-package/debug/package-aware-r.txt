@@ -1123,6 +1123,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cv_blogItem
 id cv_day
 id cv_latihanGrid
 id cv_rencanaItem

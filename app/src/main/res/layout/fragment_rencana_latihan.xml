@@ -65,6 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -81,8 +82,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/open_sans_light"
-                    android:text="Selengkapnya >"
-                    android:textColor="#109D58" />
+                    android:gravity="right"
+                    android:text="SELENGKAPNYA"
+                    android:textColor="#109D58"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -97,6 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -113,8 +117,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/open_sans_light"
-                    android:text="Selengkapnya >"
-                    android:textColor="#109D58" />
+                    android:gravity="right"
+                    android:text="SELENGKAPNYA"
+                    android:textColor="#109D58"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView

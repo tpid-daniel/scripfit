@@ -1,0 +1,4 @@
+#Sat Apr 27 15:54:24 ICT 2019
+base.0=D\:\\Scripfit\\2\\scripfit\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+path.0=classes.dex
+renamed.0=classes.dex

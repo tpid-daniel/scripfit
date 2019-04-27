@@ -183,7 +183,8 @@
                 android:background="@drawable/border_button_enable"
                 android:fontFamily="@font/open_sans_light"
                 android:text="Simpan Pengingat"
-                android:textColor="#FFF" />
+                android:textColor="#FFF"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_resetReminder"
@@ -198,7 +199,8 @@
                 android:background="@drawable/border_button_enable"
                 android:fontFamily="@font/open_sans_light"
                 android:text="Reset/Hapus"
-                android:textColor="#FFF" />
+                android:textColor="#FFF"
+                android:textStyle="bold" />
         </RelativeLayout>
 
     </LinearLayout>

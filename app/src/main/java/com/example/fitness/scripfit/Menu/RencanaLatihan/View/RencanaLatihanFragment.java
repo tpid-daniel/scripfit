@@ -123,7 +123,11 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list1(){
-        adapter = new ListRencanaAdapter(getContext(), menuList1, 0);
+        if(menuList1.size()>1){
+            adapter = new ListRencanaAdapter(getContext(), menuList1, 0);
+        }else{
+            adapter = new ListRencanaAdapter(getContext(), menuList1, 1);
+        }
 
         rv_list1.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -132,7 +136,11 @@ public class RencanaLatihanFragment extends Fragment implements RencanaPresenter
     }
 
     public void list2(){
-        adapter = new ListRencanaAdapter(getContext(), menuList2, 0);
+        if(menuList1.size()>1) {
+            adapter = new ListRencanaAdapter(getContext(), menuList2, 0);
+        }else{
+            adapter = new ListRencanaAdapter(getContext(), menuList2, 1);
+        }
 
         rv_list2.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 

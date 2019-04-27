@@ -3,6 +3,7 @@ package com.example.fitness.scripfit.Menu.Blog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -63,6 +64,14 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogAdapter.ViewHolder>{
                 context.startActivity(data);
             }
         });
+        viewHolder.cv_blogItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent data = new Intent(context, BlogDetail.class);
+                data.putExtra("id", id);
+                context.startActivity(data);
+            }
+        });
     }
 
     @Override
@@ -77,9 +86,10 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogAdapter.ViewHolder>{
         public TextView txtKeterangan;
         public ImageView iv_blogItem;
         public TextView tv_SelanjutnyaBlog;
+        public CardView cv_blogItem;
         public ViewHolder(View v) {
             super(v);
-
+            cv_blogItem = (CardView) v.findViewById(R.id.cv_blogItem);
             txtJudul = (TextView) v.findViewById(R.id.tv_judul);
             txtKeterangan = (TextView) v.findViewById(R.id.tv_keterangan);
             iv_blogItem = (ImageView) v.findViewById(R.id.iv_blogItem);
